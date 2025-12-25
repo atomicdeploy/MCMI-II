@@ -186,7 +186,7 @@ class ComprehensiveValidator {
 // Run if called directly
 if (process.argv[1] === new URL(import.meta.url).pathname) {
   const validator = new ComprehensiveValidator();
-  const filePath = process.argv[2] || 'output/javascript/advanced-transpiled.js';
+  const filePath = process.argv[2] || 'output/javascript/transpiled.js';
   
   const success = validator.validate(filePath);
   process.exit(success ? 0 : 1);

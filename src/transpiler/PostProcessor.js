@@ -113,10 +113,14 @@ export class PostProcessor {
 
     let result = code;
 
+    // Helper to escape regex special characters
+    const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
     // Fix array access for each known array - support variables as indices too
     for (const arrayName of arrayNames) {
       // Pattern: arrayName(index) -> arrayName[index] where index can be variable or number
-      const pattern = new RegExp(`\\b${arrayName}\\(([^)]+)\\)`, 'g');
+      const escapedName = escapeRegex(arrayName);
+      const pattern = new RegExp(`\\b${escapedName}\\(([^)]+)\\)`, 'g');
       const before = result;
       result = result.replace(pattern, `${arrayName}[$1]`);
       
