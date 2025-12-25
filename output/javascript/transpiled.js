@@ -1,7 +1,7 @@
 /**
  * Transpiled JavaScript from VBScript
  * Source: MCMI-II Assessment Tool
- * Generated: 2025-12-25T19:36:41.619Z
+ * Generated: 2025-12-25T19:54:06.031Z
  * 
  * Note: This is an automated transpilation. Manual review and testing recommended.
  */
@@ -4056,7 +4056,7 @@ for (let j = 3; j <= 12; j++)
   if (k.t3.value="") {
   msgbox"لطفاً حداقل خانه مربوط به سن را پر کنيد"
    
-  } else if (not isnumeric(k.t3.value)) {
+  } else if (!isnumeric(k.t3.value)) {
    msgbox "لطفاً در خانه مربوط به سن يک عدد وارد کنيد"
   
   
@@ -4064,7 +4064,7 @@ for (let j = 3; j <= 12; j++)
   msgbox "سن شما برای اين تست مناسب نيست"
   
  
- } else if (not  k.radgender(0).checked +  + !k.radgender(1).checked) {
+ } else if (not  k.radgender(0).checked && not k.radgender(1).checked) {
  msgbox "لطفاً دايره مربوط به جنسيت را پر کنيد"
   
 } else {
@@ -4077,7 +4077,7 @@ function buttclick() {
 
 total=v+pp+cc+ss+t+b+n+d+h+a+p+c+s+eightb+eighta+seven+sixb+sixa+five+four+three+two+one+z+y 
  fname=k.t4.value
- if (not k.t1.value="" +  + !k.t2.value="") {
+ if (not k.t1.value="" and !k.t2.value="") {
  name=k.t1.value
  code=k.t2.value
  }
@@ -4172,64 +4172,64 @@ total=v+pp+cc+ss+t+b+n+d+h+a+p+c+s+eightb+eighta+seven+sixb+sixa+five+four+three
 	end select 
 	
 	 if rrawx<180 then xscore=0
-	 if rrawx>180 +  + rrawx<195 then xscore=5
-	 if rrawx>194 +  + rrawx<207 then xscore=10
-	 if rrawx>206 +  + rrawx<220 then xscore=15
-	 if rrawx>219 +  + rrawx<232 then xscore=20
-	 if rrawx>231 +  + rrawx<245 then xscore=25
-	 if rrawx>244 +  + rrawx<257 then xscore=30
-	 if (rrawx>256 +  + rrawx<270) {
+	 if rrawx>180 && rrawx<195 then xscore=5
+	 if rrawx>194 && rrawx<207 then xscore=10
+	 if rrawx>206 && rrawx<220 then xscore=15
+	 if rrawx>219 && rrawx<232 then xscore=20
+	 if rrawx>231 && rrawx<245 then xscore=25
+	 if rrawx>244 && rrawx<257 then xscore=30
+	 if (rrawx>256 && rrawx<270) {
 	 if k.radgender(1).checked then xscore=35 else xscore=34
 	  
 	 }
-	 if rrawx>269 +  + rrawx<282 then xscore=40
-	 if rrawx>281 +  + rrawx<295 then xscore=45
-	 if rrawx>294 +  + rrawx<307 then xscore=50
-	 if (rrawx>306 +  + rrawx<320) {
+	 if rrawx>269 && rrawx<282 then xscore=40
+	 if rrawx>281 && rrawx<295 then xscore=45
+	 if rrawx>294 && rrawx<307 then xscore=50
+	 if (rrawx>306 && rrawx<320) {
 	 if k.radgender(1).checked then xscore=55 else xscore=54
 	  
-	 } (if rrawx>319 +  + rrawx<345) {
+	 } (if rrawx>319 && rrawx<345) {
 	 if k.radgender(1).checked then xscore=60 else xscore=55
 	  
-	 } (if rrawx>344 +  + rrawx<357) {
+	 } (if rrawx>344 && rrawx<357) {
 	 if k.radgender(1).checked then xscore=63 else xscore=56
 	  
-	 } (if rrawx>356 +  + rrawx<370) {
+	 } (if rrawx>356 && rrawx<370) {
 	 if k.radgender(1).checked then xscore=66 else xscore=58
 	  
-	 } (if rrawx>369 +  + rrawx<382) {
+	 } (if rrawx>369 && rrawx<382) {
 	 if k.radgender(1).checked then xscore=69 else xscore=60
 	  
-	 } (if rrawx>381 +  + rrawx<395) {
+	 } (if rrawx>381 && rrawx<395) {
 	 if k.radgender(1).checked then xscore=72 else xscore=63
 	  
-	 } (if rrawx>394 +  + rrawx<420) {
+	 } (if rrawx>394 && rrawx<420) {
 	 if k.radgender(1).checked then xscore=74 else xscore=65
 	  
-	 } (if rrawx>419 +  + rrawx<432) {
+	 } (if rrawx>419 && rrawx<432) {
 	 if k.radgender(1).checked then xscore=77 else xscore=67
 	  
-	 } (if rrawx>431 +  + rrawx<445) {
+	 } (if rrawx>431 && rrawx<445) {
 	 if k.radgender(1).checked then xscore=79 else xscore=70
 	  
-	 } (if rrawx>444 +  + rrawx<457) {
+	 } (if rrawx>444 && rrawx<457) {
 	 if k.radgender(1).checked then xscore=81 else xscore=72
 	  
-	 } (if rrawx>456 +  + rrawx<470) {
+	 } (if rrawx>456 && rrawx<470) {
 	 if k.radgender(1).checked then xscore=83 else xscore=75
 	  
-	 } (if rrawx>469 +  + rrawx<483) {
+	 } (if rrawx>469 && rrawx<483) {
 	 if k.radgender(1).checked then xscore=85 else xscore=79
 	  
-	 } (if rrawx>482 +  + rrawx<495) {
+	 } (if rrawx>482 && rrawx<495) {
 	 if k.radgender(1).checked then xscore=87 else xscore=84
 	  
 	 }
-	 if rrawx>494 +  + rrawx<508 then xscore=89
-	 if rrawx>507 +  + rrawx<520 then xscore=91
-	 if rrawx>519 +  + rrawx<533 then xscore=93
-	 if rrawx>532 +  + rrawx<545 then xscore=95
-	 if rrawx>544 +  + rrawx<558 then xscore=97
+	 if rrawx>494 && rrawx<508 then xscore=89
+	 if rrawx>507 && rrawx<520 then xscore=91
+	 if rrawx>519 && rrawx<533 then xscore=93
+	 if rrawx>532 && rrawx<545 then xscore=95
+	 if rrawx>544 && rrawx<558 then xscore=97
 	 if rrawx>557 then xscore=100
 	 
       dacontain=daadjust()  

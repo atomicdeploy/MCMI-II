@@ -17,7 +17,7 @@ export class HTMLParser {
 
   parse() {
     this.logger.step('Parsing HTML file');
-    
+
     try {
       // Read the HTML file
       this.rawHTML = readFileSync(this.filePath, 'utf-8');
@@ -25,15 +25,15 @@ export class HTMLParser {
 
       // Extract metadata
       this._extractMetadata();
-      
+
       // Extract questions
       this._extractQuestions();
-      
+
       // Extract form structure
       this._extractFormStructure();
 
       this.logger.complete('HTML parsing completed');
-      
+
       return {
         questions: this.questions,
         metadata: this.metadata,
@@ -47,7 +47,7 @@ export class HTMLParser {
 
   _extractMetadata() {
     this.logger.info('Extracting metadata');
-    
+
     // Extract title
     const titleMatch = this.rawHTML.match(/<TITLE>(.*?)<\/TITLE>/i);
     if (titleMatch) {
@@ -62,27 +62,27 @@ export class HTMLParser {
 
     this.metadata.encoding = 'UTF-8';
     this.metadata.originalEncoding = 'UTF-16LE';
-    
+
     this.logger.success('Metadata extracted', this.metadata);
   }
 
   _extractQuestions() {
     this.logger.info('Extracting questions');
-    
+
     // Extract all radio button names to find question numbers
     const radioPattern = /name=R(\d+)/gi;
     const questionNumbers = new Set();
     let match;
-    
+
     while ((match = radioPattern.exec(this.rawHTML)) !== null) {
       questionNumbers.add(parseInt(match[1]));
     }
-    
+
     this.logger.info(`Found ${questionNumbers.size} unique questions`);
-    
+
     // For each question number, extract the question text
     const sortedNumbers = Array.from(questionNumbers).sort((a, b) => a - b);
-    
+
     for (const qNum of sortedNumbers) {
       // Pattern to find question text near the radio buttons
       // Look for the question number, then the radio buttons, then the text in <B> tags
@@ -90,10 +90,10 @@ export class HTMLParser {
         `name=R${qNum}[\\s\\S]{0,500}<B>([\\s\\S]*?)<\\/B>`,
         'i'
       );
-      
+
       const textMatch = this.rawHTML.match(qPattern);
       let questionText = '';
-      
+
       if (textMatch) {
         questionText = textMatch[1]
           .replace(/<[^>]+>/g, '') // Remove HTML tags
@@ -101,7 +101,7 @@ export class HTMLParser {
           .replace(/\s+/g, ' ') // Normalize whitespace
           .trim();
       }
-      
+
       // If we couldn't find text after, try looking before
       if (!questionText) {
         const beforePattern = new RegExp(
@@ -117,7 +117,7 @@ export class HTMLParser {
             .trim();
         }
       }
-      
+
       this.questions.push({
         id: qNum,
         number: qNum,
@@ -127,24 +127,24 @@ export class HTMLParser {
         options: ['false', 'true'],
         labels: ['FALSE - خیر', 'TRUE - بلی']
       });
-      
+
       if (qNum % 25 === 0) {
         this.logger.progress('Extracting questions', qNum, 175);
       }
     }
-    
+
     // Sort questions by number
     this.questions.sort((a, b) => a.number - b.number);
-    
+
     this.logger.success(`Extracted ${this.questions.length} questions`);
   }
 
   _extractFormStructure() {
     this.logger.info('Extracting form structure');
-    
+
     // Extract demographic fields
     this.metadata.demographicFields = [];
-    
+
     // Gender field
     if (this.rawHTML.includes('radgender')) {
       this.metadata.demographicFields.push({
@@ -154,7 +154,7 @@ export class HTMLParser {
         options: ['female', 'male']
       });
     }
-    
+
     // Age field
     if (this.rawHTML.includes('name=age') || this.rawHTML.includes('id=age')) {
       this.metadata.demographicFields.push({
@@ -163,7 +163,7 @@ export class HTMLParser {
         label: 'Age'
       });
     }
-    
+
     // Name field
     if (this.rawHTML.includes('name=name') || this.rawHTML.includes('id=name')) {
       this.metadata.demographicFields.push({
@@ -172,7 +172,7 @@ export class HTMLParser {
         label: 'Name'
       });
     }
-    
+
     this.logger.success(`Extracted ${this.metadata.demographicFields.length} demographic fields`);
   }
 

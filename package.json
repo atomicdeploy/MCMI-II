@@ -1,19 +1,35 @@
 {
   "name": "mcmi-ii-parser",
   "version": "1.0.0",
-  "description": "Complete DOM, HTML, JS, VBScript parser and converter for MCMI-II assessment tool",
+  "description": "Complete DOM, HTML, JS, VBScript parser and converter for MCMI-II assessment tool with comprehensive tests and ESLint validation",
   "main": "src/index.js",
   "type": "module",
   "scripts": {
     "parse": "node src/index.js",
-    "test": "node --test tests/**/*.test.js",
-    "lint": "eslint src/",
-    "validate": "node src/validator.js"
+    "test": "node --test tests/*.test.js",
+    "lint": "eslint src/ tests/",
+    "lint:all": "eslint src/ tests/ output/javascript/transpiled.js",
+    "lint:fix": "eslint src/ tests/ --fix",
+    "validate": "node src/validator.js",
+    "ci": "npm run lint && npm run parse && npm run validate && npm run test"
   },
-  "keywords": ["mcmi-ii", "parser", "vbscript", "transpiler", "html", "assessment"],
+  "keywords": [
+    "mcmi-ii",
+    "parser",
+    "vbscript",
+    "transpiler",
+    "html",
+    "assessment",
+    "testing",
+    "eslint"
+  ],
   "author": "",
   "license": "MIT",
   "engines": {
     "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.2",
+    "globals": "^16.5.0"
   }
 }

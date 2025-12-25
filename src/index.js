@@ -30,23 +30,23 @@ class MCMIIPipeline {
     try {
       // Step 1: Parse HTML and extract questions
       const questionsData = await this.parseHTML();
-      
+
       // Step 2: Extract VBScript
       const vbscriptData = await this.extractVBScript();
-      
+
       // Step 3: Transpile VBScript to JavaScript
       const javascriptData = await this.transpileToJavaScript(vbscriptData);
-      
+
       // Step 4: Generate outputs
       await this.generateOutputs(questionsData, vbscriptData, javascriptData);
-      
+
       // Step 5: Generate modern HTML fragments
       await this.generateHTMLFragments(questionsData);
-      
+
       this.logger.separator();
       this.logger.complete('✨ Pipeline completed successfully!');
       this.logger.separator();
-      
+
       return {
         success: true,
         outputs: {
@@ -64,36 +64,36 @@ class MCMIIPipeline {
 
   async parseHTML() {
     this.logger.step('Step 1: Parsing HTML');
-    
+
     const parser = new HTMLParser(this.sourceFile);
     const result = parser.parse();
-    
+
     this.logger.success(`Parsed ${result.totalQuestions} questions`);
-    
+
     return parser.getQuestionsJSON();
   }
 
   async extractVBScript() {
     this.logger.step('Step 2: Extracting VBScript');
-    
+
     const extractor = new VBScriptExtractor(this.sourceFile);
     const result = extractor.extract();
-    
+
     this.logger.success(`Extracted ${result.lineCount} lines of VBScript`);
     this.logger.info(`Found ${result.functions.length} functions`);
     this.logger.info(`Found ${result.variables.length} variables`);
-    
+
     return extractor.getVBScriptInfo();
   }
 
   async transpileToJavaScript(vbscriptData) {
     this.logger.step('Step 3: Transpiling VBScript to JavaScript');
-    
+
     const transpiler = new VBScriptTranspiler();
     const jsCode = transpiler.transpile(vbscriptData.code);
-    
+
     this.logger.success('Transpilation completed');
-    
+
     return {
       code: jsCode,
       functions: vbscriptData.functions,
@@ -103,17 +103,17 @@ class MCMIIPipeline {
 
   async generateOutputs(questionsData, vbscriptData, javascriptData) {
     this.logger.step('Step 4: Generating output files');
-    
+
     // Ensure output directories exist
     mkdirSync(join(this.outputDir, 'json'), { recursive: true });
     mkdirSync(join(this.outputDir, 'javascript'), { recursive: true });
     mkdirSync(join(this.outputDir, 'html'), { recursive: true });
-    
+
     // Write questions JSON
     const questionsPath = join(this.outputDir, 'json', 'questions.json');
     writeFileSync(questionsPath, JSON.stringify(questionsData, null, 2));
     this.logger.success(`✓ Questions JSON: ${questionsPath}`);
-    
+
     // Write VBScript metadata
     const vbscriptMetaPath = join(this.outputDir, 'json', 'vbscript-metadata.json');
     writeFileSync(vbscriptMetaPath, JSON.stringify({
@@ -122,12 +122,12 @@ class MCMIIPipeline {
       lineCount: vbscriptData.totalLines
     }, null, 2));
     this.logger.success(`✓ VBScript metadata: ${vbscriptMetaPath}`);
-    
+
     // Write original VBScript
     const vbscriptPath = join(this.outputDir, 'javascript', 'original-vbscript.vbs');
     writeFileSync(vbscriptPath, vbscriptData.code);
     this.logger.success(`✓ Original VBScript: ${vbscriptPath}`);
-    
+
     // Write transpiled JavaScript
     const jsPath = join(this.outputDir, 'javascript', 'transpiled.js');
     const jsHeader = `/**
@@ -141,7 +141,7 @@ class MCMIIPipeline {
 `;
     writeFileSync(jsPath, jsHeader + javascriptData.code);
     this.logger.success(`✓ Transpiled JavaScript: ${jsPath}`);
-    
+
     // Write engine/data separation info
     const engineDataPath = join(this.outputDir, 'json', 'engine-structure.json');
     writeFileSync(engineDataPath, JSON.stringify({
@@ -164,13 +164,13 @@ class MCMIIPipeline {
 
   async generateHTMLFragments(questionsData) {
     this.logger.step('Step 5: Generating modern HTML fragments');
-    
+
     // Generate question fragment
     const questionHTML = this._generateQuestionFragment(questionsData.questions[0]);
     const fragmentPath = join(this.outputDir, 'html', 'question-fragment.html');
     writeFileSync(fragmentPath, questionHTML);
     this.logger.success(`✓ Question fragment: ${fragmentPath}`);
-    
+
     // Generate full form template
     const formHTML = this._generateFormTemplate(questionsData);
     const formPath = join(this.outputDir, 'html', 'assessment-form.html');

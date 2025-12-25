@@ -4,7 +4,6 @@
  */
 
 import { readFileSync, existsSync } from 'fs';
-import { join } from 'path';
 import Logger from './logger/Logger.js';
 
 class Validator {
@@ -71,7 +70,7 @@ class Validator {
     // Validate questions.json
     try {
       const questions = JSON.parse(readFileSync('output/json/questions.json', 'utf8'));
-      
+
       if (questions.totalQuestions !== 175) {
         this.errors.push(`Expected 175 questions, found ${questions.totalQuestions}`);
       } else {
@@ -107,7 +106,7 @@ class Validator {
     // Validate vbscript-metadata.json
     try {
       const metadata = JSON.parse(readFileSync('output/json/vbscript-metadata.json', 'utf8'));
-      
+
       if (!metadata.functions || !Array.isArray(metadata.functions)) {
         this.errors.push('VBScript metadata missing functions array');
       } else {
@@ -127,7 +126,7 @@ class Validator {
     // Validate engine-structure.json
     try {
       const engine = JSON.parse(readFileSync('output/json/engine-structure.json', 'utf8'));
-      
+
       if (!engine.functions || !engine.dataStructures) {
         this.errors.push('Engine structure incomplete');
       } else {
@@ -146,7 +145,7 @@ class Validator {
     try {
       const vbscript = readFileSync('output/javascript/original-vbscript.vbs', 'utf8');
       const lines = vbscript.split('\n').length;
-      
+
       if (lines < 4000) {
         this.warnings.push(`VBScript seems short: ${lines} lines`);
       } else {
@@ -166,7 +165,7 @@ class Validator {
     try {
       const js = readFileSync('output/javascript/transpiled.js', 'utf8');
       const lines = js.split('\n').length;
-      
+
       this.logger.success(`✓ JavaScript generated: ${lines} lines`);
 
       // Check for successful transpilation markers
@@ -189,7 +188,7 @@ class Validator {
     // Check question fragment
     try {
       const fragment = readFileSync('output/html/question-fragment.html', 'utf8');
-      
+
       if (!fragment.includes('<div class="question"')) {
         this.errors.push('Question fragment missing expected structure');
       } else {
@@ -203,7 +202,7 @@ class Validator {
     // Check assessment form
     try {
       const form = readFileSync('output/html/assessment-form.html', 'utf8');
-      
+
       if (!form.includes('<!DOCTYPE html>')) {
         this.warnings.push('Assessment form missing DOCTYPE');
       }
@@ -224,7 +223,7 @@ class Validator {
 
     try {
       const questions = JSON.parse(readFileSync('output/json/questions.json', 'utf8'));
-      
+
       // Check for Persian text
       let persianCount = 0;
       questions.questions.forEach(q => {
