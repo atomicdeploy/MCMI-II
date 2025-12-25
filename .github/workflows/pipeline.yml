@@ -1,0 +1,133 @@
+name: 🚀 MCMI-II Parser Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  parse-and-process:
+    name: 📊 Parse & Process MCMI-II
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+      
+      - name: 🔧 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: 📦 Install dependencies
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          else
+            npm install
+          fi
+      
+      - name: ✅ Verify source file exists
+        run: |
+          if [ -f MCMI2_DRS.html ]; then
+            echo "✅ Source file found"
+            ls -lh MCMI2_DRS.html
+          else
+            echo "❌ Source file not found"
+            exit 1
+          fi
+      
+      - name: 🏃 Run parser pipeline
+        run: npm run parse
+      
+      - name: 📊 Verify outputs
+        run: |
+          echo "🔍 Checking generated outputs..."
+          if [ -d output/json ]; then
+            echo "✅ JSON outputs:"
+            ls -lh output/json/
+          fi
+          if [ -d output/javascript ]; then
+            echo "✅ JavaScript outputs:"
+            ls -lh output/javascript/
+          fi
+          if [ -d output/html ]; then
+            echo "✅ HTML outputs:"
+            ls -lh output/html/
+          fi
+      
+      - name: 📤 Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: mcmi-ii-outputs
+          path: output/
+          retention-days: 30
+      
+      - name: 📝 Generate summary
+        run: |
+          echo "## 🎉 Pipeline Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Generated Outputs" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ -f output/json/questions.json ]; then
+            QUESTION_COUNT=$(grep -o '"number":' output/json/questions.json | wc -l)
+            echo "- ✅ Questions extracted: $QUESTION_COUNT" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          if [ -f output/javascript/transpiled.js ]; then
+            JS_LINES=$(wc -l < output/javascript/transpiled.js)
+            echo "- ✅ JavaScript lines generated: $JS_LINES" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          if [ -f output/json/vbscript-metadata.json ]; then
+            FUNC_COUNT=$(grep -o '"name":' output/json/vbscript-metadata.json | wc -l)
+            echo "- ✅ Functions transpiled: $FUNC_COUNT" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 📦 Artifacts" >> $GITHUB_STEP_SUMMARY
+          echo "All outputs are available as workflow artifacts." >> $GITHUB_STEP_SUMMARY
+
+  validate:
+    name: 🔍 Validate Outputs
+    needs: parse-and-process
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+      
+      - name: 🔧 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: 📥 Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: mcmi-ii-outputs
+          path: output/
+      
+      - name: ✅ Validate JSON structure
+        run: |
+          echo "🔍 Validating JSON files..."
+          for file in output/json/*.json; do
+            if [ -f "$file" ]; then
+              echo "Checking $file"
+              node -e "JSON.parse(require('fs').readFileSync('$file', 'utf8'))" && echo "✅ Valid" || echo "❌ Invalid"
+            fi
+          done
+      
+      - name: ✅ Validate JavaScript syntax
+        run: |
+          echo "🔍 Validating JavaScript files..."
+          for file in output/javascript/*.js; do
+            if [ -f "$file" ]; then
+              echo "Checking $file"
+              node --check "$file" && echo "✅ Valid syntax" || echo "⚠️ Syntax issues detected"
+            fi
+          done
