@@ -1,7 +1,7 @@
 /**
  * Transpiled JavaScript from VBScript
  * Generated with comprehensive token-aware transpiler
- * Date: 2025-12-25T20:44:54.580Z
+ * Date: 2025-12-25T21:06:43.812Z
  * All VBScript tokens handled systematically
  */
 
@@ -25,7 +25,7 @@ let wf;
 let f;
 
 function window_onload() {
-  if (k.c1.checked === true) {
+  if (k.c1.checked === true) { k.t4.disabled === false; }
 }
 
 function c1_onclick() {
@@ -39,1198 +39,1198 @@ function c1_onclick() {
 
 function v() {
   sum = 0;
-  if (k.elements.r62[1].checked) {
-    if (k.elements.r90[1].checked) {
-      if (k.elements.r152[1].checked) {
-        if (k.elements.r169[1].checked) {
-          return sum;
-          w[25] = sum;
-          r[25] = "Validity";
+  if (k.elements.r62[1].checked) { sum = sum+1; }
+  if (k.elements.r90[1].checked) { sum = sum+1; }
+  if (k.elements.r152[1].checked) { sum = sum+1; }
+  if (k.elements.r169[1].checked) { sum = sum+1; }
+  return sum;
+  w[25] = sum;
+  r[25] = "Validity";
 }
 
 function pp() {
   sum = 0;
-  if (k.elements.r15[1].checked) {
-    if (k.elements.r16[1].checked) {
-      if (k.elements.r24[1].checked) {
-        if (k.elements.r32[1].checked) {
-          if (k.elements.r38[1].checked) {
-            if (k.elements.r39[1].checked) {
-              if (k.elements.r69[1].checked) {
-                if (k.elements.r74[1].checked) {
-                  if (k.elements.r80[1].checked) {
-                    if (k.elements.r84[1].checked) {
-                      if (k.elements.r85[1].checked) {
-                        if (k.elements.r89[1].checked) {
-                          if (k.elements.r98[1].checked) {
-                            if (k.elements.r100[1].checked) {
-                              if (k.elements.r112[1].checked) {
-                                if (k.elements.r123[1].checked) {
-                                  if (k.elements.r126[1].checked) {
-                                    if (k.elements.r131[1].checked) {
-                                      if (k.elements.r138[1].checked) {
-                                        if (k.elements.r143[1].checked) {
-                                          if (k.elements.r146[1].checked) {
-                                            if (k.elements.r164[1].checked) {
-                                              if (sum>36) {
-                                                return sum;
-                                                r[24] = "Delusional disorder";
-                                                w[24] = sum;
+  if (k.elements.r15[1].checked) { sum = sum+1; }
+  if (k.elements.r16[1].checked) { sum = sum+2; }
+  if (k.elements.r24[1].checked) { sum = sum+2; }
+  if (k.elements.r32[1].checked) { sum = sum+1; }
+  if (k.elements.r38[1].checked) { sum = sum+2; }
+  if (k.elements.r39[1].checked) { sum = sum+1; }
+  if (k.elements.r69[1].checked) { sum = sum+2; }
+  if (k.elements.r74[1].checked) { sum = sum+1; }
+  if (k.elements.r80[1].checked) { sum = sum+3; }
+  if (k.elements.r84[1].checked) { sum = sum+2; }
+  if (k.elements.r85[1].checked) { sum = sum+2; }
+  if (k.elements.r89[1].checked) { sum = sum+1; }
+  if (k.elements.r98[1].checked) { sum = sum+2; }
+  if (k.elements.r100[1].checked) { sum = sum+3; }
+  if (k.elements.r112[1].checked) { sum = sum+1; }
+  if (k.elements.r123[1].checked) { sum = sum+3; }
+  if (k.elements.r126[1].checked) { sum = sum+1; }
+  if (k.elements.r131[1].checked) { sum = sum+2; }
+  if (k.elements.r138[1].checked) { sum = sum+1; }
+  if (k.elements.r143[1].checked) { sum = sum+1; }
+  if (k.elements.r146[1].checked) { sum = sum+2; }
+  if (k.elements.r164[1].checked) { sum = sum+2; }
+  if (sum>36) { sum = 36; }
+  return sum;
+  r[24] = "Delusional disorder";
+  w[24] = sum;
 }
 
 function cc() {
   sum = 0;
-  if (k.elements.r5[1].checked) {
-    if (k.elements.r19[1].checked) {
-      if (k.elements.r26[1].checked) {
-        if (k.elements.r33[1].checked) {
-          if (k.elements.r36[1].checked) {
-            if (k.elements.r45[1].checked) {
-              if (k.elements.r47[1].checked) {
-                if (k.elements.r50[1].checked) {
-                  if (k.elements.r51[1].checked) {
-                    if (k.elements.r53[1].checked) {
-                      if (k.elements.r54[1].checked) {
-                        if (k.elements.r56[1].checked) {
-                          if (k.elements.r57[1].checked) {
-                            if (k.elements.r58[1].checked) {
-                              if (k.elements.r59[1].checked) {
-                                if (k.elements.r65[1].checked) {
-                                  if (k.elements.r67[1].checked) {
-                                    if (k.elements.r72[1].checked) {
-                                      if (k.elements.r76[1].checked) {
-                                        if (k.elements.r79[1].checked) {
-                                          if (k.elements.r81[1].checked) {
-                                            if (k.elements.r82[1].checked) {
-                                              if (k.elements.r95[1].checked) {
-                                                if (k.elements.r96[1].checked) {
-                                                  if (k.elements.r99[1].checked) {
-                                                    if (k.elements.r108[1].checked) {
-                                                      if (k.elements.r109[1].checked) {
-                                                        if (k.elements.r110[1].checked) {
-                                                          if (k.elements.r117[1].checked) {
-                                                            if (k.elements.r136[1].checked) {
-                                                              if (k.elements.r154[1].checked) {
-                                                                if (k.elements.radgender[1].checked) {
-                                                                  if (sum>46) {
-                                                                  }
-                                                                  return sum;
-                                                                  r[23] = "Major Depression";
-                                                                  w[23] = sum;
+  if (k.elements.r5[1].checked) { sum = sum+3; }
+  if (k.elements.r19[1].checked) { sum = sum+1; }
+  if (k.elements.r26[1].checked) { sum = sum+3; }
+  if (k.elements.r33[1].checked) { sum = sum+2; }
+  if (k.elements.r36[1].checked) { sum = sum+3; }
+  if (k.elements.r45[1].checked) { sum = sum+2; }
+  if (k.elements.r47[1].checked) { sum = sum+2; }
+  if (k.elements.r50[1].checked) { sum = sum+2; }
+  if (k.elements.r51[1].checked) { sum = sum+1; }
+  if (k.elements.r53[1].checked) { sum = sum+3; }
+  if (k.elements.r54[1].checked) { sum = sum+1; }
+  if (k.elements.r56[1].checked) { sum = sum+2; }
+  if (k.elements.r57[1].checked) { sum = sum+1; }
+  if (k.elements.r58[1].checked) { sum = sum+1; }
+  if (k.elements.r59[1].checked) { sum = sum+3; }
+  if (k.elements.r65[1].checked) { sum = sum+1; }
+  if (k.elements.r67[1].checked) { sum = sum+1; }
+  if (k.elements.r72[1].checked) { sum = sum+2; }
+  if (k.elements.r76[1].checked) { sum = sum+3; }
+  if (k.elements.r79[1].checked) { sum = sum+2; }
+  if (k.elements.r81[1].checked) { sum = sum+1; }
+  if (k.elements.r82[1].checked) { sum = sum+1; }
+  if (k.elements.r95[1].checked) { sum = sum+1; }
+  if (k.elements.r96[1].checked) { sum = sum+2; }
+  if (k.elements.r99[1].checked) { sum = sum+1; }
+  if (k.elements.r108[1].checked) { sum = sum+2; }
+  if (k.elements.r109[1].checked) { sum = sum+2; }
+  if (k.elements.r110[1].checked) { sum = sum+1; }
+  if (k.elements.r117[1].checked) { sum = sum+1; }
+  if (k.elements.r136[1].checked) { sum = sum+3; }
+  if (k.elements.r154[1].checked) { sum = sum+1; }
+  if (k.elements.radgender[1].checked) {
+    if (sum>46) { sum = 46; }
+  }
+  return sum;
+  r[23] = "Major Depression";
+  w[23] = sum;
 }
 
 function ss() {
   sum = 0;
-  if (k.elements.r3[1].checked) {
-    if (k.elements.r8[1].checked) {
-      if (k.elements.r13[1].checked) {
-        if (k.elements.r19[1].checked) {
-          if (k.elements.r23[1].checked) {
-            if (k.elements.r24[1].checked) {
-              if (k.elements.r29[1].checked) {
-                if (k.elements.r31[1].checked) {
-                  if (k.elements.r38[1].checked) {
-                    if (k.elements.r68[1].checked) {
-                      if (k.elements.r69[1].checked) {
-                        if (k.elements.r74[1].checked) {
-                          if (k.elements.r77[1].checked) {
-                            if (k.elements.r80[1].checked) {
-                              if (k.elements.r82[1].checked) {
-                                if (k.elements.r83[1].checked) {
-                                  if (k.elements.r85[1].checked) {
-                                    if (k.elements.r98[1].checked) {
-                                      if (k.elements.r102[1].checked) {
-                                        if (k.elements.r109[1].checked) {
-                                          if (k.elements.r112[1].checked) {
-                                            if (k.elements.r115[1].checked) {
-                                              if (k.elements.r120[1].checked) {
-                                                if (k.elements.r124[1].checked) {
-                                                  if (k.elements.r127[1].checked) {
-                                                    if (k.elements.r141[1].checked) {
-                                                      if (k.elements.r146[1].checked) {
-                                                        if (k.elements.r147[1].checked) {
-                                                          if (k.elements.r156[1].checked) {
-                                                            if (k.elements.r160[1].checked) {
-                                                              if (k.elements.r161[1].checked) {
-                                                                if (k.elements.r164[1].checked) {
-                                                                  if (k.elements.r167[1].checked) {
-                                                                    if (k.elements.radgender[1].checked) {
-                                                                      if (sum>39) {
-                                                                      }
-                                                                      return sum;
-                                                                      r[22] = "Thought Disorder";
-                                                                      w[22] = sum;
+  if (k.elements.r3[1].checked) { sum = sum+1; }
+  if (k.elements.r8[1].checked) { sum = sum+1; }
+  if (k.elements.r13[1].checked) { sum = sum+1; }
+  if (k.elements.r19[1].checked) { sum = sum+1; }
+  if (k.elements.r23[1].checked) { sum = sum+1; }
+  if (k.elements.r24[1].checked) { sum = sum+1; }
+  if (k.elements.r29[1].checked) { sum = sum+1; }
+  if (k.elements.r31[1].checked) { sum = sum+1; }
+  if (k.elements.r38[1].checked) { sum = sum+2; }
+  if (k.elements.r68[1].checked) { sum = sum+2; }
+  if (k.elements.r69[1].checked) { sum = sum+2; }
+  if (k.elements.r74[1].checked) { sum = sum+1; }
+  if (k.elements.r77[1].checked) { sum = sum+2; }
+  if (k.elements.r80[1].checked) { sum = sum+2; }
+  if (k.elements.r82[1].checked) { sum = sum+1; }
+  if (k.elements.r83[1].checked) { sum = sum+2; }
+  if (k.elements.r85[1].checked) { sum = sum+2; }
+  if (k.elements.r98[1].checked) { sum = sum+3; }
+  if (k.elements.r102[1].checked) { sum = sum+2; }
+  if (k.elements.r109[1].checked) { sum = sum+3; }
+  if (k.elements.r112[1].checked) { sum = sum+2; }
+  if (k.elements.r115[1].checked) { sum = sum+2; }
+  if (k.elements.r120[1].checked) { sum = sum+2; }
+  if (k.elements.r124[1].checked) { sum = sum+3; }
+  if (k.elements.r127[1].checked) { sum = sum+3; }
+  if (k.elements.r141[1].checked) { sum = sum+1; }
+  if (k.elements.r146[1].checked) { sum = sum+2; }
+  if (k.elements.r147[1].checked) { sum = sum+1; }
+  if (k.elements.r156[1].checked) { sum = sum+1; }
+  if (k.elements.r160[1].checked) { sum = sum+3; }
+  if (k.elements.r161[1].checked) { sum = sum+1; }
+  if (k.elements.r164[1].checked) { sum = sum+2; }
+  if (k.elements.r167[1].checked) { sum = sum+3; }
+  if (k.elements.radgender[1].checked) {
+    if (sum>39) { sum = 39; }
+  }
+  return sum;
+  r[22] = "Thought Disorder";
+  w[22] = sum;
 }
 
 function t() {
   sum = 0;
-  if (k.elements.r1[1].checked) {
-    if (k.elements.r6[1].checked) {
-      if (k.elements.r7[1].checked) {
-        if (k.elements.r9[1].checked) {
-          if (k.elements.r12[1].checked) {
-            if (k.elements.r14[1].checked) {
-              if (k.elements.r20[1].checked) {
-                if (k.elements.r22[1].checked) {
-                  if (k.elements.r30[1].checked) {
-                    if (k.elements.r32[1].checked) {
-                      if (k.elements.r35[1].checked) {
-                        if (k.elements.r40[1].checked) {
-                          if (k.elements.r43[1].checked) {
-                            if (k.elements.r44[1].checked) {
-                              if (k.elements.r50[1].checked) {
-                                if (k.elements.r55[1].checked) {
-                                  if (k.elements.r58[1].checked) {
-                                    if (k.elements.r60[1].checked) {
-                                      if (k.elements.r61[0].checked) {
-                                        if (k.elements.r66[1].checked) {
-                                          if (k.elements.r70[1].checked) {
-                                            if (k.elements.r73[1].checked) {
-                                              if (k.elements.r80[1].checked) {
-                                                if (k.elements.r82[1].checked) {
-                                                  if (k.elements.r86[1].checked) {
-                                                    if (k.elements.r89[1].checked) {
-                                                      if (k.elements.r91[1].checked) {
-                                                        if (k.elements.r92[1].checked) {
-                                                          if (k.elements.r93[1].checked) {
-                                                            if (k.elements.r94[1].checked) {
-                                                              if (k.elements.r95[1].checked) {
-                                                                if (k.elements.r101[1].checked) {
-                                                                  if (k.elements.r103[1].checked) {
-                                                                    if (k.elements.r104[1].checked) {
-                                                                      if (k.elements.r105[1].checked) {
-                                                                        if (k.elements.r111[1].checked) {
-                                                                          if (k.elements.r113[1].checked) {
-                                                                            if (k.elements.r114[1].checked) {
-                                                                              if (k.elements.r115[1].checked) {
-                                                                                if (k.elements.r116[1].checked) {
-                                                                                  if (k.elements.r117[1].checked) {
-                                                                                    if (k.elements.r120[1].checked) {
-                                                                                      if (k.elements.r123[1].checked) {
-                                                                                        if (k.elements.r125[1].checked) {
-                                                                                          if (k.elements.r128[1].checked) {
-                                                                                            if (k.elements.r129[1].checked) {
-                                                                                              if (k.elements.r130[1].checked) {
-                                                                                                if (k.elements.r137[1].checked) {
-                                                                                                  if (k.elements.r140[1].checked) {
-                                                                                                    if (k.elements.r144[1].checked) {
-                                                                                                      if (k.elements.r146[1].checked) {
-                                                                                                        if (k.elements.r155[1].checked) {
-                                                                                                          if (k.elements.r162[1].checked) {
-                                                                                                            if (k.elements.r165[1].checked) {
-                                                                                                              if (k.elements.r166[1].checked) {
-                                                                                                                if (k.elements.r171[1].checked) {
-                                                                                                                  if (k.elements.r172[1].checked) {
-                                                                                                                    if (k.elements.r175[1].checked) {
-                                                                                                                      if (k.elements.radgender[1].checked) {
-                                                                                                                        if (sum>60) {
-                                                                                                                        }
-                                                                                                                        return sum;
-                                                                                                                        r[21] = "Drug dependence";
-                                                                                                                        w[21] = sum;
+  if (k.elements.r1[1].checked) { sum = sum+2; }
+  if (k.elements.r6[1].checked) { sum = sum+1; }
+  if (k.elements.r7[1].checked) { sum = sum+2; }
+  if (k.elements.r9[1].checked) { sum = sum+2; }
+  if (k.elements.r12[1].checked) { sum = sum+1; }
+  if (k.elements.r14[1].checked) { sum = sum+1; }
+  if (k.elements.r20[1].checked) { sum = sum+2; }
+  if (k.elements.r22[1].checked) { sum = sum+2; }
+  if (k.elements.r30[1].checked) { sum = sum+1; }
+  if (k.elements.r32[1].checked) { sum = sum+1; }
+  if (k.elements.r35[1].checked) { sum = sum+3; }
+  if (k.elements.r40[1].checked) { sum = sum+2; }
+  if (k.elements.r43[1].checked) { sum = sum+2; }
+  if (k.elements.r44[1].checked) { sum = sum+1; }
+  if (k.elements.r50[1].checked) { sum = sum+1; }
+  if (k.elements.r55[1].checked) { sum = sum+1; }
+  if (k.elements.r58[1].checked) { sum = sum+2; }
+  if (k.elements.r60[1].checked) { sum = sum+1; }
+  if (k.elements.r61[0].checked) { sum = sum+1; }
+  if (k.elements.r66[1].checked) { sum = sum+1; }
+  if (k.elements.r70[1].checked) { sum = sum+3; }
+  if (k.elements.r73[1].checked) { sum = sum+2; }
+  if (k.elements.r80[1].checked) { sum = sum+2; }
+  if (k.elements.r82[1].checked) { sum = sum+2; }
+  if (k.elements.r86[1].checked) { sum = sum+2; }
+  if (k.elements.r89[1].checked) { sum = sum+1; }
+  if (k.elements.r91[1].checked) { sum = sum+2; }
+  if (k.elements.r92[1].checked) { sum = sum+2; }
+  if (k.elements.r93[1].checked) { sum = sum+1; }
+  if (k.elements.r94[1].checked) { sum = sum+1; }
+  if (k.elements.r95[1].checked) { sum = sum+2; }
+  if (k.elements.r101[1].checked) { sum = sum+1; }
+  if (k.elements.r103[1].checked) { sum = sum+2; }
+  if (k.elements.r104[1].checked) { sum = sum+1; }
+  if (k.elements.r105[1].checked) { sum = sum+3; }
+  if (k.elements.r111[1].checked) { sum = sum+1; }
+  if (k.elements.r113[1].checked) { sum = sum+1; }
+  if (k.elements.r114[1].checked) { sum = sum+1; }
+  if (k.elements.r115[1].checked) { sum = sum+2; }
+  if (k.elements.r116[1].checked) { sum = sum+1; }
+  if (k.elements.r117[1].checked) { sum = sum+2; }
+  if (k.elements.r120[1].checked) { sum = sum+1; }
+  if (k.elements.r123[1].checked) { sum = sum+1; }
+  if (k.elements.r125[1].checked) { sum = sum+1; }
+  if (k.elements.r128[1].checked) { sum = sum+1; }
+  if (k.elements.r129[1].checked) { sum = sum+2; }
+  if (k.elements.r130[1].checked) { sum = sum+1; }
+  if (k.elements.r137[1].checked) { sum = sum+1; }
+  if (k.elements.r140[1].checked) { sum = sum+3; }
+  if (k.elements.r144[1].checked) { sum = sum+3; }
+  if (k.elements.r146[1].checked) { sum = sum+1; }
+  if (k.elements.r155[1].checked) { sum = sum+1; }
+  if (k.elements.r162[1].checked) { sum = sum+2; }
+  if (k.elements.r165[1].checked) { sum = sum+1; }
+  if (k.elements.r166[1].checked) { sum = sum+1; }
+  if (k.elements.r171[1].checked) { sum = sum+1; }
+  if (k.elements.r172[1].checked) { sum = sum+1; }
+  if (k.elements.r175[1].checked) { sum = sum+3; }
+  if (k.elements.radgender[1].checked) {
+    if (sum>60) { sum = 60; }
+  }
+  return sum;
+  r[21] = "Drug dependence";
+  w[21] = sum;
 }
 
 function b() {
   sum = 0;
-  if (k.elements.r8[0].checked) {
-    if (k.elements.r17[1].checked) {
-      if (k.elements.r18[1].checked) {
-        if (k.elements.r22[1].checked) {
-          if (k.elements.r23[1].checked) {
-            if (k.elements.r25[1].checked) {
-              if (k.elements.r27[1].checked) {
-                if (k.elements.r35[1].checked) {
-                  if (k.elements.r40[1].checked) {
-                    if (k.elements.r46[1].checked) {
-                      if (k.elements.r52[0].checked) {
-                        if (k.elements.r54[1].checked) {
-                          if (k.elements.r65[1].checked) {
-                            if (k.elements.r70[1].checked) {
-                              if (k.elements.r73[1].checked) {
-                                if (k.elements.r80[1].checked) {
-                                  if (k.elements.r87[1].checked) {
-                                    if (k.elements.r93[1].checked) {
-                                      if (k.elements.r95[1].checked) {
-                                        if (k.elements.r96[1].checked) {
-                                          if (k.elements.r97[1].checked) {
-                                            if (k.elements.r103[1].checked) {
-                                              if (k.elements.r104[1].checked) {
-                                                if (k.elements.r105[1].checked) {
-                                                  if (k.elements.r108[1].checked) {
-                                                    if (k.elements.r109[1].checked) {
-                                                      if (k.elements.r111[1].checked) {
-                                                        if (k.elements.r114[1].checked) {
-                                                          if (k.elements.r117[1].checked) {
-                                                            if (k.elements.r119[1].checked) {
-                                                              if (k.elements.r122[0].checked) {
-                                                                if (k.elements.r125[1].checked) {
-                                                                  if (k.elements.r128[1].checked) {
-                                                                    if (k.elements.r130[1].checked) {
-                                                                      if (k.elements.r135[1].checked) {
-                                                                        if (k.elements.r137[1].checked) {
-                                                                          if (k.elements.r140[1].checked) {
-                                                                            if (k.elements.r144[1].checked) {
-                                                                              if (k.elements.r149[1].checked) {
-                                                                                if (k.elements.r155[1].checked) {
-                                                                                  if (k.elements.r157[1].checked) {
-                                                                                    if (k.elements.r159[1].checked) {
-                                                                                      if (k.elements.r162[1].checked) {
-                                                                                        if (k.elements.r165[1].checked) {
-                                                                                          if (k.elements.r171[1].checked) {
-                                                                                            if (k.elements.r175[1].checked) {
-                                                                                              if (k.elements.radgender[1].checked) {
-                                                                                                if (sum>51) {
-                                                                                                }
-                                                                                                return sum;
-                                                                                                w[20] = sum;
-                                                                                                r[20] = "Alcohol dependence";
+  if (k.elements.r8[0].checked) { sum = sum+1; }
+  if (k.elements.r17[1].checked) { sum = sum+3; }
+  if (k.elements.r18[1].checked) { sum = sum+2; }
+  if (k.elements.r22[1].checked) { sum = sum+1; }
+  if (k.elements.r23[1].checked) { sum = sum+1; }
+  if (k.elements.r25[1].checked) { sum = sum+1; }
+  if (k.elements.r27[1].checked) { sum = sum+1; }
+  if (k.elements.r35[1].checked) { sum = sum+1; }
+  if (k.elements.r40[1].checked) { sum = sum+1; }
+  if (k.elements.r46[1].checked) { sum = sum+1; }
+  if (k.elements.r52[0].checked) { sum = sum+2; }
+  if (k.elements.r54[1].checked) { sum = sum+2; }
+  if (k.elements.r65[1].checked) { sum = sum+1; }
+  if (k.elements.r70[1].checked) { sum = sum+1; }
+  if (k.elements.r73[1].checked) { sum = sum+2; }
+  if (k.elements.r80[1].checked) { sum = sum+1; }
+  if (k.elements.r87[1].checked) { sum = sum+3; }
+  if (k.elements.r93[1].checked) { sum = sum+1; }
+  if (k.elements.r95[1].checked) { sum = sum+2; }
+  if (k.elements.r96[1].checked) { sum = sum+1; }
+  if (k.elements.r97[1].checked) { sum = sum+2; }
+  if (k.elements.r103[1].checked) { sum = sum+1; }
+  if (k.elements.r104[1].checked) { sum = sum+1; }
+  if (k.elements.r105[1].checked) { sum = sum+2; }
+  if (k.elements.r108[1].checked) { sum = sum+1; }
+  if (k.elements.r109[1].checked) { sum = sum+2; }
+  if (k.elements.r111[1].checked) { sum = sum+1; }
+  if (k.elements.r114[1].checked) { sum = sum+1; }
+  if (k.elements.r117[1].checked) { sum = sum+1; }
+  if (k.elements.r119[1].checked) { sum = sum+3; }
+  if (k.elements.r122[0].checked) { sum = sum+2; }
+  if (k.elements.r125[1].checked) { sum = sum+1; }
+  if (k.elements.r128[1].checked) { sum = sum+1; }
+  if (k.elements.r130[1].checked) { sum = sum+1; }
+  if (k.elements.r135[1].checked) { sum = sum+1; }
+  if (k.elements.r137[1].checked) { sum = sum+1; }
+  if (k.elements.r140[1].checked) { sum = sum+1; }
+  if (k.elements.r144[1].checked) { sum = sum+2; }
+  if (k.elements.r149[1].checked) { sum = sum+1; }
+  if (k.elements.r155[1].checked) { sum = sum+1; }
+  if (k.elements.r157[1].checked) { sum = sum+3; }
+  if (k.elements.r159[1].checked) { sum = sum+1; }
+  if (k.elements.r162[1].checked) { sum = sum+1; }
+  if (k.elements.r165[1].checked) { sum = sum+1; }
+  if (k.elements.r171[1].checked) { sum = sum+1; }
+  if (k.elements.r175[1].checked) { sum = sum+2; }
+  if (k.elements.radgender[1].checked) {
+    if (sum>51) { sum = 51; }
+  }
+  return sum;
+  w[20] = sum;
+  r[20] = "Alcohol dependence";
 }
 
 function d() {
   sum = 0;
-  if (k.elements.r5[1].checked) {
-    if (k.elements.r8[1].checked) {
-      if (k.elements.r25[1].checked) {
-        if (k.elements.r26[1].checked) {
-          if (k.elements.r27[1].checked) {
-            if (k.elements.r36[1].checked) {
-              if (k.elements.r41[0].checked) {
-                if (k.elements.r45[1].checked) {
-                  if (k.elements.r46[1].checked) {
-                    if (k.elements.r51[1].checked) {
-                      if (k.elements.r53[1].checked) {
-                        if (k.elements.r54[1].checked) {
-                          if (k.elements.r56[1].checked) {
-                            if (k.elements.r59[1].checked) {
-                              if (k.elements.r65[1].checked) {
-                                if (k.elements.r71[1].checked) {
-                                  if (k.elements.r72[1].checked) {
-                                    if (k.elements.r76[1].checked) {
-                                      if (k.elements.r79[1].checked) {
-                                        if (k.elements.r83[1].checked) {
-                                          if (k.elements.r86[0].checked) {
-                                            if (k.elements.r96[1].checked) {
-                                              if (k.elements.r97[1].checked) {
-                                                if (k.elements.r99[1].checked) {
-                                                  if (k.elements.r107[1].checked) {
-                                                    if (k.elements.r108[1].checked) {
-                                                      if (k.elements.r109[1].checked) {
-                                                        if (k.elements.r110[1].checked) {
-                                                          if (k.elements.r132[1].checked) {
-                                                            if (k.elements.r136[1].checked) {
-                                                              if (k.elements.r139[1].checked) {
-                                                                if (k.elements.r154[1].checked) {
-                                                                  if (k.elements.r155[1].checked) {
-                                                                    if (k.elements.r166[0].checked) {
-                                                                      if (k.elements.r167[1].checked) {
-                                                                        if (k.elements.r168[1].checked) {
-                                                                          if (k.elements.radgender[1].checked) {
-                                                                            if (sum>56) {
-                                                                            }
-                                                                            return sum;
-                                                                            w[19] = sum;
-                                                                            r[19] = "Dysthymia";
+  if (k.elements.r5[1].checked) { sum = sum+2; }
+  if (k.elements.r8[1].checked) { sum = sum+2; }
+  if (k.elements.r25[1].checked) { sum = sum+1; }
+  if (k.elements.r26[1].checked) { sum = sum+2; }
+  if (k.elements.r27[1].checked) { sum = sum+3; }
+  if (k.elements.r36[1].checked) { sum = sum+2; }
+  if (k.elements.r41[0].checked) { sum = sum+1; }
+  if (k.elements.r45[1].checked) { sum = sum+3; }
+  if (k.elements.r46[1].checked) { sum = sum+1; }
+  if (k.elements.r51[1].checked) { sum = sum+2; }
+  if (k.elements.r53[1].checked) { sum = sum+2; }
+  if (k.elements.r54[1].checked) { sum = sum+3; }
+  if (k.elements.r56[1].checked) { sum = sum+1; }
+  if (k.elements.r59[1].checked) { sum = sum+2; }
+  if (k.elements.r65[1].checked) { sum = sum+2; }
+  if (k.elements.r71[1].checked) { sum = sum+2; }
+  if (k.elements.r72[1].checked) { sum = sum+2; }
+  if (k.elements.r76[1].checked) { sum = sum+2; }
+  if (k.elements.r79[1].checked) { sum = sum+3; }
+  if (k.elements.r83[1].checked) { sum = sum+2; }
+  if (k.elements.r86[0].checked) { sum = sum+1; }
+  if (k.elements.r96[1].checked) { sum = sum+2; }
+  if (k.elements.r97[1].checked) { sum = sum+3; }
+  if (k.elements.r99[1].checked) { sum = sum+3; }
+  if (k.elements.r107[1].checked) { sum = sum+1; }
+  if (k.elements.r108[1].checked) { sum = sum+3; }
+  if (k.elements.r109[1].checked) { sum = sum+2; }
+  if (k.elements.r110[1].checked) { sum = sum+1; }
+  if (k.elements.r132[1].checked) { sum = sum+3; }
+  if (k.elements.r136[1].checked) { sum = sum+2; }
+  if (k.elements.r139[1].checked) { sum = sum+1; }
+  if (k.elements.r154[1].checked) { sum = sum+2; }
+  if (k.elements.r155[1].checked) { sum = sum+1; }
+  if (k.elements.r166[0].checked) { sum = sum+2; }
+  if (k.elements.r167[1].checked) { sum = sum+1; }
+  if (k.elements.r168[1].checked) { sum = sum+1; }
+  if (k.elements.radgender[1].checked) {
+    if (sum>56) { sum = 56; }
+  }
+  return sum;
+  w[19] = sum;
+  r[19] = "Dysthymia";
 }
 
 function n() {
   sum = 0;
-  if (k.elements.r11[1].checked) {
-    if (k.elements.r14[1].checked) {
-      if (k.elements.r17[1].checked) {
-        if (k.elements.r19[0].checked) {
-          if (k.elements.r20[1].checked) {
-            if (k.elements.r28[1].checked) {
-              if (k.elements.r37[1].checked) {
-                if (k.elements.r40[1].checked) {
-                  if (k.elements.r42[0].checked) {
-                    if (k.elements.r50[1].checked) {
-                      if (k.elements.r58[1].checked) {
-                        if (k.elements.r60[1].checked) {
-                          if (k.elements.r66[1].checked) {
-                            if (k.elements.r67[1].checked) {
-                              if (k.elements.r73[1].checked) {
-                                if (k.elements.r86[1].checked) {
-                                  if (k.elements.r89[1].checked) {
-                                    if (k.elements.r93[1].checked) {
-                                      if (k.elements.r95[1].checked) {
-                                        if (k.elements.r98[1].checked) {
-                                          if (k.elements.r101[1].checked) {
-                                            if (k.elements.r103[1].checked) {
-                                              if (k.elements.r111[1].checked) {
-                                                if (k.elements.r121[1].checked) {
-                                                  if (k.elements.r125[1].checked) {
-                                                    if (k.elements.r127[1].checked) {
-                                                      if (k.elements.r128[1].checked) {
-                                                        if (k.elements.r131[1].checked) {
-                                                          if (k.elements.r134[1].checked) {
-                                                            if (k.elements.r137[1].checked) {
-                                                              if (k.elements.r151[1].checked) {
-                                                                if (k.elements.r158[0].checked) {
-                                                                  if (k.elements.r161[0].checked) {
-                                                                    if (k.elements.r166[1].checked) {
-                                                                      if (k.elements.r170[1].checked) {
-                                                                        if (k.elements.r172[1].checked) {
-                                                                          if (k.elements.r174[1].checked) {
-                                                                            if (k.elements.radgender[1].checked) {
-                                                                              if (sum>44) {
-                                                                              }
-                                                                              return sum;
-                                                                              w[18] = sum;
-                                                                              r[18] = "Bipolar:Manic";
+  if (k.elements.r11[1].checked) { sum = sum+3; }
+  if (k.elements.r14[1].checked) { sum = sum+2; }
+  if (k.elements.r17[1].checked) { sum = sum+1; }
+  if (k.elements.r19[0].checked) { sum = sum+1; }
+  if (k.elements.r20[1].checked) { sum = sum+2; }
+  if (k.elements.r28[1].checked) { sum = sum+2; }
+  if (k.elements.r37[1].checked) { sum = sum+1; }
+  if (k.elements.r40[1].checked) { sum = sum+1; }
+  if (k.elements.r42[0].checked) { sum = sum+1; }
+  if (k.elements.r50[1].checked) { sum = sum+2; }
+  if (k.elements.r58[1].checked) { sum = sum+1; }
+  if (k.elements.r60[1].checked) { sum = sum+2; }
+  if (k.elements.r66[1].checked) { sum = sum+1; }
+  if (k.elements.r67[1].checked) { sum = sum+1; }
+  if (k.elements.r73[1].checked) { sum = sum+1; }
+  if (k.elements.r86[1].checked) { sum = sum+2; }
+  if (k.elements.r89[1].checked) { sum = sum+1; }
+  if (k.elements.r93[1].checked) { sum = sum+3; }
+  if (k.elements.r95[1].checked) { sum = sum+1; }
+  if (k.elements.r98[1].checked) { sum = sum+1; }
+  if (k.elements.r101[1].checked) { sum = sum+1; }
+  if (k.elements.r103[1].checked) { sum = sum+2; }
+  if (k.elements.r111[1].checked) { sum = sum+1; }
+  if (k.elements.r121[1].checked) { sum = sum+1; }
+  if (k.elements.r125[1].checked) { sum = sum+2; }
+  if (k.elements.r127[1].checked) { sum = sum+1; }
+  if (k.elements.r128[1].checked) { sum = sum+2; }
+  if (k.elements.r131[1].checked) { sum = sum+1; }
+  if (k.elements.r134[1].checked) { sum = sum+2; }
+  if (k.elements.r137[1].checked) { sum = sum+2; }
+  if (k.elements.r151[1].checked) { sum = sum+3; }
+  if (k.elements.r158[0].checked) { sum = sum+1; }
+  if (k.elements.r161[0].checked) { sum = sum+1; }
+  if (k.elements.r166[1].checked) { sum = sum+1; }
+  if (k.elements.r170[1].checked) { sum = sum+2; }
+  if (k.elements.r172[1].checked) { sum = sum+1; }
+  if (k.elements.r174[1].checked) { sum = sum+3; }
+  if (k.elements.radgender[1].checked) {
+    if (sum>44) { sum = 44; }
+  }
+  return sum;
+  w[18] = sum;
+  r[18] = "Bipolar:Manic";
 }
 
 function h() {
   sum = 0;
-  if (k.elements.r5[1].checked) {
-    if (k.elements.r18[1].checked) {
-      if (k.elements.r26[1].checked) {
-        if (k.elements.r29[1].checked) {
-          if (k.elements.r31[1].checked) {
-            if (k.elements.r33[1].checked) {
-              if (k.elements.r36[1].checked) {
-                if (k.elements.r41[0].checked) {
-                  if (k.elements.r42[1].checked) {
-                    if (k.elements.r50[1].checked) {
-                      if (k.elements.r51[1].checked) {
-                        if (k.elements.r53[1].checked) {
-                          if (k.elements.r56[1].checked) {
-                            if (k.elements.r60[1].checked) {
-                              if (k.elements.r66[1].checked) {
-                                if (k.elements.r67[1].checked) {
-                                  if (k.elements.r68[1].checked) {
-                                    if (k.elements.r71[1].checked) {
-                                      if (k.elements.r72[1].checked) {
-                                        if (k.elements.r78[1].checked) {
-                                          if (k.elements.r96[1].checked) {
-                                            if (k.elements.r98[1].checked) {
-                                              if (k.elements.r102[1].checked) {
-                                                if (k.elements.r109[1].checked) {
-                                                  if (k.elements.r114[1].checked) {
-                                                    if (k.elements.r117[1].checked) {
-                                                      if (k.elements.r118[1].checked) {
-                                                        if (k.elements.r137[1].checked) {
-                                                          if (k.elements.r145[1].checked) {
-                                                            if (k.elements.r170[1].checked) {
-                                                              if (k.elements.r173[1].checked) {
-                                                                if (k.elements.radgender[1].checked) {
-                                                                  if (sum>43) {
-                                                                  }
-                                                                  return sum;
-                                                                  w[17] = sum;
-                                                                  r[17] = "Somatoform";
+  if (k.elements.r5[1].checked) { sum = sum+1; }
+  if (k.elements.r18[1].checked) { sum = sum+2; }
+  if (k.elements.r26[1].checked) { sum = sum+1; }
+  if (k.elements.r29[1].checked) { sum = sum+3; }
+  if (k.elements.r31[1].checked) { sum = sum+1; }
+  if (k.elements.r33[1].checked) { sum = sum+3; }
+  if (k.elements.r36[1].checked) { sum = sum+1; }
+  if (k.elements.r41[0].checked) { sum = sum+1; }
+  if (k.elements.r42[1].checked) { sum = sum+1; }
+  if (k.elements.r50[1].checked) { sum = sum+1; }
+  if (k.elements.r51[1].checked) { sum = sum+2; }
+  if (k.elements.r53[1].checked) { sum = sum+2; }
+  if (k.elements.r56[1].checked) { sum = sum+1; }
+  if (k.elements.r60[1].checked) { sum = sum+1; }
+  if (k.elements.r66[1].checked) { sum = sum+1; }
+  if (k.elements.r67[1].checked) { sum = sum+2; }
+  if (k.elements.r68[1].checked) { sum = sum+3; }
+  if (k.elements.r71[1].checked) { sum = sum+3; }
+  if (k.elements.r72[1].checked) { sum = sum+3; }
+  if (k.elements.r78[1].checked) { sum = sum+1; }
+  if (k.elements.r96[1].checked) { sum = sum+3; }
+  if (k.elements.r98[1].checked) { sum = sum+2; }
+  if (k.elements.r102[1].checked) { sum = sum+1; }
+  if (k.elements.r109[1].checked) { sum = sum+1; }
+  if (k.elements.r114[1].checked) { sum = sum+2; }
+  if (k.elements.r117[1].checked) { sum = sum+1; }
+  if (k.elements.r118[1].checked) { sum = sum+1; }
+  if (k.elements.r137[1].checked) { sum = sum+1; }
+  if (k.elements.r145[1].checked) { sum = sum+1; }
+  if (k.elements.r170[1].checked) { sum = sum+1; }
+  if (k.elements.r173[1].checked) { sum = sum+1; }
+  if (k.elements.radgender[1].checked) {
+    if (sum>43) { sum = 43; }
+  }
+  return sum;
+  w[17] = sum;
+  r[17] = "Somatoform";
 }
 
 function a() {
   sum = 0;
-  if (k.elements.r8[1].checked) {
-    if (k.elements.r16[1].checked) {
-      if (k.elements.r18[1].checked) {
-        if (k.elements.r26[1].checked) {
-          if (k.elements.r29[1].checked) {
-            if (k.elements.r33[1].checked) {
-              if (k.elements.r36[1].checked) {
-                if (k.elements.r51[1].checked) {
-                  if (k.elements.r53[1].checked) {
-                    if (k.elements.r54[1].checked) {
-                      if (k.elements.r67[1].checked) {
-                        if (k.elements.r71[1].checked) {
-                          if (k.elements.r78[1].checked) {
-                            if (k.elements.r96[1].checked) {
-                              if (k.elements.r97[1].checked) {
-                                if (k.elements.r99[1].checked) {
-                                  if (k.elements.r108[1].checked) {
-                                    if (k.elements.r109[1].checked) {
-                                      if (k.elements.r114[1].checked) {
-                                        if (k.elements.r117[1].checked) {
-                                          if (k.elements.r132[1].checked) {
-                                            if (k.elements.r145[1].checked) {
-                                              if (k.elements.r153[1].checked) {
-                                                if (k.elements.r166[0].checked) {
-                                                  if (k.elements.r167[1].checked) {
-                                                    if (k.elements.radgender[1].checked) {
-                                                      if (sum>36) {
-                                                      }
-                                                      return sum;
-                                                      w[16] = sum;
-                                                      r[16] = "Anxiety";
+  if (k.elements.r8[1].checked) { sum = sum+1; }
+  if (k.elements.r16[1].checked) { sum = sum+1; }
+  if (k.elements.r18[1].checked) { sum = sum+3; }
+  if (k.elements.r26[1].checked) { sum = sum+1; }
+  if (k.elements.r29[1].checked) { sum = sum+2; }
+  if (k.elements.r33[1].checked) { sum = sum+2; }
+  if (k.elements.r36[1].checked) { sum = sum+1; }
+  if (k.elements.r51[1].checked) { sum = sum+3; }
+  if (k.elements.r53[1].checked) { sum = sum+2; }
+  if (k.elements.r54[1].checked) { sum = sum+1; }
+  if (k.elements.r67[1].checked) { sum = sum+3; }
+  if (k.elements.r71[1].checked) { sum = sum+2; }
+  if (k.elements.r78[1].checked) { sum = sum+1; }
+  if (k.elements.r96[1].checked) { sum = sum+2; }
+  if (k.elements.r97[1].checked) { sum = sum+2; }
+  if (k.elements.r99[1].checked) { sum = sum+1; }
+  if (k.elements.r108[1].checked) { sum = sum+1; }
+  if (k.elements.r109[1].checked) { sum = sum+2; }
+  if (k.elements.r114[1].checked) { sum = sum+3; }
+  if (k.elements.r117[1].checked) { sum = sum+3; }
+  if (k.elements.r132[1].checked) { sum = sum+1; }
+  if (k.elements.r145[1].checked) { sum = sum+1; }
+  if (k.elements.r153[1].checked) { sum = sum+1; }
+  if (k.elements.r166[0].checked) { sum = sum+1; }
+  if (k.elements.r167[1].checked) { sum = sum+2; }
+  if (k.elements.radgender[1].checked) {
+    if (sum>36) { sum = 36; }
+  }
+  return sum;
+  w[16] = sum;
+  r[16] = "Anxiety";
 }
 
 function p() {
   sum = 0;
-  if (k.elements.r6[1].checked) {
-    if (k.elements.r12[1].checked) {
-      if (k.elements.r15[1].checked) {
-        if (k.elements.r16[1].checked) {
-          if (k.elements.r21[1].checked) {
-            if (k.elements.r22[1].checked) {
-              if (k.elements.r24[1].checked) {
-                if (k.elements.r30[1].checked) {
-                  if (k.elements.r32[1].checked) {
-                    if (k.elements.r37[1].checked) {
-                      if (k.elements.r38[1].checked) {
-                        if (k.elements.r39[1].checked) {
-                          if (k.elements.r41[1].checked) {
-                            if (k.elements.r43[1].checked) {
-                              if (k.elements.r44[1].checked) {
-                                if (k.elements.r46[1].checked) {
-                                  if (k.elements.r55[1].checked) {
-                                    if (k.elements.r61[1].checked) {
-                                      if (k.elements.r63[1].checked) {
-                                        if (k.elements.r64[1].checked) {
-                                          if (k.elements.r68[1].checked) {
-                                            if (k.elements.r74[1].checked) {
-                                              if (k.elements.r75[1].checked) {
-                                                if (k.elements.r80[1].checked) {
-                                                  if (k.elements.r84[1].checked) {
-                                                    if (k.elements.r85[1].checked) {
-                                                      if (k.elements.r89[1].checked) {
-                                                        if (k.elements.r98[1].checked) {
-                                                          if (k.elements.r100[1].checked) {
-                                                            if (k.elements.r103[1].checked) {
-                                                              if (k.elements.r123[1].checked) {
-                                                                if (k.elements.r126[1].checked) {
-                                                                  if (k.elements.r127[1].checked) {
-                                                                    if (k.elements.r129[1].checked) {
-                                                                      if (k.elements.r131[1].checked) {
-                                                                        if (k.elements.r135[1].checked) {
-                                                                          if (k.elements.r138[1].checked) {
-                                                                            if (k.elements.r143[1].checked) {
-                                                                              if (k.elements.r146[1].checked) {
-                                                                                if (k.elements.r163[1].checked) {
-                                                                                  if (k.elements.r164[1].checked) {
-                                                                                    if (k.elements.r165[1].checked) {
-                                                                                      if (k.elements.r171[1].checked) {
-                                                                                        if (k.elements.r172[1].checked) {
-                                                                                          if (k.elements.radgender[1].checked) {
-                                                                                            if (sum>62) {
-                                                                                            }
-                                                                                            return sum;
-                                                                                            w[15] = sum;
-                                                                                            r[15] = "Paranoid";
+  if (k.elements.r6[1].checked) { sum = sum+1; }
+  if (k.elements.r12[1].checked) { sum = sum+1; }
+  if (k.elements.r15[1].checked) { sum = sum+2; }
+  if (k.elements.r16[1].checked) { sum = sum+3; }
+  if (k.elements.r21[1].checked) { sum = sum+1; }
+  if (k.elements.r22[1].checked) { sum = sum+1; }
+  if (k.elements.r24[1].checked) { sum = sum+2; }
+  if (k.elements.r30[1].checked) { sum = sum+1; }
+  if (k.elements.r32[1].checked) { sum = sum+3; }
+  if (k.elements.r37[1].checked) { sum = sum+2; }
+  if (k.elements.r38[1].checked) { sum = sum+3; }
+  if (k.elements.r39[1].checked) { sum = sum+1; }
+  if (k.elements.r41[1].checked) { sum = sum+1; }
+  if (k.elements.r43[1].checked) { sum = sum+1; }
+  if (k.elements.r44[1].checked) { sum = sum+1; }
+  if (k.elements.r46[1].checked) { sum = sum+2; }
+  if (k.elements.r55[1].checked) { sum = sum+1; }
+  if (k.elements.r61[1].checked) { sum = sum+1; }
+  if (k.elements.r63[1].checked) { sum = sum+1; }
+  if (k.elements.r64[1].checked) { sum = sum+3; }
+  if (k.elements.r68[1].checked) { sum = sum+1; }
+  if (k.elements.r74[1].checked) { sum = sum+3; }
+  if (k.elements.r75[1].checked) { sum = sum+1; }
+  if (k.elements.r80[1].checked) { sum = sum+2; }
+  if (k.elements.r84[1].checked) { sum = sum+3; }
+  if (k.elements.r85[1].checked) { sum = sum+3; }
+  if (k.elements.r89[1].checked) { sum = sum+2; }
+  if (k.elements.r98[1].checked) { sum = sum+1; }
+  if (k.elements.r100[1].checked) { sum = sum+2; }
+  if (k.elements.r103[1].checked) { sum = sum+2; }
+  if (k.elements.r123[1].checked) { sum = sum+2; }
+  if (k.elements.r126[1].checked) { sum = sum+2; }
+  if (k.elements.r127[1].checked) { sum = sum+1; }
+  if (k.elements.r129[1].checked) { sum = sum+2; }
+  if (k.elements.r131[1].checked) { sum = sum+2; }
+  if (k.elements.r135[1].checked) { sum = sum+1; }
+  if (k.elements.r138[1].checked) { sum = sum+1; }
+  if (k.elements.r143[1].checked) { sum = sum+1; }
+  if (k.elements.r146[1].checked) { sum = sum+3; }
+  if (k.elements.r163[1].checked) { sum = sum+1; }
+  if (k.elements.r164[1].checked) { sum = sum+3; }
+  if (k.elements.r165[1].checked) { sum = sum+1; }
+  if (k.elements.r171[1].checked) { sum = sum+1; }
+  if (k.elements.r172[1].checked) { sum = sum+1; }
+  if (k.elements.radgender[1].checked) {
+    if (sum>62) { sum = 62; }
+  }
+  return sum;
+  w[15] = sum;
+  r[15] = "Paranoid";
 }
 
 function c() {
   sum = 0;
-  if (k.elements.r5[1].checked) {
-    if (k.elements.r7[1].checked) {
-      if (k.elements.r22[1].checked) {
-        if (k.elements.r23[1].checked) {
-          if (k.elements.r25[1].checked) {
-            if (k.elements.r26[1].checked) {
-              if (k.elements.r27[1].checked) {
-                if (k.elements.r35[1].checked) {
-                  if (k.elements.r36[1].checked) {
-                    if (k.elements.r40[1].checked) {
-                      if (k.elements.r43[1].checked) {
-                        if (k.elements.r44[1].checked) {
-                          if (k.elements.r50[1].checked) {
-                            if (k.elements.r51[1].checked) {
-                              if (k.elements.r53[1].checked) {
-                                if (k.elements.r54[1].checked) {
-                                  if (k.elements.r56[1].checked) {
-                                    if (k.elements.r57[1].checked) {
-                                      if (k.elements.r58[1].checked) {
-                                        if (k.elements.r59[1].checked) {
-                                          if (k.elements.r65[1].checked) {
-                                            if (k.elements.r66[1].checked) {
-                                              if (k.elements.r67[1].checked) {
-                                                if (k.elements.r72[1].checked) {
-                                                  if (k.elements.r73[1].checked) {
-                                                    if (k.elements.r74[1].checked) {
-                                                      if (k.elements.r77[1].checked) {
-                                                        if (k.elements.r78[1].checked) {
-                                                          if (k.elements.r79[1].checked) {
-                                                            if (k.elements.r82[1].checked) {
-                                                              if (k.elements.r91[1].checked) {
-                                                                if (k.elements.r94[1].checked) {
-                                                                  if (k.elements.r95[1].checked) {
-                                                                    if (k.elements.r97[1].checked) {
-                                                                      if (k.elements.r99[1].checked) {
-                                                                        if (k.elements.r101[1].checked) {
-                                                                          if (k.elements.r103[1].checked) {
-                                                                            if (k.elements.r104[1].checked) {
-                                                                              if (k.elements.r108[1].checked) {
-                                                                                if (k.elements.r110[1].checked) {
-                                                                                  if (k.elements.r113[1].checked) {
-                                                                                    if (k.elements.r115[1].checked) {
-                                                                                      if (k.elements.r128[1].checked) {
-                                                                                        if (k.elements.r129[1].checked) {
-                                                                                          if (k.elements.r130[1].checked) {
-                                                                                            if (k.elements.r132[1].checked) {
-                                                                                              if (k.elements.r135[1].checked) {
-                                                                                                if (k.elements.r136[1].checked) {
-                                                                                                  if (k.elements.r139[1].checked) {
-                                                                                                    if (k.elements.r140[1].checked) {
-                                                                                                      if (k.elements.r142[1].checked) {
-                                                                                                        if (k.elements.r144[1].checked) {
-                                                                                                          if (k.elements.r147[1].checked) {
-                                                                                                            if (k.elements.r154[1].checked) {
-                                                                                                              if (k.elements.r155[1].checked) {
-                                                                                                                if (k.elements.r156[1].checked) {
-                                                                                                                  if (k.elements.r162[1].checked) {
-                                                                                                                    if (k.elements.r165[1].checked) {
-                                                                                                                      if (k.elements.r167[1].checked) {
-                                                                                                                        if (k.elements.r168[1].checked) {
-                                                                                                                          if (k.elements.r171[1].checked) {
-                                                                                                                            if (k.elements.r173[1].checked) {
-                                                                                                                              if (k.elements.radgender[1].checked) {
-                                                                                                                                if (sum>64) {
-                                                                                                                                }
-                                                                                                                                return sum;
-                                                                                                                                w[14] = sum;
-                                                                                                                                r[14] = "Borderline";
+  if (k.elements.r5[1].checked) { sum = sum+2; }
+  if (k.elements.r7[1].checked) { sum = sum+1; }
+  if (k.elements.r22[1].checked) { sum = sum+2; }
+  if (k.elements.r23[1].checked) { sum = sum+2; }
+  if (k.elements.r25[1].checked) { sum = sum+3; }
+  if (k.elements.r26[1].checked) { sum = sum+2; }
+  if (k.elements.r27[1].checked) { sum = sum+2; }
+  if (k.elements.r35[1].checked) { sum = sum+2; }
+  if (k.elements.r36[1].checked) { sum = sum+1; }
+  if (k.elements.r40[1].checked) { sum = sum+1; }
+  if (k.elements.r43[1].checked) { sum = sum+3; }
+  if (k.elements.r44[1].checked) { sum = sum+1; }
+  if (k.elements.r50[1].checked) { sum = sum+2; }
+  if (k.elements.r51[1].checked) { sum = sum+1; }
+  if (k.elements.r53[1].checked) { sum = sum+1; }
+  if (k.elements.r54[1].checked) { sum = sum+1; }
+  if (k.elements.r56[1].checked) { sum = sum+3; }
+  if (k.elements.r57[1].checked) { sum = sum+1; }
+  if (k.elements.r58[1].checked) { sum = sum+3; }
+  if (k.elements.r59[1].checked) { sum = sum+2; }
+  if (k.elements.r65[1].checked) { sum = sum+1; }
+  if (k.elements.r66[1].checked) { sum = sum+2; }
+  if (k.elements.r67[1].checked) { sum = sum+1; }
+  if (k.elements.r72[1].checked) { sum = sum+1; }
+  if (k.elements.r73[1].checked) { sum = sum+3; }
+  if (k.elements.r74[1].checked) { sum = sum+1; }
+  if (k.elements.r77[1].checked) { sum = sum+1; }
+  if (k.elements.r78[1].checked) { sum = sum+1; }
+  if (k.elements.r79[1].checked) { sum = sum+2; }
+  if (k.elements.r82[1].checked) { sum = sum+3; }
+  if (k.elements.r91[1].checked) { sum = sum+2; }
+  if (k.elements.r94[1].checked) { sum = sum+1; }
+  if (k.elements.r95[1].checked) { sum = sum+2; }
+  if (k.elements.r97[1].checked) { sum = sum+2; }
+  if (k.elements.r99[1].checked) { sum = sum+1; }
+  if (k.elements.r101[1].checked) { sum = sum+2; }
+  if (k.elements.r103[1].checked) { sum = sum+1; }
+  if (k.elements.r104[1].checked) { sum = sum+1; }
+  if (k.elements.r108[1].checked) { sum = sum+1; }
+  if (k.elements.r110[1].checked) { sum = sum+1; }
+  if (k.elements.r113[1].checked) { sum = sum+3; }
+  if (k.elements.r115[1].checked) { sum = sum+3; }
+  if (k.elements.r128[1].checked) { sum = sum+3; }
+  if (k.elements.r129[1].checked) { sum = sum+2; }
+  if (k.elements.r130[1].checked) { sum = sum+1; }
+  if (k.elements.r132[1].checked) { sum = sum+1; }
+  if (k.elements.r135[1].checked) { sum = sum+1; }
+  if (k.elements.r136[1].checked) { sum = sum+2; }
+  if (k.elements.r139[1].checked) { sum = sum+1; }
+  if (k.elements.r140[1].checked) { sum = sum+2; }
+  if (k.elements.r142[1].checked) { sum = sum+2; }
+  if (k.elements.r144[1].checked) { sum = sum+1; }
+  if (k.elements.r147[1].checked) { sum = sum+1; }
+  if (k.elements.r154[1].checked) { sum = sum+1; }
+  if (k.elements.r155[1].checked) { sum = sum+3; }
+  if (k.elements.r156[1].checked) { sum = sum+2; }
+  if (k.elements.r162[1].checked) { sum = sum+1; }
+  if (k.elements.r165[1].checked) { sum = sum+1; }
+  if (k.elements.r167[1].checked) { sum = sum+1; }
+  if (k.elements.r168[1].checked) { sum = sum+1; }
+  if (k.elements.r171[1].checked) { sum = sum+3; }
+  if (k.elements.r173[1].checked) { sum = sum+1; }
+  if (k.elements.radgender[1].checked) {
+    if (sum>64) { sum = 64; }
+  }
+  return sum;
+  w[14] = sum;
+  r[14] = "Borderline";
 }
 
 function s() {
   sum = 0;
-  if (k.elements.r2[1].checked) {
-    if (k.elements.r3[1].checked) {
-      if (k.elements.r8[1].checked) {
-        if (k.elements.r10[1].checked) {
-          if (k.elements.r13[1].checked) {
-            if (k.elements.r14[0].checked) {
-              if (k.elements.r19[1].checked) {
-                if (k.elements.r23[1].checked) {
-                  if (k.elements.r24[1].checked) {
-                    if (k.elements.r25[1].checked) {
-                      if (k.elements.r31[1].checked) {
-                        if (k.elements.r38[1].checked) {
-                          if (k.elements.r47[1].checked) {
-                            if (k.elements.r48[0].checked) {
-                              if (k.elements.r49[1].checked) {
-                                if (k.elements.r53[1].checked) {
-                                  if (k.elements.r60[0].checked) {
-                                    if (k.elements.r63[1].checked) {
-                                      if (k.elements.r69[1].checked) {
-                                        if (k.elements.r77[1].checked) {
-                                          if (k.elements.r83[1].checked) {
-                                            if (k.elements.r85[1].checked) {
-                                              if (k.elements.r100[1].checked) {
-                                                if (k.elements.r102[1].checked) {
-                                                  if (k.elements.r108[1].checked) {
-                                                    if (k.elements.r112[1].checked) {
-                                                      if (k.elements.r113[1].checked) {
-                                                        if (k.elements.r118[1].checked) {
-                                                          if (k.elements.r120[1].checked) {
-                                                            if (k.elements.r123[1].checked) {
-                                                              if (k.elements.r124[1].checked) {
-                                                                if (k.elements.r130[1].checked) {
-                                                                  if (k.elements.r133[1].checked) {
-                                                                    if (k.elements.r136[1].checked) {
-                                                                      if (k.elements.r141[1].checked) {
-                                                                        if (k.elements.r147[1].checked) {
-                                                                          if (k.elements.r150[1].checked) {
-                                                                            if (k.elements.r158[1].checked) {
-                                                                              if (k.elements.r160[1].checked) {
-                                                                                if (k.elements.r161[1].checked) {
-                                                                                  if (k.elements.r162[1].checked) {
-                                                                                    if (k.elements.r164[1].checked) {
-                                                                                      if (k.elements.r165[1].checked) {
-                                                                                        if (k.elements.r166[0].checked) {
-                                                                                          if (sum>48) {
-                                                                                            return sum;
-                                                                                            w[13] = sum;
-                                                                                            r[13] = "Schizotypal";
+  if (k.elements.r2[1].checked) { sum = sum+2; }
+  if (k.elements.r3[1].checked) { sum = sum+2; }
+  if (k.elements.r8[1].checked) { sum = sum+2; }
+  if (k.elements.r10[1].checked) { sum = sum+1; }
+  if (k.elements.r13[1].checked) { sum = sum+1; }
+  if (k.elements.r14[0].checked) { sum = sum+1; }
+  if (k.elements.r19[1].checked) { sum = sum+1; }
+  if (k.elements.r23[1].checked) { sum = sum+1; }
+  if (k.elements.r24[1].checked) { sum = sum+3; }
+  if (k.elements.r25[1].checked) { sum = sum+1; }
+  if (k.elements.r31[1].checked) { sum = sum+2; }
+  if (k.elements.r38[1].checked) { sum = sum+2; }
+  if (k.elements.r47[1].checked) { sum = sum+3; }
+  if (k.elements.r48[0].checked) { sum = sum+1; }
+  if (k.elements.r49[1].checked) { sum = sum+2; }
+  if (k.elements.r53[1].checked) { sum = sum+1; }
+  if (k.elements.r60[0].checked) { sum = sum+1; }
+  if (k.elements.r63[1].checked) { sum = sum+2; }
+  if (k.elements.r69[1].checked) { sum = sum+3; }
+  if (k.elements.r77[1].checked) { sum = sum+2; }
+  if (k.elements.r83[1].checked) { sum = sum+3; }
+  if (k.elements.r85[1].checked) { sum = sum+2; }
+  if (k.elements.r100[1].checked) { sum = sum+2; }
+  if (k.elements.r102[1].checked) { sum = sum+3; }
+  if (k.elements.r108[1].checked) { sum = sum+1; }
+  if (k.elements.r112[1].checked) { sum = sum+3; }
+  if (k.elements.r113[1].checked) { sum = sum+2; }
+  if (k.elements.r118[1].checked) { sum = sum+3; }
+  if (k.elements.r120[1].checked) { sum = sum+2; }
+  if (k.elements.r123[1].checked) { sum = sum+2; }
+  if (k.elements.r124[1].checked) { sum = sum+2; }
+  if (k.elements.r130[1].checked) { sum = sum+1; }
+  if (k.elements.r133[1].checked) { sum = sum+2; }
+  if (k.elements.r136[1].checked) { sum = sum+1; }
+  if (k.elements.r141[1].checked) { sum = sum+2; }
+  if (k.elements.r147[1].checked) { sum = sum+1; }
+  if (k.elements.r150[1].checked) { sum = sum+3; }
+  if (k.elements.r158[1].checked) { sum = sum+2; }
+  if (k.elements.r160[1].checked) { sum = sum+1; }
+  if (k.elements.r161[1].checked) { sum = sum+1; }
+  if (k.elements.r162[1].checked) { sum = sum+1; }
+  if (k.elements.r164[1].checked) { sum = sum+2; }
+  if (k.elements.r165[1].checked) { sum = sum+1; }
+  if (k.elements.r166[0].checked) { sum = sum+2; }
+  if (sum>48) { sum = 48; }
+  return sum;
+  w[13] = sum;
+  r[13] = "Schizotypal";
 }
 
 function eightb() {
   sum = 0;
-  if (k.elements.r8[1].checked) {
-    if (k.elements.r10[1].checked) {
-      if (k.elements.r16[1].checked) {
-        if (k.elements.r18[1].checked) {
-          if (k.elements.r23[1].checked) {
-            if (k.elements.r25[1].checked) {
-              if (k.elements.r28[1].checked) {
-                if (k.elements.r31[1].checked) {
-                  if (k.elements.r42[1].checked) {
-                    if (k.elements.r45[1].checked) {
-                      if (k.elements.r51[1].checked) {
-                        if (k.elements.r54[1].checked) {
-                          if (k.elements.r56[1].checked) {
-                            if (k.elements.r57[1].checked) {
-                              if (k.elements.r63[1].checked) {
-                                if (k.elements.r65[1].checked) {
-                                  if (k.elements.r71[1].checked) {
-                                    if (k.elements.r73[1].checked) {
-                                      if (k.elements.r74[0].checked) {
-                                        if (k.elements.r77[1].checked) {
-                                          if (k.elements.r81[1].checked) {
-                                            if (k.elements.r82[1].checked) {
-                                              if (k.elements.r99[1].checked) {
-                                                if (k.elements.r106[1].checked) {
-                                                  if (k.elements.r110[1].checked) {
-                                                    if (k.elements.r115[1].checked) {
-                                                      if (k.elements.r120[1].checked) {
-                                                        if (k.elements.r121[1].checked) {
-                                                          if (k.elements.r128[1].checked) {
-                                                            if (k.elements.r132[1].checked) {
-                                                              if (k.elements.r133[1].checked) {
-                                                                if (k.elements.r139[1].checked) {
-                                                                  if (k.elements.r141[1].checked) {
-                                                                    if (k.elements.r145[1].checked) {
-                                                                      if (k.elements.r154[1].checked) {
-                                                                        if (k.elements.r155[1].checked) {
-                                                                          if (k.elements.r167[1].checked) {
-                                                                            if (k.elements.r168[1].checked) {
-                                                                              if (k.elements.r171[1].checked) {
-                                                                                if (k.elements.r173[1].checked) {
-                                                                                  if (k.elements.radgender[1].checked) {
-                                                                                    if (sum>43) {
-                                                                                    }
-                                                                                    return sum;
-                                                                                    w[12] = sum;
-                                                                                    r[12] = "Self-defeating";
+  if (k.elements.r8[1].checked) { sum = sum+1; }
+  if (k.elements.r10[1].checked) { sum = sum+2; }
+  if (k.elements.r16[1].checked) { sum = sum+2; }
+  if (k.elements.r18[1].checked) { sum = sum+1; }
+  if (k.elements.r23[1].checked) { sum = sum+3; }
+  if (k.elements.r25[1].checked) { sum = sum+1; }
+  if (k.elements.r28[1].checked) { sum = sum+2; }
+  if (k.elements.r31[1].checked) { sum = sum+1; }
+  if (k.elements.r42[1].checked) { sum = sum+2; }
+  if (k.elements.r45[1].checked) { sum = sum+2; }
+  if (k.elements.r51[1].checked) { sum = sum+2; }
+  if (k.elements.r54[1].checked) { sum = sum+2; }
+  if (k.elements.r56[1].checked) { sum = sum+2; }
+  if (k.elements.r57[1].checked) { sum = sum+3; }
+  if (k.elements.r63[1].checked) { sum = sum+1; }
+  if (k.elements.r65[1].checked) { sum = sum+3; }
+  if (k.elements.r71[1].checked) { sum = sum+1; }
+  if (k.elements.r73[1].checked) { sum = sum+1; }
+  if (k.elements.r74[0].checked) { sum = sum+1; }
+  if (k.elements.r77[1].checked) { sum = sum+2; }
+  if (k.elements.r81[1].checked) { sum = sum+1; }
+  if (k.elements.r82[1].checked) { sum = sum+1; }
+  if (k.elements.r99[1].checked) { sum = sum+1; }
+  if (k.elements.r106[1].checked) { sum = sum+2; }
+  if (k.elements.r110[1].checked) { sum = sum+3; }
+  if (k.elements.r115[1].checked) { sum = sum+2; }
+  if (k.elements.r120[1].checked) { sum = sum+2; }
+  if (k.elements.r121[1].checked) { sum = sum+3; }
+  if (k.elements.r128[1].checked) { sum = sum+1; }
+  if (k.elements.r132[1].checked) { sum = sum+2; }
+  if (k.elements.r133[1].checked) { sum = sum+1; }
+  if (k.elements.r139[1].checked) { sum = sum+3; }
+  if (k.elements.r141[1].checked) { sum = sum+1; }
+  if (k.elements.r145[1].checked) { sum = sum+2; }
+  if (k.elements.r154[1].checked) { sum = sum+3; }
+  if (k.elements.r155[1].checked) { sum = sum+2; }
+  if (k.elements.r167[1].checked) { sum = sum+1; }
+  if (k.elements.r168[1].checked) { sum = sum+3; }
+  if (k.elements.r171[1].checked) { sum = sum+1; }
+  if (k.elements.r173[1].checked) { sum = sum+1; }
+  if (k.elements.radgender[1].checked) {
+    if (sum>43) { sum = 43; }
+  }
+  return sum;
+  w[12] = sum;
+  r[12] = "Self-defeating";
 }
 
 function eighta() {
   sum = 0;
-  if (k.elements.r1[1].checked) {
-    if (k.elements.r4[1].checked) {
-      if (k.elements.r9[1].checked) {
-        if (k.elements.r12[1].checked) {
-          if (k.elements.r16[1].checked) {
-            if (k.elements.r21[1].checked) {
-              if (k.elements.r22[1].checked) {
-                if (k.elements.r23[1].checked) {
-                  if (k.elements.r25[1].checked) {
-                    if (k.elements.r28[1].checked) {
-                      if (k.elements.r43[1].checked) {
-                        if (k.elements.r50[1].checked) {
-                          if (k.elements.r51[1].checked) {
-                            if (k.elements.r55[1].checked) {
-                              if (k.elements.r58[1].checked) {
-                                if (k.elements.r61[0].checked) {
-                                  if (k.elements.r64[1].checked) {
-                                    if (k.elements.r66[1].checked) {
-                                      if (k.elements.r73[1].checked) {
-                                        if (k.elements.r74[1].checked) {
-                                          if (k.elements.r77[1].checked) {
-                                            if (k.elements.r82[1].checked) {
-                                              if (k.elements.r86[1].checked) {
-                                                if (k.elements.r95[1].checked) {
-                                                  if (k.elements.r101[1].checked) {
-                                                    if (k.elements.r104[1].checked) {
-                                                      if (k.elements.r107[1].checked) {
-                                                        if (k.elements.r110[1].checked) {
-                                                          if (k.elements.r115[1].checked) {
-                                                            if (k.elements.r120[1].checked) {
-                                                              if (k.elements.r123[1].checked) {
-                                                                if (k.elements.r128[1].checked) {
-                                                                  if (k.elements.r129[1].checked) {
-                                                                    if (k.elements.r135[1].checked) {
-                                                                      if (k.elements.r139[1].checked) {
-                                                                        if (k.elements.r149[0].checked) {
-                                                                          if (k.elements.r155[1].checked) {
-                                                                            if (k.elements.r156[1].checked) {
-                                                                              if (k.elements.r159[0].checked) {
-                                                                                if (k.elements.r165[1].checked) {
-                                                                                  if (k.elements.r171[1].checked) {
-                                                                                    if (k.elements.radgender[1].checked) {
-                                                                                      if (sum>55) {
-                                                                                      }
-                                                                                      return sum;
-                                                                                      w[11] = sum;
-                                                                                      r[11] = "Passive-Agressive";
+  if (k.elements.r1[1].checked) { sum = sum+1; }
+  if (k.elements.r4[1].checked) { sum = sum+1; }
+  if (k.elements.r9[1].checked) { sum = sum+2; }
+  if (k.elements.r12[1].checked) { sum = sum+1; }
+  if (k.elements.r16[1].checked) { sum = sum+2; }
+  if (k.elements.r21[1].checked) { sum = sum+1; }
+  if (k.elements.r22[1].checked) { sum = sum+3; }
+  if (k.elements.r23[1].checked) { sum = sum+1; }
+  if (k.elements.r25[1].checked) { sum = sum+1; }
+  if (k.elements.r28[1].checked) { sum = sum+2; }
+  if (k.elements.r43[1].checked) { sum = sum+2; }
+  if (k.elements.r50[1].checked) { sum = sum+3; }
+  if (k.elements.r51[1].checked) { sum = sum+1; }
+  if (k.elements.r55[1].checked) { sum = sum+3; }
+  if (k.elements.r58[1].checked) { sum = sum+1; }
+  if (k.elements.r61[0].checked) { sum = sum+1; }
+  if (k.elements.r64[1].checked) { sum = sum+2; }
+  if (k.elements.r66[1].checked) { sum = sum+3; }
+  if (k.elements.r73[1].checked) { sum = sum+2; }
+  if (k.elements.r74[1].checked) { sum = sum+2; }
+  if (k.elements.r77[1].checked) { sum = sum+2; }
+  if (k.elements.r82[1].checked) { sum = sum+2; }
+  if (k.elements.r86[1].checked) { sum = sum+2; }
+  if (k.elements.r95[1].checked) { sum = sum+3; }
+  if (k.elements.r101[1].checked) { sum = sum+2; }
+  if (k.elements.r104[1].checked) { sum = sum+3; }
+  if (k.elements.r107[1].checked) { sum = sum+3; }
+  if (k.elements.r110[1].checked) { sum = sum+1; }
+  if (k.elements.r115[1].checked) { sum = sum+2; }
+  if (k.elements.r120[1].checked) { sum = sum+1; }
+  if (k.elements.r123[1].checked) { sum = sum+2; }
+  if (k.elements.r128[1].checked) { sum = sum+2; }
+  if (k.elements.r129[1].checked) { sum = sum+1; }
+  if (k.elements.r135[1].checked) { sum = sum+3; }
+  if (k.elements.r139[1].checked) { sum = sum+1; }
+  if (k.elements.r149[0].checked) { sum = sum+2; }
+  if (k.elements.r155[1].checked) { sum = sum+2; }
+  if (k.elements.r156[1].checked) { sum = sum+3; }
+  if (k.elements.r159[0].checked) { sum = sum+2; }
+  if (k.elements.r165[1].checked) { sum = sum+3; }
+  if (k.elements.r171[1].checked) { sum = sum+1; }
+  if (k.elements.radgender[1].checked) {
+    if (sum>55) { sum = 55; }
+  }
+  return sum;
+  w[11] = sum;
+  r[11] = "Passive-Agressive";
 }
 
 function seven() {
   sum = 0;
-  if (k.elements.r4[1].checked) {
-    if (k.elements.r7[0].checked) {
-      if (k.elements.r20[0].checked) {
-        if (k.elements.r21[1].checked) {
-          if (k.elements.r32[1].checked) {
-            if (k.elements.r39[1].checked) {
-              if (k.elements.r40[0].checked) {
-                if (k.elements.r43[0].checked) {
-                  if (k.elements.r46[1].checked) {
-                    if (k.elements.r48[0].checked) {
-                      if (k.elements.r50[0].checked) {
-                        if (k.elements.r60[0].checked) {
-                          if (k.elements.r61[1].checked) {
-                            if (k.elements.r64[1].checked) {
-                              if (k.elements.r66[0].checked) {
-                                if (k.elements.r74[1].checked) {
-                                  if (k.elements.r75[1].checked) {
-                                    if (k.elements.r77[0].checked) {
-                                      if (k.elements.r78[1].checked) {
-                                        if (k.elements.r81[1].checked) {
-                                          if (k.elements.r86[0].checked) {
-                                            if (k.elements.r88[1].checked) {
-                                              if (k.elements.r92[0].checked) {
-                                                if (k.elements.r95[0].checked) {
-                                                  if (k.elements.r103[0].checked) {
-                                                    if (k.elements.r111[0].checked) {
-                                                      if (k.elements.r126[1].checked) {
-                                                        if (k.elements.r128[0].checked) {
-                                                          if (k.elements.r134[1].checked) {
-                                                            if (k.elements.r138[1].checked) {
-                                                              if (k.elements.r145[0].checked) {
-                                                                if (k.elements.r148[1].checked) {
-                                                                  if (k.elements.r149[1].checked) {
-                                                                    if (k.elements.r153[1].checked) {
-                                                                      if (k.elements.r155[0].checked) {
-                                                                        if (k.elements.r159[1].checked) {
-                                                                          if (k.elements.r161[1].checked) {
-                                                                            if (k.elements.r163[1].checked) {
-                                                                              if (k.elements.radgender[1].checked) {
-                                                                                if (sum>61) {
-                                                                                }
-                                                                                return sum;
-                                                                                w[10] = sum;
-                                                                                r[10] = "Compulsive";
+  if (k.elements.r4[1].checked) { sum = sum+1; }
+  if (k.elements.r7[0].checked) { sum = sum+1; }
+  if (k.elements.r20[0].checked) { sum = sum+2; }
+  if (k.elements.r21[1].checked) { sum = sum+3; }
+  if (k.elements.r32[1].checked) { sum = sum+1; }
+  if (k.elements.r39[1].checked) { sum = sum+3; }
+  if (k.elements.r40[0].checked) { sum = sum+1; }
+  if (k.elements.r43[0].checked) { sum = sum+1; }
+  if (k.elements.r46[1].checked) { sum = sum+3; }
+  if (k.elements.r48[0].checked) { sum = sum+2; }
+  if (k.elements.r50[0].checked) { sum = sum+1; }
+  if (k.elements.r60[0].checked) { sum = sum+1; }
+  if (k.elements.r61[1].checked) { sum = sum+3; }
+  if (k.elements.r64[1].checked) { sum = sum+2; }
+  if (k.elements.r66[0].checked) { sum = sum+1; }
+  if (k.elements.r74[1].checked) { sum = sum+1; }
+  if (k.elements.r75[1].checked) { sum = sum+3; }
+  if (k.elements.r77[0].checked) { sum = sum+1; }
+  if (k.elements.r78[1].checked) { sum = sum+1; }
+  if (k.elements.r81[1].checked) { sum = sum+1; }
+  if (k.elements.r86[0].checked) { sum = sum+2; }
+  if (k.elements.r88[1].checked) { sum = sum+3; }
+  if (k.elements.r92[0].checked) { sum = sum+1; }
+  if (k.elements.r95[0].checked) { sum = sum+1; }
+  if (k.elements.r103[0].checked) { sum = sum+1; }
+  if (k.elements.r111[0].checked) { sum = sum+1; }
+  if (k.elements.r126[1].checked) { sum = sum+3; }
+  if (k.elements.r128[0].checked) { sum = sum+1; }
+  if (k.elements.r134[1].checked) { sum = sum+2; }
+  if (k.elements.r138[1].checked) { sum = sum+3; }
+  if (k.elements.r145[0].checked) { sum = sum+2; }
+  if (k.elements.r148[1].checked) { sum = sum+2; }
+  if (k.elements.r149[1].checked) { sum = sum+3; }
+  if (k.elements.r153[1].checked) { sum = sum+3; }
+  if (k.elements.r155[0].checked) { sum = sum+1; }
+  if (k.elements.r159[1].checked) { sum = sum+2; }
+  if (k.elements.r161[1].checked) { sum = sum+2; }
+  if (k.elements.r163[1].checked) { sum = sum+2; }
+  if (k.elements.radgender[1].checked) {
+    if (sum>61) { sum = 61; }
+  }
+  return sum;
+  w[10] = sum;
+  r[10] = "Compulsive";
 }
 
 function sixb() {
   sum = 0;
-  if (k.elements.r1[1].checked) {
-    if (k.elements.r4[1].checked) {
-      if (k.elements.r7[1].checked) {
-        if (k.elements.r9[1].checked) {
-          if (k.elements.r12[1].checked) {
-            if (k.elements.r21[1].checked) {
-              if (k.elements.r30[1].checked) {
-                if (k.elements.r31[0].checked) {
-                  if (k.elements.r32[1].checked) {
-                    if (k.elements.r38[1].checked) {
-                      if (k.elements.r40[1].checked) {
-                        if (k.elements.r41[1].checked) {
-                          if (k.elements.r42[0].checked) {
-                            if (k.elements.r43[1].checked) {
-                              if (k.elements.r44[1].checked) {
-                                if (k.elements.r58[1].checked) {
-                                  if (k.elements.r64[1].checked) {
-                                    if (k.elements.r66[1].checked) {
-                                      if (k.elements.r71[0].checked) {
-                                        if (k.elements.r74[1].checked) {
-                                          if (k.elements.r77[0].checked) {
-                                            if (k.elements.r78[0].checked) {
-                                              if (k.elements.r80[1].checked) {
-                                                if (k.elements.r82[1].checked) {
-                                                  if (k.elements.r84[1].checked) {
-                                                    if (k.elements.r86[1].checked) {
-                                                      if (k.elements.r91[1].checked) {
-                                                        if (k.elements.r95[1].checked) {
-                                                          if (k.elements.r101[1].checked) {
-                                                            if (k.elements.r106[0].checked) {
-                                                              if (k.elements.r107[1].checked) {
-                                                                if (k.elements.r115[1].checked) {
-                                                                  if (k.elements.r121[1].checked) {
-                                                                    if (k.elements.r129[1].checked) {
-                                                                      if (k.elements.r134[1].checked) {
-                                                                        if (k.elements.r135[1].checked) {
-                                                                          if (k.elements.r142[1].checked) {
-                                                                            if (k.elements.r145[0].checked) {
-                                                                              if (k.elements.r146[1].checked) {
-                                                                                if (k.elements.r147[1].checked) {
-                                                                                  if (k.elements.r148[1].checked) {
-                                                                                    if (k.elements.r155[1].checked) {
-                                                                                      if (k.elements.r163[1].checked) {
-                                                                                        if (k.elements.r165[1].checked) {
-                                                                                          if (k.elements.r166[1].checked) {
-                                                                                            if (k.elements.radgender[1].checked) {
-                                                                                              if (sum>53) {
-                                                                                              }
-                                                                                              return sum;
-                                                                                              w[9] = sum;
-                                                                                              r[9] = "Aggressive/Sadistic";
+  if (k.elements.r1[1].checked) { sum = sum+2; }
+  if (k.elements.r4[1].checked) { sum = sum+3; }
+  if (k.elements.r7[1].checked) { sum = sum+1; }
+  if (k.elements.r9[1].checked) { sum = sum+3; }
+  if (k.elements.r12[1].checked) { sum = sum+3; }
+  if (k.elements.r21[1].checked) { sum = sum+2; }
+  if (k.elements.r30[1].checked) { sum = sum+3; }
+  if (k.elements.r31[0].checked) { sum = sum+1; }
+  if (k.elements.r32[1].checked) { sum = sum+1; }
+  if (k.elements.r38[1].checked) { sum = sum+1; }
+  if (k.elements.r40[1].checked) { sum = sum+1; }
+  if (k.elements.r41[1].checked) { sum = sum+3; }
+  if (k.elements.r42[0].checked) { sum = sum+2; }
+  if (k.elements.r43[1].checked) { sum = sum+1; }
+  if (k.elements.r44[1].checked) { sum = sum+3; }
+  if (k.elements.r58[1].checked) { sum = sum+1; }
+  if (k.elements.r64[1].checked) { sum = sum+2; }
+  if (k.elements.r66[1].checked) { sum = sum+1; }
+  if (k.elements.r71[0].checked) { sum = sum+1; }
+  if (k.elements.r74[1].checked) { sum = sum+2; }
+  if (k.elements.r77[0].checked) { sum = sum+2; }
+  if (k.elements.r78[0].checked) { sum = sum+2; }
+  if (k.elements.r80[1].checked) { sum = sum+1; }
+  if (k.elements.r82[1].checked) { sum = sum+2; }
+  if (k.elements.r84[1].checked) { sum = sum+2; }
+  if (k.elements.r86[1].checked) { sum = sum+1; }
+  if (k.elements.r91[1].checked) { sum = sum+2; }
+  if (k.elements.r95[1].checked) { sum = sum+1; }
+  if (k.elements.r101[1].checked) { sum = sum+3; }
+  if (k.elements.r106[0].checked) { sum = sum+1; }
+  if (k.elements.r107[1].checked) { sum = sum+2; }
+  if (k.elements.r115[1].checked) { sum = sum+2; }
+  if (k.elements.r121[1].checked) { sum = sum+2; }
+  if (k.elements.r129[1].checked) { sum = sum+2; }
+  if (k.elements.r134[1].checked) { sum = sum+3; }
+  if (k.elements.r135[1].checked) { sum = sum+1; }
+  if (k.elements.r142[1].checked) { sum = sum+1; }
+  if (k.elements.r145[0].checked) { sum = sum+1; }
+  if (k.elements.r146[1].checked) { sum = sum+1; }
+  if (k.elements.r147[1].checked) { sum = sum+1; }
+  if (k.elements.r148[1].checked) { sum = sum+3; }
+  if (k.elements.r155[1].checked) { sum = sum+2; }
+  if (k.elements.r163[1].checked) { sum = sum+3; }
+  if (k.elements.r165[1].checked) { sum = sum+1; }
+  if (k.elements.r166[1].checked) { sum = sum+2; }
+  if (k.elements.radgender[1].checked) {
+    if (sum>53) { sum = 53; }
+  }
+  return sum;
+  w[9] = sum;
+  r[9] = "Aggressive/Sadistic";
 }
 
 function sixa() {
   sum = 0;
-  if (k.elements.r1[1].checked) {
-    if (k.elements.r7[1].checked) {
-      if (k.elements.r12[1].checked) {
-        if (k.elements.r15[1].checked) {
-          if (k.elements.r20[1].checked) {
-            if (k.elements.r22[1].checked) {
-              if (k.elements.r32[1].checked) {
-                if (k.elements.r34[0].checked) {
-                  if (k.elements.r38[1].checked) {
-                    if (k.elements.r40[1].checked) {
-                      if (k.elements.r42[0].checked) {
-                        if (k.elements.r43[1].checked) {
-                          if (k.elements.r44[1].checked) {
-                            if (k.elements.r48[1].checked) {
-                              if (k.elements.r55[1].checked) {
-                                if (k.elements.r64[1].checked) {
-                                  if (k.elements.r73[1].checked) {
-                                    if (k.elements.r74[1].checked) {
-                                      if (k.elements.r77[0].checked) {
-                                        if (k.elements.r78[0].checked) {
-                                          if (k.elements.r80[1].checked) {
-                                            if (k.elements.r81[0].checked) {
-                                              if (k.elements.r85[1].checked) {
-                                                if (k.elements.r86[1].checked) {
-                                                  if (k.elements.r87[1].checked) {
-                                                    if (k.elements.r91[1].checked) {
-                                                      if (k.elements.r92[1].checked) {
-                                                        if (k.elements.r94[1].checked) {
-                                                          if (k.elements.r101[1].checked) {
-                                                            if (k.elements.r103[1].checked) {
-                                                              if (k.elements.r104[1].checked) {
-                                                                if (k.elements.r111[1].checked) {
-                                                                  if (k.elements.r113[1].checked) {
-                                                                    if (k.elements.r116[1].checked) {
-                                                                      if (k.elements.r129[1].checked) {
-                                                                        if (k.elements.r130[1].checked) {
-                                                                          if (k.elements.r140[1].checked) {
-                                                                            if (k.elements.r142[1].checked) {
-                                                                              if (k.elements.r144[1].checked) {
-                                                                                if (k.elements.r147[1].checked) {
-                                                                                  if (k.elements.r157[1].checked) {
-                                                                                    if (k.elements.r162[1].checked) {
-                                                                                      if (k.elements.r165[1].checked) {
-                                                                                        if (k.elements.r171[1].checked) {
-                                                                                          if (k.elements.r172[1].checked) {
-                                                                                            if (k.elements.radgender[1].checked) {
-                                                                                              if (sum>54) {
-                                                                                              }
-                                                                                              return sum;
-                                                                                              w[8] = sum;
-                                                                                              r[8] = "Antisocial";
+  if (k.elements.r1[1].checked) { sum = sum+2; }
+  if (k.elements.r7[1].checked) { sum = sum+3; }
+  if (k.elements.r12[1].checked) { sum = sum+2; }
+  if (k.elements.r15[1].checked) { sum = sum+1; }
+  if (k.elements.r20[1].checked) { sum = sum+2; }
+  if (k.elements.r22[1].checked) { sum = sum+2; }
+  if (k.elements.r32[1].checked) { sum = sum+2; }
+  if (k.elements.r34[0].checked) { sum = sum+1; }
+  if (k.elements.r38[1].checked) { sum = sum+2; }
+  if (k.elements.r40[1].checked) { sum = sum+3; }
+  if (k.elements.r42[0].checked) { sum = sum+2; }
+  if (k.elements.r43[1].checked) { sum = sum+2; }
+  if (k.elements.r44[1].checked) { sum = sum+1; }
+  if (k.elements.r48[1].checked) { sum = sum+1; }
+  if (k.elements.r55[1].checked) { sum = sum+2; }
+  if (k.elements.r64[1].checked) { sum = sum+1; }
+  if (k.elements.r73[1].checked) { sum = sum+2; }
+  if (k.elements.r74[1].checked) { sum = sum+2; }
+  if (k.elements.r77[0].checked) { sum = sum+1; }
+  if (k.elements.r78[0].checked) { sum = sum+2; }
+  if (k.elements.r80[1].checked) { sum = sum+2; }
+  if (k.elements.r81[0].checked) { sum = sum+2; }
+  if (k.elements.r85[1].checked) { sum = sum+1; }
+  if (k.elements.r86[1].checked) { sum = sum+2; }
+  if (k.elements.r87[1].checked) { sum = sum+2; }
+  if (k.elements.r91[1].checked) { sum = sum+2; }
+  if (k.elements.r92[1].checked) { sum = sum+3; }
+  if (k.elements.r94[1].checked) { sum = sum+3; }
+  if (k.elements.r101[1].checked) { sum = sum+1; }
+  if (k.elements.r103[1].checked) { sum = sum+3; }
+  if (k.elements.r104[1].checked) { sum = sum+1; }
+  if (k.elements.r111[1].checked) { sum = sum+1; }
+  if (k.elements.r113[1].checked) { sum = sum+1; }
+  if (k.elements.r116[1].checked) { sum = sum+3; }
+  if (k.elements.r129[1].checked) { sum = sum+2; }
+  if (k.elements.r130[1].checked) { sum = sum+3; }
+  if (k.elements.r140[1].checked) { sum = sum+1; }
+  if (k.elements.r142[1].checked) { sum = sum+2; }
+  if (k.elements.r144[1].checked) { sum = sum+2; }
+  if (k.elements.r147[1].checked) { sum = sum+3; }
+  if (k.elements.r157[1].checked) { sum = sum+1; }
+  if (k.elements.r162[1].checked) { sum = sum+3; }
+  if (k.elements.r165[1].checked) { sum = sum+2; }
+  if (k.elements.r171[1].checked) { sum = sum+1; }
+  if (k.elements.r172[1].checked) { sum = sum+3; }
+  if (k.elements.radgender[1].checked) {
+    if (sum>54) { sum = 54; }
+  }
+  return sum;
+  w[8] = sum;
+  r[8] = "Antisocial";
 }
 
 function five() {
   sum = 0;
-  if (k.elements.r1[1].checked) {
-    if (k.elements.r2[1].checked) {
-      if (k.elements.r4[1].checked) {
-        if (k.elements.r6[1].checked) {
-          if (k.elements.r8[0].checked) {
-            if (k.elements.r12[1].checked) {
-              if (k.elements.r14[1].checked) {
-                if (k.elements.r15[1].checked) {
-                  if (k.elements.r16[1].checked) {
-                    if (k.elements.r22[1].checked) {
-                      if (k.elements.r28[1].checked) {
-                        if (k.elements.r31[0].checked) {
-                          if (k.elements.r32[1].checked) {
-                            if (k.elements.r37[1].checked) {
-                              if (k.elements.r41[1].checked) {
-                                if (k.elements.r42[0].checked) {
-                                  if (k.elements.r43[1].checked) {
-                                    if (k.elements.r45[0].checked) {
-                                      if (k.elements.r51[0].checked) {
-                                        if (k.elements.r55[1].checked) {
-                                          if (k.elements.r60[1].checked) {
-                                            if (k.elements.r78[0].checked) {
-                                              if (k.elements.r80[1].checked) {
-                                                if (k.elements.r85[1].checked) {
-                                                  if (k.elements.r86[1].checked) {
-                                                    if (k.elements.r89[1].checked) {
-                                                      if (k.elements.r91[1].checked) {
-                                                        if (k.elements.r103[1].checked) {
-                                                          if (k.elements.r106[0].checked) {
-                                                            if (k.elements.r111[1].checked) {
-                                                              if (k.elements.r125[1].checked) {
-                                                                if (k.elements.r126[1].checked) {
-                                                                  if (k.elements.r129[1].checked) {
-                                                                    if (k.elements.r130[1].checked) {
-                                                                      if (k.elements.r131[1].checked) {
-                                                                        if (k.elements.r134[1].checked) {
-                                                                          if (k.elements.r135[1].checked) {
-                                                                            if (k.elements.r137[1].checked) {
-                                                                              if (k.elements.r142[1].checked) {
-                                                                                if (k.elements.r143[1].checked) {
-                                                                                  if (k.elements.r146[1].checked) {
-                                                                                    if (k.elements.r149[0].checked) {
-                                                                                      if (k.elements.r158[0].checked) {
-                                                                                        if (k.elements.r163[1].checked) {
-                                                                                          if (k.elements.r165[1].checked) {
-                                                                                            if (k.elements.r166[1].checked) {
-                                                                                              if (k.elements.r170[1].checked) {
-                                                                                                if (k.elements.r171[1].checked) {
-                                                                                                  if (k.elements.r172[1].checked) {
-                                                                                                    if (k.elements.radgender[1].checked) {
-                                                                                                      if (sum>67) {
-                                                                                                      }
-                                                                                                      return sum;
-                                                                                                      w[7] = sum;
-                                                                                                      r[7] = "Narcissistic";
+  if (k.elements.r1[1].checked) { sum = sum+3; }
+  if (k.elements.r2[1].checked) { sum = sum+1; }
+  if (k.elements.r4[1].checked) { sum = sum+2; }
+  if (k.elements.r6[1].checked) { sum = sum+3; }
+  if (k.elements.r8[0].checked) { sum = sum+1; }
+  if (k.elements.r12[1].checked) { sum = sum+1; }
+  if (k.elements.r14[1].checked) { sum = sum+2; }
+  if (k.elements.r15[1].checked) { sum = sum+3; }
+  if (k.elements.r16[1].checked) { sum = sum+2; }
+  if (k.elements.r22[1].checked) { sum = sum+1; }
+  if (k.elements.r28[1].checked) { sum = sum+1; }
+  if (k.elements.r31[0].checked) { sum = sum+1; }
+  if (k.elements.r32[1].checked) { sum = sum+1; }
+  if (k.elements.r37[1].checked) { sum = sum+3; }
+  if (k.elements.r41[1].checked) { sum = sum+2; }
+  if (k.elements.r42[0].checked) { sum = sum+2; }
+  if (k.elements.r43[1].checked) { sum = sum+1; }
+  if (k.elements.r45[0].checked) { sum = sum+1; }
+  if (k.elements.r51[0].checked) { sum = sum+1; }
+  if (k.elements.r55[1].checked) { sum = sum+1; }
+  if (k.elements.r60[1].checked) { sum = sum+1; }
+  if (k.elements.r78[0].checked) { sum = sum+1; }
+  if (k.elements.r80[1].checked) { sum = sum+1; }
+  if (k.elements.r85[1].checked) { sum = sum+1; }
+  if (k.elements.r86[1].checked) { sum = sum+2; }
+  if (k.elements.r89[1].checked) { sum = sum+3; }
+  if (k.elements.r91[1].checked) { sum = sum+3; }
+  if (k.elements.r103[1].checked) { sum = sum+2; }
+  if (k.elements.r106[0].checked) { sum = sum+1; }
+  if (k.elements.r111[1].checked) { sum = sum+2; }
+  if (k.elements.r125[1].checked) { sum = sum+2; }
+  if (k.elements.r126[1].checked) { sum = sum+1; }
+  if (k.elements.r129[1].checked) { sum = sum+3; }
+  if (k.elements.r130[1].checked) { sum = sum+1; }
+  if (k.elements.r131[1].checked) { sum = sum+3; }
+  if (k.elements.r134[1].checked) { sum = sum+1; }
+  if (k.elements.r135[1].checked) { sum = sum+1; }
+  if (k.elements.r137[1].checked) { sum = sum+2; }
+  if (k.elements.r142[1].checked) { sum = sum+3; }
+  if (k.elements.r143[1].checked) { sum = sum+1; }
+  if (k.elements.r146[1].checked) { sum = sum+1; }
+  if (k.elements.r149[0].checked) { sum = sum+2; }
+  if (k.elements.r158[0].checked) { sum = sum+2; }
+  if (k.elements.r163[1].checked) { sum = sum+1; }
+  if (k.elements.r165[1].checked) { sum = sum+2; }
+  if (k.elements.r166[1].checked) { sum = sum+3; }
+  if (k.elements.r170[1].checked) { sum = sum+2; }
+  if (k.elements.r171[1].checked) { sum = sum+2; }
+  if (k.elements.r172[1].checked) { sum = sum+2; }
+  if (k.elements.radgender[1].checked) {
+    if (sum>67) { sum = 67; }
+  }
+  return sum;
+  w[7] = sum;
+  r[7] = "Narcissistic";
 }
 
 function four() {
   sum = 0;
-  if (k.elements.r3[0].checked) {
-    if (k.elements.r7[1].checked) {
-      if (k.elements.r9[1].checked) {
-        if (k.elements.r14[1].checked) {
-          if (k.elements.r19[0].checked) {
-            if (k.elements.r20[1].checked) {
-              if (k.elements.r28[1].checked) {
-                if (k.elements.r37[1].checked) {
-                  if (k.elements.r39[0].checked) {
-                    if (k.elements.r40[1].checked) {
-                      if (k.elements.r41[1].checked) {
-                        if (k.elements.r42[1].checked) {
-                          if (k.elements.r43[1].checked) {
-                            if (k.elements.r48[1].checked) {
-                              if (k.elements.r51[0].checked) {
-                                if (k.elements.r56[1].checked) {
-                                  if (k.elements.r60[1].checked) {
-                                    if (k.elements.r61[0].checked) {
-                                      if (k.elements.r66[1].checked) {
-                                        if (k.elements.r77[0].checked) {
-                                          if (k.elements.r86[1].checked) {
-                                            if (k.elements.r89[1].checked) {
-                                              if (k.elements.r91[1].checked) {
-                                                if (k.elements.r95[1].checked) {
-                                                  if (k.elements.r103[1].checked) {
-                                                    if (k.elements.r111[1].checked) {
-                                                      if (k.elements.r125[1].checked) {
-                                                        if (k.elements.r126[0].checked) {
-                                                          if (k.elements.r128[1].checked) {
-                                                            if (k.elements.r130[1].checked) {
-                                                              if (k.elements.r133[1].checked) {
-                                                                if (k.elements.r137[1].checked) {
-                                                                  if (k.elements.r142[1].checked) {
-                                                                    if (k.elements.r158[0].checked) {
-                                                                      if (k.elements.r162[1].checked) {
-                                                                        if (k.elements.r166[1].checked) {
-                                                                          if (k.elements.r170[1].checked) {
-                                                                            if (k.elements.r171[1].checked) {
-                                                                              if (k.elements.r172[1].checked) {
-                                                                                if (k.elements.r173[1].checked) {
-                                                                                  if (k.elements.radgender[1].checked) {
-                                                                                    if (sum>58) {
-                                                                                    }
-                                                                                    return sum;
-                                                                                    w[6] = sum;
-                                                                                    r[6] = "Histrionic";
+  if (k.elements.r3[0].checked) { sum = sum+1; }
+  if (k.elements.r7[1].checked) { sum = sum+1; }
+  if (k.elements.r9[1].checked) { sum = sum+2; }
+  if (k.elements.r14[1].checked) { sum = sum+3; }
+  if (k.elements.r19[0].checked) { sum = sum+1; }
+  if (k.elements.r20[1].checked) { sum = sum+3; }
+  if (k.elements.r28[1].checked) { sum = sum+3; }
+  if (k.elements.r37[1].checked) { sum = sum+1; }
+  if (k.elements.r39[0].checked) { sum = sum+1; }
+  if (k.elements.r40[1].checked) { sum = sum+1; }
+  if (k.elements.r41[1].checked) { sum = sum+1; }
+  if (k.elements.r42[1].checked) { sum = sum+2; }
+  if (k.elements.r43[1].checked) { sum = sum+2; }
+  if (k.elements.r48[1].checked) { sum = sum+3; }
+  if (k.elements.r51[0].checked) { sum = sum+1; }
+  if (k.elements.r56[1].checked) { sum = sum+1; }
+  if (k.elements.r60[1].checked) { sum = sum+3; }
+  if (k.elements.r61[0].checked) { sum = sum+2; }
+  if (k.elements.r66[1].checked) { sum = sum+2; }
+  if (k.elements.r77[0].checked) { sum = sum+1; }
+  if (k.elements.r86[1].checked) { sum = sum+3; }
+  if (k.elements.r89[1].checked) { sum = sum+1; }
+  if (k.elements.r91[1].checked) { sum = sum+1; }
+  if (k.elements.r95[1].checked) { sum = sum+1; }
+  if (k.elements.r103[1].checked) { sum = sum+2; }
+  if (k.elements.r111[1].checked) { sum = sum+3; }
+  if (k.elements.r125[1].checked) { sum = sum+3; }
+  if (k.elements.r126[0].checked) { sum = sum+1; }
+  if (k.elements.r128[1].checked) { sum = sum+1; }
+  if (k.elements.r130[1].checked) { sum = sum+1; }
+  if (k.elements.r133[1].checked) { sum = sum+2; }
+  if (k.elements.r137[1].checked) { sum = sum+3; }
+  if (k.elements.r142[1].checked) { sum = sum+1; }
+  if (k.elements.r158[0].checked) { sum = sum+2; }
+  if (k.elements.r162[1].checked) { sum = sum+1; }
+  if (k.elements.r166[1].checked) { sum = sum+2; }
+  if (k.elements.r170[1].checked) { sum = sum+3; }
+  if (k.elements.r171[1].checked) { sum = sum+1; }
+  if (k.elements.r172[1].checked) { sum = sum+1; }
+  if (k.elements.r173[1].checked) { sum = sum+1; }
+  if (k.elements.radgender[1].checked) {
+    if (sum>58) { sum = 58; }
+  }
+  return sum;
+  w[6] = sum;
+  r[6] = "Histrionic";
 }
 
 function three() {
   sum = 0;
-  if (k.elements.r4[0].checked) {
-    if (k.elements.r7[0].checked) {
-      if (k.elements.r10[1].checked) {
-        if (k.elements.r12[0].checked) {
-          if (k.elements.r21[0].checked) {
-            if (k.elements.r28[0].checked) {
-              if (k.elements.r31[1].checked) {
-                if (k.elements.r34[1].checked) {
-                  if (k.elements.r40[0].checked) {
-                    if (k.elements.r41[0].checked) {
-                      if (k.elements.r42[1].checked) {
-                        if (k.elements.r43[0].checked) {
-                          if (k.elements.r49[1].checked) {
-                            if (k.elements.r54[1].checked) {
-                              if (k.elements.r57[1].checked) {
-                                if (k.elements.r60[1].checked) {
-                                  if (k.elements.r74[0].checked) {
-                                    if (k.elements.r75[1].checked) {
-                                      if (k.elements.r77[1].checked) {
-                                        if (k.elements.r78[1].checked) {
-                                          if (k.elements.r81[1].checked) {
-                                            if (k.elements.r91[0].checked) {
-                                              if (k.elements.r92[0].checked) {
-                                                if (k.elements.r97[1].checked) {
-                                                  if (k.elements.r101[0].checked) {
-                                                    if (k.elements.r106[1].checked) {
-                                                      if (k.elements.r110[1].checked) {
-                                                        if (k.elements.r125[1].checked) {
-                                                          if (k.elements.r133[1].checked) {
-                                                            if (k.elements.r145[1].checked) {
-                                                              if (k.elements.r147[0].checked) {
-                                                                if (k.elements.r149[1].checked) {
-                                                                  if (k.elements.r159[1].checked) {
-                                                                    if (k.elements.r162[0].checked) {
-                                                                      if (k.elements.r163[0].checked) {
-                                                                        if (k.elements.r168[1].checked) {
-                                                                          if (k.elements.r173[1].checked) {
-                                                                            if (k.elements.radgender[1].checked) {
-                                                                              if (sum>51) {
-                                                                              }
-                                                                              return sum;
-                                                                              w[5] = sum;
-                                                                              r[5] = "Dependent";
+  if (k.elements.r4[0].checked) { sum = sum+2; }
+  if (k.elements.r7[0].checked) { sum = sum+1; }
+  if (k.elements.r10[1].checked) { sum = sum+3; }
+  if (k.elements.r12[0].checked) { sum = sum+1; }
+  if (k.elements.r21[0].checked) { sum = sum+1; }
+  if (k.elements.r28[0].checked) { sum = sum+1; }
+  if (k.elements.r31[1].checked) { sum = sum+3; }
+  if (k.elements.r34[1].checked) { sum = sum+2; }
+  if (k.elements.r40[0].checked) { sum = sum+1; }
+  if (k.elements.r41[0].checked) { sum = sum+1; }
+  if (k.elements.r42[1].checked) { sum = sum+3; }
+  if (k.elements.r43[0].checked) { sum = sum+1; }
+  if (k.elements.r49[1].checked) { sum = sum+1; }
+  if (k.elements.r54[1].checked) { sum = sum+1; }
+  if (k.elements.r57[1].checked) { sum = sum+2; }
+  if (k.elements.r60[1].checked) { sum = sum+2; }
+  if (k.elements.r74[0].checked) { sum = sum+1; }
+  if (k.elements.r75[1].checked) { sum = sum+1; }
+  if (k.elements.r77[1].checked) { sum = sum+2; }
+  if (k.elements.r78[1].checked) { sum = sum+3; }
+  if (k.elements.r81[1].checked) { sum = sum+2; }
+  if (k.elements.r91[0].checked) { sum = sum+1; }
+  if (k.elements.r92[0].checked) { sum = sum+1; }
+  if (k.elements.r97[1].checked) { sum = sum+2; }
+  if (k.elements.r101[0].checked) { sum = sum+1; }
+  if (k.elements.r106[1].checked) { sum = sum+3; }
+  if (k.elements.r110[1].checked) { sum = sum+1; }
+  if (k.elements.r125[1].checked) { sum = sum+1; }
+  if (k.elements.r133[1].checked) { sum = sum+3; }
+  if (k.elements.r145[1].checked) { sum = sum+3; }
+  if (k.elements.r147[0].checked) { sum = sum+1; }
+  if (k.elements.r149[1].checked) { sum = sum+1; }
+  if (k.elements.r159[1].checked) { sum = sum+3; }
+  if (k.elements.r162[0].checked) { sum = sum+1; }
+  if (k.elements.r163[0].checked) { sum = sum+1; }
+  if (k.elements.r168[1].checked) { sum = sum+1; }
+  if (k.elements.r173[1].checked) { sum = sum+3; }
+  if (k.elements.radgender[1].checked) {
+    if (sum>51) { sum = 51; }
+  }
+  return sum;
+  w[5] = sum;
+  r[5] = "Dependent";
 }
 
 function two() {
   sum = 0;
-  if (k.elements.r2[1].checked) {
-    if (k.elements.r3[1].checked) {
-      if (k.elements.r8[1].checked) {
-        if (k.elements.r14[0].checked) {
-          if (k.elements.r19[1].checked) {
-            if (k.elements.r21[0].checked) {
-              if (k.elements.r23[1].checked) {
-                if (k.elements.r25[1].checked) {
-                  if (k.elements.r27[1].checked) {
-                    if (k.elements.r28[0].checked) {
-                      if (k.elements.r32[1].checked) {
-                        if (k.elements.r34[1].checked) {
-                          if (k.elements.r45[1].checked) {
-                            if (k.elements.r47[1].checked) {
-                              if (k.elements.r49[1].checked) {
-                                if (k.elements.r56[1].checked) {
-                                  if (k.elements.r57[1].checked) {
-                                    if (k.elements.r63[1].checked) {
-                                      if (k.elements.r77[1].checked) {
-                                        if (k.elements.r81[1].checked) {
-                                          if (k.elements.r83[1].checked) {
-                                            if (k.elements.r85[1].checked) {
-                                              if (k.elements.r102[1].checked) {
-                                                if (k.elements.r106[1].checked) {
-                                                  if (k.elements.r109[1].checked) {
-                                                    if (k.elements.r110[1].checked) {
-                                                      if (k.elements.r113[1].checked) {
-                                                        if (k.elements.r115[1].checked) {
-                                                          if (k.elements.r118[1].checked) {
-                                                            if (k.elements.r120[1].checked) {
-                                                              if (k.elements.r125[0].checked) {
-                                                                if (k.elements.r133[1].checked) {
-                                                                  if (k.elements.r139[1].checked) {
-                                                                    if (k.elements.r141[1].checked) {
-                                                                      if (k.elements.r147[1].checked) {
-                                                                        if (k.elements.r150[1].checked) {
-                                                                          if (k.elements.r155[1].checked) {
-                                                                            if (k.elements.r158[1].checked) {
-                                                                              if (k.elements.r160[1].checked) {
-                                                                                if (k.elements.r163[0].checked) {
-                                                                                  if (k.elements.r171[1].checked) {
-                                                                                    if (k.elements.radgender[1].checked) {
-                                                                                      if (sum>46) {
-                                                                                      }
-                                                                                      return sum;
-                                                                                      w[4] = sum;
-                                                                                      r[4] = "Avoidant";
+  if (k.elements.r2[1].checked) { sum = sum+1; }
+  if (k.elements.r3[1].checked) { sum = sum+3; }
+  if (k.elements.r8[1].checked) { sum = sum+3; }
+  if (k.elements.r14[0].checked) { sum = sum+1; }
+  if (k.elements.r19[1].checked) { sum = sum+2; }
+  if (k.elements.r21[0].checked) { sum = sum+1; }
+  if (k.elements.r23[1].checked) { sum = sum+2; }
+  if (k.elements.r25[1].checked) { sum = sum+2; }
+  if (k.elements.r27[1].checked) { sum = sum+2; }
+  if (k.elements.r28[0].checked) { sum = sum+1; }
+  if (k.elements.r32[1].checked) { sum = sum+2; }
+  if (k.elements.r34[1].checked) { sum = sum+1; }
+  if (k.elements.r45[1].checked) { sum = sum+1; }
+  if (k.elements.r47[1].checked) { sum = sum+2; }
+  if (k.elements.r49[1].checked) { sum = sum+3; }
+  if (k.elements.r56[1].checked) { sum = sum+2; }
+  if (k.elements.r57[1].checked) { sum = sum+2; }
+  if (k.elements.r63[1].checked) { sum = sum+3; }
+  if (k.elements.r77[1].checked) { sum = sum+3; }
+  if (k.elements.r81[1].checked) { sum = sum+1; }
+  if (k.elements.r83[1].checked) { sum = sum+2; }
+  if (k.elements.r85[1].checked) { sum = sum+1; }
+  if (k.elements.r102[1].checked) { sum = sum+2; }
+  if (k.elements.r106[1].checked) { sum = sum+1; }
+  if (k.elements.r109[1].checked) { sum = sum+1; }
+  if (k.elements.r110[1].checked) { sum = sum+2; }
+  if (k.elements.r113[1].checked) { sum = sum+1; }
+  if (k.elements.r115[1].checked) { sum = sum+2; }
+  if (k.elements.r118[1].checked) { sum = sum+2; }
+  if (k.elements.r120[1].checked) { sum = sum+3; }
+  if (k.elements.r125[0].checked) { sum = sum+1; }
+  if (k.elements.r133[1].checked) { sum = sum+1; }
+  if (k.elements.r139[1].checked) { sum = sum+1; }
+  if (k.elements.r141[1].checked) { sum = sum+3; }
+  if (k.elements.r147[1].checked) { sum = sum+1; }
+  if (k.elements.r150[1].checked) { sum = sum+2; }
+  if (k.elements.r155[1].checked) { sum = sum+2; }
+  if (k.elements.r158[1].checked) { sum = sum+3; }
+  if (k.elements.r160[1].checked) { sum = sum+1; }
+  if (k.elements.r163[0].checked) { sum = sum+1; }
+  if (k.elements.r171[1].checked) { sum = sum+2; }
+  if (k.elements.radgender[1].checked) {
+    if (sum>46) { sum = 46; }
+  }
+  return sum;
+  w[4] = sum;
+  r[4] = "Avoidant";
 }
 
 function one() {
   sum = 0;
-  if (k.elements.r2[1].checked) {
-    if (k.elements.r10[1].checked) {
-      if (k.elements.r13[1].checked) {
-        if (k.elements.r14[0].checked) {
-          if (k.elements.r16[1].checked) {
-            if (k.elements.r19[1].checked) {
-              if (k.elements.r20[0].checked) {
-                if (k.elements.r22[1].checked) {
-                  if (k.elements.r25[1].checked) {
-                    if (k.elements.r28[0].checked) {
-                      if (k.elements.r33[1].checked) {
-                        if (k.elements.r34[1].checked) {
-                          if (k.elements.r46[1].checked) {
-                            if (k.elements.r47[1].checked) {
-                              if (k.elements.r48[0].checked) {
-                                if (k.elements.r53[1].checked) {
-                                  if (k.elements.r60[0].checked) {
-                                    if (k.elements.r78[0].checked) {
-                                      if (k.elements.r81[1].checked) {
-                                        if (k.elements.r83[1].checked) {
-                                          if (k.elements.r85[1].checked) {
-                                            if (k.elements.r95[0].checked) {
-                                              if (k.elements.r103[0].checked) {
-                                                if (k.elements.r106[1].checked) {
-                                                  if (k.elements.r108[1].checked) {
-                                                    if (k.elements.r111[0].checked) {
-                                                      if (k.elements.r124[1].checked) {
-                                                        if (k.elements.r125[0].checked) {
-                                                          if (k.elements.r159[1].checked) {
-                                                            if (k.elements.r160[1].checked) {
-                                                              if (k.elements.r161[1].checked) {
-                                                                if (k.elements.r141[1].checked) {
-                                                                  if (k.elements.r142[1].checked) {
-                                                                    if (k.elements.r143[1].checked) {
-                                                                      if (k.elements.r150[1].checked) {
-                                                                        if (k.elements.radgender[1].checked) {
-                                                                          if (sum>40) {
-                                                                          }
-                                                                          return sum;
-                                                                          w[3] = sum;
-                                                                          r[3] = "Schizoid";
+  if (k.elements.r2[1].checked) { sum = sum+3; }
+  if (k.elements.r10[1].checked) { sum = sum+2; }
+  if (k.elements.r13[1].checked) { sum = sum+3; }
+  if (k.elements.r14[0].checked) { sum = sum+1; }
+  if (k.elements.r16[1].checked) { sum = sum+1; }
+  if (k.elements.r19[1].checked) { sum = sum+3; }
+  if (k.elements.r20[0].checked) { sum = sum+2; }
+  if (k.elements.r22[1].checked) { sum = sum+1; }
+  if (k.elements.r25[1].checked) { sum = sum+1; }
+  if (k.elements.r28[0].checked) { sum = sum+1; }
+  if (k.elements.r33[1].checked) { sum = sum+2; }
+  if (k.elements.r34[1].checked) { sum = sum+3; }
+  if (k.elements.r46[1].checked) { sum = sum+1; }
+  if (k.elements.r47[1].checked) { sum = sum+2; }
+  if (k.elements.r48[0].checked) { sum = sum+2; }
+  if (k.elements.r53[1].checked) { sum = sum+1; }
+  if (k.elements.r60[0].checked) { sum = sum+1; }
+  if (k.elements.r78[0].checked) { sum = sum+1; }
+  if (k.elements.r81[1].checked) { sum = sum+3; }
+  if (k.elements.r83[1].checked) { sum = sum+2; }
+  if (k.elements.r85[1].checked) { sum = sum+1; }
+  if (k.elements.r95[0].checked) { sum = sum+1; }
+  if (k.elements.r103[0].checked) { sum = sum+1; }
+  if (k.elements.r106[1].checked) { sum = sum+2; }
+  if (k.elements.r108[1].checked) { sum = sum+1; }
+  if (k.elements.r111[0].checked) { sum = sum+1; }
+  if (k.elements.r124[1].checked) { sum = sum+2; }
+  if (k.elements.r125[0].checked) { sum = sum+1; }
+  if (k.elements.r159[1].checked) { sum = sum+1; }
+  if (k.elements.r160[1].checked) { sum = sum+1; }
+  if (k.elements.r161[1].checked) { sum = sum+3; }
+  if (k.elements.r141[1].checked) { sum = sum+1; }
+  if (k.elements.r142[1].checked) { sum = sum+1; }
+  if (k.elements.r143[1].checked) { sum = sum+3; }
+  if (k.elements.r150[1].checked) { sum = sum+2; }
+  if (k.elements.radgender[1].checked) {
+    if (sum>40) { sum = 40; }
+  }
+  return sum;
+  w[3] = sum;
+  r[3] = "Schizoid";
 }
 
 function z() {
   sum = 0;
-  if (k.elements.r3[1].checked) {
-    if (k.elements.r5[1].checked) {
-      if (k.elements.r8[1].checked) {
-        if (k.elements.r18[1].checked) {
-          if (k.elements.r23[1].checked) {
-            if (k.elements.r24[1].checked) {
-              if (k.elements.r25[1].checked) {
-                if (k.elements.r26[1].checked) {
-                  if (k.elements.r27[1].checked) {
-                    if (k.elements.r33[1].checked) {
-                      if (k.elements.r36[1].checked) {
-                        if (k.elements.r43[1].checked) {
-                          if (k.elements.r45[1].checked) {
-                            if (k.elements.r49[1].checked) {
-                              if (k.elements.r50[1].checked) {
-                                if (k.elements.r51[1].checked) {
-                                  if (k.elements.r53[1].checked) {
-                                    if (k.elements.r54[1].checked) {
-                                      if (k.elements.r58[1].checked) {
-                                        if (k.elements.r59[1].checked) {
-                                          if (k.elements.r63[1].checked) {
-                                            if (k.elements.r66[1].checked) {
-                                              if (k.elements.r67[1].checked) {
-                                                if (k.elements.r68[1].checked) {
-                                                  if (k.elements.r71[1].checked) {
-                                                    if (k.elements.r72[1].checked) {
-                                                      if (k.elements.r76[1].checked) {
-                                                        if (k.elements.r79[1].checked) {
-                                                          if (k.elements.r82[1].checked) {
-                                                            if (k.elements.r96[1].checked) {
-                                                              if (k.elements.r97[1].checked) {
-                                                                if (k.elements.r99[1].checked) {
-                                                                  if (k.elements.r100[1].checked) {
-                                                                    if (k.elements.r102[1].checked) {
-                                                                      if (k.elements.r108[1].checked) {
-                                                                        if (k.elements.r110[1].checked) {
-                                                                          if (k.elements.r114[1].checked) {
-                                                                            if (k.elements.r115[1].checked) {
-                                                                              if (k.elements.r117[1].checked) {
-                                                                                if (k.elements.r118[1].checked) {
-                                                                                  if (k.elements.r120[1].checked) {
-                                                                                    if (k.elements.r128[1].checked) {
-                                                                                      if (k.elements.r132[1].checked) {
-                                                                                        if (k.elements.r136[1].checked) {
-                                                                                          if (k.elements.r158[1].checked) {
-                                                                                            if (k.elements.r167[1].checked) {
-                                                                                              if (k.elements.radgender[1].checked) {
-                                                                                                if (sum>34) {
-                                                                                                }
-                                                                                                return sum;
-                                                                                                w[2] = sum;
-                                                                                                r[2] = "Debasement";
+  if (k.elements.r3[1].checked) { sum = sum+1; }
+  if (k.elements.r5[1].checked) { sum = sum+1; }
+  if (k.elements.r8[1].checked) { sum = sum+1; }
+  if (k.elements.r18[1].checked) { sum = sum+1; }
+  if (k.elements.r23[1].checked) { sum = sum+1; }
+  if (k.elements.r24[1].checked) { sum = sum+1; }
+  if (k.elements.r25[1].checked) { sum = sum+1; }
+  if (k.elements.r26[1].checked) { sum = sum+1; }
+  if (k.elements.r27[1].checked) { sum = sum+1; }
+  if (k.elements.r33[1].checked) { sum = sum+1; }
+  if (k.elements.r36[1].checked) { sum = sum+1; }
+  if (k.elements.r43[1].checked) { sum = sum+1; }
+  if (k.elements.r45[1].checked) { sum = sum+1; }
+  if (k.elements.r49[1].checked) { sum = sum+1; }
+  if (k.elements.r50[1].checked) { sum = sum+1; }
+  if (k.elements.r51[1].checked) { sum = sum+1; }
+  if (k.elements.r53[1].checked) { sum = sum+1; }
+  if (k.elements.r54[1].checked) { sum = sum+1; }
+  if (k.elements.r58[1].checked) { sum = sum+1; }
+  if (k.elements.r59[1].checked) { sum = sum+1; }
+  if (k.elements.r63[1].checked) { sum = sum+1; }
+  if (k.elements.r66[1].checked) { sum = sum+1; }
+  if (k.elements.r67[1].checked) { sum = sum+1; }
+  if (k.elements.r68[1].checked) { sum = sum+1; }
+  if (k.elements.r71[1].checked) { sum = sum+1; }
+  if (k.elements.r72[1].checked) { sum = sum+1; }
+  if (k.elements.r76[1].checked) { sum = sum+1; }
+  if (k.elements.r79[1].checked) { sum = sum+1; }
+  if (k.elements.r82[1].checked) { sum = sum+1; }
+  if (k.elements.r96[1].checked) { sum = sum+1; }
+  if (k.elements.r97[1].checked) { sum = sum+1; }
+  if (k.elements.r99[1].checked) { sum = sum+1; }
+  if (k.elements.r100[1].checked) { sum = sum+1; }
+  if (k.elements.r102[1].checked) { sum = sum+1; }
+  if (k.elements.r108[1].checked) { sum = sum+1; }
+  if (k.elements.r110[1].checked) { sum = sum+1; }
+  if (k.elements.r114[1].checked) { sum = sum+1; }
+  if (k.elements.r115[1].checked) { sum = sum+1; }
+  if (k.elements.r117[1].checked) { sum = sum+1; }
+  if (k.elements.r118[1].checked) { sum = sum+1; }
+  if (k.elements.r120[1].checked) { sum = sum+1; }
+  if (k.elements.r128[1].checked) { sum = sum+1; }
+  if (k.elements.r132[1].checked) { sum = sum+1; }
+  if (k.elements.r136[1].checked) { sum = sum+1; }
+  if (k.elements.r158[1].checked) { sum = sum+1; }
+  if (k.elements.r167[1].checked) { sum = sum+1; }
+  if (k.elements.radgender[1].checked) {
+    if (sum>34) { sum = 34; }
+  }
+  return sum;
+  w[2] = sum;
+  r[2] = "Debasement";
 }
 
 function y() {
   sum = 0;
-  if (k.elements.r4[1].checked) {
-    if (k.elements.r14[1].checked) {
-      if (k.elements.r34[1].checked) {
-        if (k.elements.r39[1].checked) {
-          if (k.elements.r60[1].checked) {
-            if (k.elements.r61[1].checked) {
-              if (k.elements.r75[1].checked) {
-                if (k.elements.r78[1].checked) {
-                  if (k.elements.r86[1].checked) {
-                    if (k.elements.r88[1].checked) {
-                      if (k.elements.r89[1].checked) {
-                        if (k.elements.r93[1].checked) {
-                          if (k.elements.r103[1].checked) {
-                            if (k.elements.r106[1].checked) {
-                              if (k.elements.r122[1].checked) {
-                                if (k.elements.r125[1].checked) {
-                                  if (k.elements.r126[1].checked) {
-                                    if (k.elements.r137[1].checked) {
-                                      if (k.elements.r138[1].checked) {
-                                        if (k.elements.r149[1].checked) {
-                                          if (k.elements.r153[1].checked) {
-                                            if (k.elements.r159[1].checked) {
-                                              if (k.elements.r166[1].checked) {
-                                                if (k.elements.radgender[1].checked) {
-                                                  if (sum>22) {
-                                                  }
-                                                  return sum;
-                                                  w[1] = sum;
-                                                  r[1] = "Desirability";
+  if (k.elements.r4[1].checked) { sum = sum+1; }
+  if (k.elements.r14[1].checked) { sum = sum+1; }
+  if (k.elements.r34[1].checked) { sum = sum+1; }
+  if (k.elements.r39[1].checked) { sum = sum+1; }
+  if (k.elements.r60[1].checked) { sum = sum+1; }
+  if (k.elements.r61[1].checked) { sum = sum+1; }
+  if (k.elements.r75[1].checked) { sum = sum+1; }
+  if (k.elements.r78[1].checked) { sum = sum+1; }
+  if (k.elements.r86[1].checked) { sum = sum+1; }
+  if (k.elements.r88[1].checked) { sum = sum+1; }
+  if (k.elements.r89[1].checked) { sum = sum+1; }
+  if (k.elements.r93[1].checked) { sum = sum+1; }
+  if (k.elements.r103[1].checked) { sum = sum+1; }
+  if (k.elements.r106[1].checked) { sum = sum+1; }
+  if (k.elements.r122[1].checked) { sum = sum+1; }
+  if (k.elements.r125[1].checked) { sum = sum+1; }
+  if (k.elements.r126[1].checked) { sum = sum+1; }
+  if (k.elements.r137[1].checked) { sum = sum+1; }
+  if (k.elements.r138[1].checked) { sum = sum+1; }
+  if (k.elements.r149[1].checked) { sum = sum+1; }
+  if (k.elements.r153[1].checked) { sum = sum+1; }
+  if (k.elements.r159[1].checked) { sum = sum+1; }
+  if (k.elements.r166[1].checked) { sum = sum+1; }
+  if (k.elements.radgender[1].checked) {
+    if (sum>22) { sum = 22; }
+  }
+  return sum;
+  w[1] = sum;
+  r[1] = "Desirability";
 }
 
 function checkonebr(onee) {
@@ -4003,7 +4003,7 @@ function daadjust() {
 
 function ddadjust() {
   dd = (rawbr[1]-rawbr[2])/10;
-  if (Math.abs(dd-Math.round(dd))===.5) {
+  if (Math.abs(dd-Math.round(dd))=.5) {
     if (dd===Math.abs(dd)) {
       dd = dd+.1;
     } else {
@@ -4011,9 +4011,9 @@ function ddadjust() {
     }
   }
   rdd = Math.round(dd);
-  if (rdd>10) {
-    if (rdd<-10) {
-      return rdd;
+  if (rdd>10) { rdd = 10; }
+  if (rdd<-10) { rdd = -10; }
+  return rdd;
 }
 
 function dcadjust() {
@@ -4026,12 +4026,12 @@ function dcadjust() {
     }
   }
   for (let j = 3; j <= 12; j++) {
-    if (j===g) {
-      if (bigger<fordc(j)) {
-        bigger = fordc(j);
-        gp = j;
-      }
+    if (j===g) { j = j+1; }
+    if (bigger<fordc(j)) {
+      bigger = fordc(j);
+      gp = j;
     }
+  }
   return null;
 }
 
@@ -4053,7 +4053,7 @@ function buttvalidate() {
 function buttclick() {
   total = v+pp+cc+ss+t+b+n+d+h+a+p+c+s+eightb+eighta+seven+sixb+sixa+five+four+three+two+one+z+y;
   fname = k.t4.value;
-  if (!k.t1.value==="" && !k.t2.value==="") {
+  if (!(k.t1.value === "") && !(k.t2.value === "")) {
     name = k.t1.value;
     code = k.t2.value;
   }
@@ -4065,301 +4065,346 @@ function buttclick() {
   }
   rawx = (w[6]+w[11])*1.5+(w[3]+w[4]+w[5]+w[12])*1.6+w[7]+w[8]+w[9]+w[10];
   rx = rawx-Math.floor(rawx);
-  if (rx=== .5) {
-    rrawx = Math.round(rawx);
-    switch (rrawx) {
-      case 145,146,147,148,149:
-        xcor = 11;
-        hxcor = 5;
-        case 150,151,152,153,154,155,156,157,158,159:
-          xcor = 10;
-          hxcor = 5;
-          case 160,161,162,163,164,165,166,167,168,169:
-            xcor = 9;
-            hxcor = 4;
-            case 170,171,172,173,174,175,176,177,178,179:
-              xcor = 8;
-              hxcor = 4;
-              case 180,181,182,183,184,185,186,187,188,189:
-                xcor = 7;
-                hxcor = 3;
-                case 190,191,192,193,194,195,196,197,198,199:
-                  xcor = 6;
-                  hxcor = 3;
-                  case 200,201,202,203,204,205,206,207,208,209:
-                    xcor = 5;
-                    hxcor = 2;
-                    case 210,211,212,213,214,215,216,217,218,219:
-                      xcor = 4;
-                      hxcor = 2;
-                      case 220,221,222,223,224,225,226,227,228,229:
-                        xcor = 3;
-                        hxcor = 1;
-                        case 230,231,232,233,234,235,236,237,238,239:
-                          xcor = 2;
-                          hxcor = 1;
-                          case 240,241,242,243,244,245,246,247,248,249:
-                            xcor = 1;
-                            hxcor = 0;
-                            case 250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,369,370,371,372,373,374,375,376,377,378,379,380,381,382,383,384,385,386,387,388,389,390,391,392,393,394,395,396,397,398,399,400:
-                              xcor = 0;
-                              hxcor = 0;
-                              case 401,402,403,404,405,406,407,408,409,410,411,412,413,414,415,416:
-                                xcor = -1;
-                                hxcor = 0;
-                                case 417,418,419,420,421,422,423,424,425,426,427,428,429,430,431,432:
-                                  xcor = -2;
-                                  hxcor = -1;
-                                  case 433,434,435,436,437,438,439,440,441,442,443,444,445,446,447,448:
-                                    xcor = -3;
-                                    hxcor = -1;
-                                    case 449,450,451,452,453,454,455,456,457,458,459,460,461,462,463,464:
-                                      xcor = -4;
-                                      hxcor = -2;
-                                      case 465,466,467,468,469,470,471,472,473,474,475,476,477,478,479,480:
-                                        xcor = -5;
-                                        hxcor = -2;
-                                        case 481,482,483,484,485,486,487,488,489,490,491,492,493,494,495,496:
-                                          xcor = -6;
-                                          hxcor = -3;
-                                          case 497,498,499,500,501,502,503,504,505,506,507,508,509,510,511,512:
-                                            xcor = -7;
-                                            hxcor = -3;
-                                            case 513,514,515,516,517,518,519,520,521,522,523,524,525,526,527,528:
-                                              xcor = -8;
-                                              hxcor = -4;
-                                              case 529,530,531,532,533,534,535,536,537,538,539,540,541,542,543,544:
-                                                xcor = -9;
-                                                hxcor = -4;
-                                                case 545,546,547,548,549,550,551,552,553,554,555,556,557,558,559,560:
-                                                  xcor = -10;
-                                                  hxcor = -5;
-                                                  case 561,562,563,564,565,566,567,568,569,570,571,572,573,574,575,576:
-                                                    xcor = -11;
-                                                    hxcor = -5;
-                                                    case 577,578,579,580,581,582,583,584,585,586,587,588,589,590:
-                                                      xcor = -12;
-                                                      hxcor = -6;
-                                                      default:
-                                                        alert("Raw X scale is:" + rrawx + String.fromCharCode(13) + "Report is invalid!");
-                                                        return;
-                                                      }
-                                                      if (rrawx<180) {
-                                                        if (rrawx>180 && rrawx<195) {
-                                                          if (rrawx>194 && rrawx<207) {
-                                                            if (rrawx>206 && rrawx<220) {
-                                                              if (rrawx>219 && rrawx<232) {
-                                                                if (rrawx>231 && rrawx<245) {
-                                                                  if (rrawx>244 && rrawx<257) {
-                                                                    if (rrawx>256 && rrawx<270) {
-                                                                      if (k.elements.radgender[1].checked) {
-                                                                      }
-                                                                      if (rrawx>269 && rrawx<282) {
-                                                                        if (rrawx>281 && rrawx<295) {
-                                                                          if (rrawx>294 && rrawx<307) {
-                                                                            if (rrawx>306 && rrawx<320) {
-                                                                              if (k.elements.radgender[1].checked) {
-                                                                              }
-                                                                              if (rrawx>319 && rrawx<345) {
-                                                                                if (k.elements.radgender[1].checked) {
-                                                                                }
-                                                                                if (rrawx>344 && rrawx<357) {
-                                                                                  if (k.elements.radgender[1].checked) {
-                                                                                  }
-                                                                                  if (rrawx>356 && rrawx<370) {
-                                                                                    if (k.elements.radgender[1].checked) {
-                                                                                    }
-                                                                                    if (rrawx>369 && rrawx<382) {
-                                                                                      if (k.elements.radgender[1].checked) {
-                                                                                      }
-                                                                                      if (rrawx>381 && rrawx<395) {
-                                                                                        if (k.elements.radgender[1].checked) {
-                                                                                        }
-                                                                                        if (rrawx>394 && rrawx<420) {
-                                                                                          if (k.elements.radgender[1].checked) {
-                                                                                          }
-                                                                                          if (rrawx>419 && rrawx<432) {
-                                                                                            if (k.elements.radgender[1].checked) {
-                                                                                            }
-                                                                                            if (rrawx>431 && rrawx<445) {
-                                                                                              if (k.elements.radgender[1].checked) {
-                                                                                              }
-                                                                                              if (rrawx>444 && rrawx<457) {
-                                                                                                if (k.elements.radgender[1].checked) {
-                                                                                                }
-                                                                                                if (rrawx>456 && rrawx<470) {
-                                                                                                  if (k.elements.radgender[1].checked) {
-                                                                                                  }
-                                                                                                  if (rrawx>469 && rrawx<483) {
-                                                                                                    if (k.elements.radgender[1].checked) {
-                                                                                                    }
-                                                                                                    if (rrawx>482 && rrawx<495) {
-                                                                                                      if (k.elements.radgender[1].checked) {
-                                                                                                      }
-                                                                                                      if (rrawx>494 && rrawx<508) {
-                                                                                                        if (rrawx>507 && rrawx<520) {
-                                                                                                          if (rrawx>519 && rrawx<533) {
-                                                                                                            if (rrawx>532 && rrawx<545) {
-                                                                                                              if (rrawx>544 && rrawx<558) {
-                                                                                                                if (rrawx>557) {
-                                                                                                                  dacontain = daadjust();
-                                                                                                                  ddcontain = ddadjust();
-                                                                                                                  inpadjust = k.d1.value;
-                                                                                                                  switch (inpadjust) {
-                                                                                                                    case 1,4:
-                                                                                                                      da = Math.floor(.25*dacontain);
-                                                                                                                      if (da>15) {
-                                                                                                                        dac = Math.floor(.5*dacontain);
-                                                                                                                        if (dac>10) {
-                                                                                                                          case 2:
-                                                                                                                            da = dacontain;
-                                                                                                                            if (da>25) {
-                                                                                                                              dac = dacontain;
-                                                                                                                              if (dac>20) {
-                                                                                                                                afterinp[22] = afterinp[22]+8;
-                                                                                                                                afterinp[23] = afterinp[23]+10;
-                                                                                                                                afterinp[24] = afterinp[24]+4;
-                                                                                                                                case 3:
-                                                                                                                                  da = Math.floor(.5*dacontain);
-                                                                                                                                  if (da>15) {
-                                                                                                                                    dac = Math.floor(.75*dacontain);
-                                                                                                                                    if (dac>15) {
-                                                                                                                                      afterinp[22] = afterinp[22]+5;
-                                                                                                                                      afterinp[23] = afterinp[23]+7;
-                                                                                                                                      afterinp[24] = afterinp[24]+2;
-                                                                                                                                      case 5:
-                                                                                                                                        da = Math.floor(.5*dacontain);
-                                                                                                                                        if (da>15) {
-                                                                                                                                          dac = Math.floor(.75*dacontain);
-                                                                                                                                          if (dac>15) {
-                                                                                                                                          }
-                                                                                                                                          gg[1] = "Y";
-                                                                                                                                          gg[2] = "Z";
-                                                                                                                                          gg[3] = "1";
-                                                                                                                                          gg[4] = "2";
-                                                                                                                                          gg[5] = "3";
-                                                                                                                                          gg[6] = "4";
-                                                                                                                                          gg[7] = "5";
-                                                                                                                                          gg[8] = "6A";
-                                                                                                                                          gg[9] = "6B";
-                                                                                                                                          gg[10] = "7";
-                                                                                                                                          gg[11] = "8A";
-                                                                                                                                          gg[12] = "8B";
-                                                                                                                                          gg[13] = "S";
-                                                                                                                                          gg[14] = "C";
-                                                                                                                                          gg[15] = "P";
-                                                                                                                                          gg[16] = "A";
-                                                                                                                                          gg[17] = "H";
-                                                                                                                                          gg[18] = "N";
-                                                                                                                                          gg[19] = "D";
-                                                                                                                                          gg[20] = "B";
-                                                                                                                                          gg[21] = "T";
-                                                                                                                                          gg[22] = "SS";
-                                                                                                                                          gg[23] = "CC";
-                                                                                                                                          gg[24] = "PP";
-                                                                                                                                          document.write("<center><b>" + k.t1.value + k.t3.value + " ساله" + "</b></center>");
-                                                                                                                                          document.write("<table border===0 cellspacing===0 cellpadding===0 ><tbody>");
-                                                                                                                                          document.write("<tr height===34><td width===167 colspan===2> </td><td width===34 style==='border-left-style: solid;  border-top-style:solid;border-color: #000000'>Raw Score</td><td width===34 style==='border-left-style: solid; border-right-style: solid; border-top-style:solid; border-color: #000000'>BR from table</td><td width===34 style==='border-right-style: solid;  border-top-style:solid;border-color: #000000'>BR  X   Cor.</td><td width===34 style==='  border-right-style: solid; border-top-style:solid; border-color: #000000'>BR  1/2X   Cor.</td><td width===34 style===' border-right-style: solid; border-top-style:solid; border-color: #000000'>BR  DA Adj.</td><td width===34 style===' border-right-style: solid; border-top-style:solid; border-color: #000000'>BR  DD Adj.</td><td width===34 style==='  border-right-style: solid; border-top-style:solid; border-color: #000000'>BR  DC Adj.</td><td width===34 style==='  border-top-style:solid ; border-color: #000000'>BR  Inp Adj.</td><th   style===' border-right-style: solid; border-top-style:solid; border-color: #000000'>Final BR</th></tr>");
-                                                                                                                                          for (let i = 1; i <= 24; i++) {
-                                                                                                                                            if (i % 2===0) {
-                                                                                                                                              xx = "FFFFFF";
-                                                                                                                                            } else {
-                                                                                                                                              xx = "c0c0c0";
-                                                                                                                                            }
-                                                                                                                                            if (i===1 || i===2 || i===13 || i===14 || i===15 || i===22 || i===23 || i===24) {
-                                                                                                                                              if (i===13 || i===14 || i===15 || i===22 || i===23 || i===24) {
-                                                                                                                                                if (i===4 || i===12) {
-                                                                                                                                                  dabr(i) = aftercor(i)-da;
-                                                                                                                                                } else if (i===14) {
-                                                                                                                                                  dabr(i) = afterhcor(i)-dac;
-                                                                                                                                                } else {
-                                                                                                                                                  dabr(i) = "";
-                                                                                                                                                }
-                                                                                                                                                if (i===13) {
-                                                                                                                                                  afterddcor(i) = afterhcor(i)+ddcontain;
-                                                                                                                                                } else if (i===14) {
-                                                                                                                                                  afterddcor(i) = dabr(i)+ddcontain;
-                                                                                                                                                } else if (i===16 || i===17 || i===19) {
-                                                                                                                                                  afterddcor(i) = aftercor(i)+ddcontain;
-                                                                                                                                                } else {
-                                                                                                                                                  afterddcor(i) = "";
-                                                                                                                                                }
-                                                                                                                                                if (i===4 || i===12) {
-                                                                                                                                                  if (i===13) {
-                                                                                                                                                    if (i>12) {
-                                                                                                                                                      switch (i) {
-                                                                                                                                                        case 13,14,16,17,19:
-                                                                                                                                                          afterdccor(i) = afterddcor(i);
-                                                                                                                                                          case 15:
-                                                                                                                                                            afterdccor(i) = afterhcor(i);
-                                                                                                                                                            default:
-                                                                                                                                                              afterdccor(i) = "";
-                                                                                                                                                            }
-                                                                                                                                                            if (g===6 || g===7 || g===10 || gp===10) {
-                                                                                                                                                              switch (i) {
-                                                                                                                                                                case 13,14:
-                                                                                                                                                                  afterdccor(i) = afterdccor(i)+4;
-                                                                                                                                                                  case 15:
-                                                                                                                                                                    afterdccor(i) = afterdccor(i)+2;
-                                                                                                                                                                    case 16,19:
-                                                                                                                                                                      afterdccor(i) = afterdccor(i)+15;
-                                                                                                                                                                      case 17:
-                                                                                                                                                                        afterdccor(i) = afterdccor(i)+13;
-                                                                                                                                                                      }
-                                                                                                                                                                    }
-                                                                                                                                                                    if (g===12 || g===4 || gp===4) {
-                                                                                                                                                                      switch (i) {
-                                                                                                                                                                        case 13:
-                                                                                                                                                                          afterdccor(i) = afterdccor(i)-2;
-                                                                                                                                                                          case 14,15:
-                                                                                                                                                                            afterdccor(i) = afterdccor(i)-6;
-                                                                                                                                                                            case 16:
-                                                                                                                                                                              afterdccor(i) = afterdccor(i)-7;
-                                                                                                                                                                              case 17,19:
-                                                                                                                                                                                afterdccor(i) = afterdccor(i)-5;
-                                                                                                                                                                              }
-                                                                                                                                                                            }
-                                                                                                                                                                          }
-                                                                                                                                                                          if (i===22 || i===23 || i===24) {
-                                                                                                                                                                            switch (i) {
-                                                                                                                                                                              case 1,2:
-                                                                                                                                                                                afterall(i) = rawbr(i);
-                                                                                                                                                                                case 3,5,6,7,8,9,10,11,18,20,21:
-                                                                                                                                                                                  afterall(i) = aftercor(i);
-                                                                                                                                                                                  case 4,12:
-                                                                                                                                                                                    afterall(i) = dabr(i);
-                                                                                                                                                                                    case 13,14,15,16,17,19:
-                                                                                                                                                                                      afterall(i) = afterdccor(i);
-                                                                                                                                                                                      case 22,23,24:
-                                                                                                                                                                                        afterall(i) = afterinp(i);
-                                                                                                                                                                                      }
-                                                                                                                                                                                      document.write("<tr bgcolor===#" + xx + "><td align===center width===10 bgcolor===000000><font color===ffffff>" + gg(i) + "</td><th align===left width===164>" + r(i));
-                                                                                                                                                                                      document.write("</th><th align===center width===34  style==='border-left-style:solid' bordercolor==='000000'><u>" + w(i));
-                                                                                                                                                                                      document.write("</u></th><th width===34  style==='border-left-style:solid' bordercolor==='000000'><u>" + rawbr(i) + "</u></th> ");
-                                                                                                                                                                                      document.write("<th width===34><u>" + aftercor(i) + "</u></th>");
-                                                                                                                                                                                      document.write("<th width===34><u>" + afterhcor(i) + "</u></th>");
-                                                                                                                                                                                      document.write("<th width===34><u>" + dabr(i) + "</u></th>");
-                                                                                                                                                                                      document.write("<th width===34><u>" + afterddcor(i) + "</u></th>");
-                                                                                                                                                                                      document.write("<th width===34><u>" + afterdccor(i) + "</u></th>");
-                                                                                                                                                                                      document.write("<th width===34><u>" + afterinp(i) + "</u></th>");
-                                                                                                                                                                                      document.write("<th width===34  style==='border-left-style:solid' bordercolor==='000000'><u>" + afterall(i) + "</u></th><td align===center width===10 bgcolor==='000000' ><font color==='FFFFFF'>" + gg(i) + "</td></tr>");
-                                                                                                                                                                                    }
-                                                                                                                                                                                    document.write("</tbody></table>");
-                                                                                                                                                                                    f = "Report is done!";
-                                                                                                                                                                                    if (wf===1) {
-                                                                                                                                                                                      set fso===/* FileSystemObject - use Blob API */ null;
-                                                                                                                                                                                      set f1===fso.OpenTextFile (fname + ".htm",2,true);
-                                                                                                                                                                                      f1.write "Report from " + name + "<br>Age:" + age + "<br>Code:" + code + "<br><table cellspacing===5>";
-                                                                                                                                                                                      for (let i = 1; i <= 24; i++) {
-                                                                                                                                                                                        f1.write "<tr><td>" + gg(i) + "</td><td>" + afterall(i) + "</td></tr>";
-                                                                                                                                                                                      }
-                                                                                                                                                                                      f1.write "</table>";
-                                                                                                                                                                                      f1.close;
-                                                                                                                                                                                      if (fso.FileExists (fname + ".htm")) {
-                                                                                                                                                                                        f = "A report has been successfully saved in file    " + fname + ".htm";
-                                                                                                                                                                                      }
-                                                                                                                                                                                    }
-                                                                                                                                                                                    document.write("<b>X (Disclosure):" + xscore + "</b><br>");
-                                                                                                                                                                                    document.write("<b>" + f);
+  if (rx=== .5) { rawx = rawx+ .1; }
+  rrawx = Math.round(rawx);
+  switch (rrawx) {
+    case 145,146,147,148,149:
+      xcor = 11;
+      hxcor = 5;
+    break;
+    case 150,151,152,153,154,155,156,157,158,159:
+      xcor = 10;
+      hxcor = 5;
+    break;
+    case 160,161,162,163,164,165,166,167,168,169:
+      xcor = 9;
+      hxcor = 4;
+    break;
+    case 170,171,172,173,174,175,176,177,178,179:
+      xcor = 8;
+      hxcor = 4;
+    break;
+    case 180,181,182,183,184,185,186,187,188,189:
+      xcor = 7;
+      hxcor = 3;
+    break;
+    case 190,191,192,193,194,195,196,197,198,199:
+      xcor = 6;
+      hxcor = 3;
+    break;
+    case 200,201,202,203,204,205,206,207,208,209:
+      xcor = 5;
+      hxcor = 2;
+    break;
+    case 210,211,212,213,214,215,216,217,218,219:
+      xcor = 4;
+      hxcor = 2;
+    break;
+    case 220,221,222,223,224,225,226,227,228,229:
+      xcor = 3;
+      hxcor = 1;
+    break;
+    case 230,231,232,233,234,235,236,237,238,239:
+      xcor = 2;
+      hxcor = 1;
+    break;
+    case 240,241,242,243,244,245,246,247,248,249:
+      xcor = 1;
+      hxcor = 0;
+    break;
+    case 250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,369,370,371,372,373,374,375,376,377,378,379,380,381,382,383,384,385,386,387,388,389,390,391,392,393,394,395,396,397,398,399,400:
+      xcor = 0;
+      hxcor = 0;
+    break;
+    case 401,402,403,404,405,406,407,408,409,410,411,412,413,414,415,416:
+      xcor = -1;
+      hxcor = 0;
+    break;
+    case 417,418,419,420,421,422,423,424,425,426,427,428,429,430,431,432:
+      xcor = -2;
+      hxcor = -1;
+    break;
+    case 433,434,435,436,437,438,439,440,441,442,443,444,445,446,447,448:
+      xcor = -3;
+      hxcor = -1;
+    break;
+    case 449,450,451,452,453,454,455,456,457,458,459,460,461,462,463,464:
+      xcor = -4;
+      hxcor = -2;
+    break;
+    case 465,466,467,468,469,470,471,472,473,474,475,476,477,478,479,480:
+      xcor = -5;
+      hxcor = -2;
+    break;
+    case 481,482,483,484,485,486,487,488,489,490,491,492,493,494,495,496:
+      xcor = -6;
+      hxcor = -3;
+    break;
+    case 497,498,499,500,501,502,503,504,505,506,507,508,509,510,511,512:
+      xcor = -7;
+      hxcor = -3;
+    break;
+    case 513,514,515,516,517,518,519,520,521,522,523,524,525,526,527,528:
+      xcor = -8;
+      hxcor = -4;
+    break;
+    case 529,530,531,532,533,534,535,536,537,538,539,540,541,542,543,544:
+      xcor = -9;
+      hxcor = -4;
+    break;
+    case 545,546,547,548,549,550,551,552,553,554,555,556,557,558,559,560:
+      xcor = -10;
+      hxcor = -5;
+    break;
+    case 561,562,563,564,565,566,567,568,569,570,571,572,573,574,575,576:
+      xcor = -11;
+      hxcor = -5;
+    break;
+    case 577,578,579,580,581,582,583,584,585,586,587,588,589,590:
+      xcor = -12;
+      hxcor = -6;
+    break;
+    default:
+      alert("Raw X scale is:" + rrawx + "\n" + "Report is invalid!");
+      return;
+    break;
+  }
+  if (rrawx<180) { xscore = 0; }
+  if (rrawx>180 && rrawx<195) { xscore = 5; }
+  if (rrawx>194 && rrawx<207) { xscore = 10; }
+  if (rrawx>206 && rrawx<220) { xscore = 15; }
+  if (rrawx>219 && rrawx<232) { xscore = 20; }
+  if (rrawx>231 && rrawx<245) { xscore = 25; }
+  if (rrawx>244 && rrawx<257) { xscore = 30; }
+  if (rrawx>256 && rrawx<270) {
+    if (k.elements.radgender[1].checked) { xscore = 35; } else { xscore = 34; }
+  }
+  if (rrawx>269 && rrawx<282) { xscore = 40; }
+  if (rrawx>281 && rrawx<295) { xscore = 45; }
+  if (rrawx>294 && rrawx<307) { xscore = 50; }
+  if (rrawx>306 && rrawx<320) {
+    if (k.elements.radgender[1].checked) { xscore = 55; } else { xscore = 54; }
+  }
+  if (rrawx>319 && rrawx<345) {
+    if (k.elements.radgender[1].checked) { xscore = 60; } else { xscore = 55; }
+  }
+  if (rrawx>344 && rrawx<357) {
+    if (k.elements.radgender[1].checked) { xscore = 63; } else { xscore = 56; }
+  }
+  if (rrawx>356 && rrawx<370) {
+    if (k.elements.radgender[1].checked) { xscore = 66; } else { xscore = 58; }
+  }
+  if (rrawx>369 && rrawx<382) {
+    if (k.elements.radgender[1].checked) { xscore = 69; } else { xscore = 60; }
+  }
+  if (rrawx>381 && rrawx<395) {
+    if (k.elements.radgender[1].checked) { xscore = 72; } else { xscore = 63; }
+  }
+  if (rrawx>394 && rrawx<420) {
+    if (k.elements.radgender[1].checked) { xscore = 74; } else { xscore = 65; }
+  }
+  if (rrawx>419 && rrawx<432) {
+    if (k.elements.radgender[1].checked) { xscore = 77; } else { xscore = 67; }
+  }
+  if (rrawx>431 && rrawx<445) {
+    if (k.elements.radgender[1].checked) { xscore = 79; } else { xscore = 70; }
+  }
+  if (rrawx>444 && rrawx<457) {
+    if (k.elements.radgender[1].checked) { xscore = 81; } else { xscore = 72; }
+  }
+  if (rrawx>456 && rrawx<470) {
+    if (k.elements.radgender[1].checked) { xscore = 83; } else { xscore = 75; }
+  }
+  if (rrawx>469 && rrawx<483) {
+    if (k.elements.radgender[1].checked) { xscore = 85; } else { xscore = 79; }
+  }
+  if (rrawx>482 && rrawx<495) {
+    if (k.elements.radgender[1].checked) { xscore = 87; } else { xscore = 84; }
+  }
+  if (rrawx>494 && rrawx<508) { xscore = 89; }
+  if (rrawx>507 && rrawx<520) { xscore = 91; }
+  if (rrawx>519 && rrawx<533) { xscore = 93; }
+  if (rrawx>532 && rrawx<545) { xscore = 95; }
+  if (rrawx>544 && rrawx<558) { xscore = 97; }
+  if (rrawx>557) { xscore = 100; }
+  dacontain = daadjust();
+  ddcontain = ddadjust();
+  inpadjust = k.d1.value;
+  switch (inpadjust) {
+    case 1,4:
+      da = Math.floor(.25*dacontain);
+      if (da>15) { da = 15; }
+      dac = Math.floor(.5*dacontain);
+      if (dac>10) { dac = 10; }
+    break;
+    case 2:
+      da = dacontain;
+      if (da>25) { da = 25; }
+      dac = dacontain;
+      if (dac>20) { dac = 20; }
+      afterinp[22] = afterinp[22]+8;
+      afterinp[23] = afterinp[23]+10;
+      afterinp[24] = afterinp[24]+4;
+    break;
+    case 3:
+      da = Math.floor(.5*dacontain);
+      if (da>15) { da = 15; }
+      dac = Math.floor(.75*dacontain);
+      if (dac>15) { dac = 15; }
+      afterinp[22] = afterinp[22]+5;
+      afterinp[23] = afterinp[23]+7;
+      afterinp[24] = afterinp[24]+2;
+    break;
+    case 5:
+      da = Math.floor(.5*dacontain);
+      if (da>15) { da = 15; }
+      dac = Math.floor(.75*dacontain);
+      if (dac>15) { dac = 15; }
+    break;
+  }
+  gg[1] = "Y";
+  gg[2] = "Z";
+  gg[3] = "1";
+  gg[4] = "2";
+  gg[5] = "3";
+  gg[6] = "4";
+  gg[7] = "5";
+  gg[8] = "6A";
+  gg[9] = "6B";
+  gg[10] = "7";
+  gg[11] = "8A";
+  gg[12] = "8B";
+  gg[13] = "S";
+  gg[14] = "C";
+  gg[15] = "P";
+  gg[16] = "A";
+  gg[17] = "H";
+  gg[18] = "N";
+  gg[19] = "D";
+  gg[20] = "B";
+  gg[21] = "T";
+  gg[22] = "SS";
+  gg[23] = "CC";
+  gg[24] = "PP";
+  document.write("<center><b>" + k.t1.value + k.t3.value + " ساله" + "</b></center>");
+  document.write("<table border=0 cellspacing=0 cellpadding=0 ><tbody>");
+  document.write("<tr height=34><td width=167 colspan=2> </td><td width=34 style='border-left-style: solid;  border-top-style:solid;border-color: #000000'>Raw Score</td><td width=34 style='border-left-style: solid; border-right-style: solid; border-top-style:solid; border-color: #000000'>BR from table</td><td width=34 style='border-right-style: solid;  border-top-style:solid;border-color: #000000'>BR  X   Cor.</td><td width=34 style='  border-right-style: solid; border-top-style:solid; border-color: #000000'>BR  1/2X   Cor.</td><td width=34 style=' border-right-style: solid; border-top-style:solid; border-color: #000000'>BR  DA Adj.</td><td width=34 style=' border-right-style: solid; border-top-style:solid; border-color: #000000'>BR  DD Adj.</td><td width=34 style='  border-right-style: solid; border-top-style:solid; border-color: #000000'>BR  DC Adj.</td><td width=34 style='  border-top-style:solid ; border-color: #000000'>BR  Inp Adj.</td><th   style=' border-right-style: solid; border-top-style:solid; border-color: #000000'>Final BR</th></tr>");
+  for (let i = 1; i <= 24; i++) {
+    if (i % 2===0) {
+      xx = "FFFFFF";
+    } else {
+      xx = "c0c0c0";
+    }
+    if (i=1 || i=2 || i=13 || i=14 || i=15 || i=22 || i=23 || i===24) { aftercor(i) = ""; } else { aftercor(i) = rawbr(i)+xcor; }
+    if (i=13 || i=14 || i=15 || i=22 || i=23 || i===24) { afterhcor(i) = rawbr(i)+hxcor; } else { afterhcor(i) = ""; }
+    if (i=4 || i===12) {
+      dabr(i) = aftercor(i)-da;
+    } else if (i===14) {
+      dabr(i) = afterhcor(i)-dac;
+    } else {
+      dabr(i) = "";
+    }
+    if (i===13) {
+      afterddcor(i) = afterhcor(i)+ddcontain;
+    } else if (i===14) {
+      afterddcor(i) = dabr(i)+ddcontain;
+    } else if (i=16 || i=17 || i===19) {
+      afterddcor(i) = aftercor(i)+ddcontain;
+    } else {
+      afterddcor(i) = "";
+    }
+    if (i=4 || i===12) { fordc(i) = dabr(i); } else { fordc(i) = aftercor(i); }
+    if (i===13) { dcadjust(); }
+    if (i>12) {
+      switch (i) {
+        case 13,14,16,17,19:
+          afterdccor(i) = afterddcor(i);
+        break;
+        case 15:
+          afterdccor(i) = afterhcor(i);
+        break;
+        default:
+          afterdccor(i) = "";
+        break;
+      }
+      if (g=6 || g=7 || g=10 || gp===10) {
+        switch (i) {
+          case 13,14:
+            afterdccor(i) = afterdccor(i)+4;
+          break;
+          case 15:
+            afterdccor(i) = afterdccor(i)+2;
+          break;
+          case 16,19:
+            afterdccor(i) = afterdccor(i)+15;
+          break;
+          case 17:
+            afterdccor(i) = afterdccor(i)+13;
+          break;
+        }
+      }
+      if (g=12 || g=4 || gp===4) {
+        switch (i) {
+          case 13:
+            afterdccor(i) = afterdccor(i)-2;
+          break;
+          case 14,15:
+            afterdccor(i) = afterdccor(i)-6;
+          break;
+          case 16:
+            afterdccor(i) = afterdccor(i)-7;
+          break;
+          case 17,19:
+            afterdccor(i) = afterdccor(i)-5;
+          break;
+        }
+      }
+    }
+    if (i=22 || i=23 || i===24) { afterinp(i) = afterhcor(i)+afterinp(i); } else { afterinp(i) = ""; }
+    switch (i) {
+      case 1,2:
+        afterall(i) = rawbr(i);
+      break;
+      case 3,5,6,7,8,9,10,11,18,20,21:
+        afterall(i) = aftercor(i);
+      break;
+      case 4,12:
+        afterall(i) = dabr(i);
+      break;
+      case 13,14,15,16,17,19:
+        afterall(i) = afterdccor(i);
+      break;
+      case 22,23,24:
+        afterall(i) = afterinp(i);
+      break;
+    }
+    document.write("<tr bgcolor=#" + xx + "><td align=center width=10 bgcolor=000000><font color=ffffff>" + gg(i) + "</td><th align=left width=164>" + r(i));
+    document.write("</th><th align=center width=34  style='border-left-style:solid' bordercolor='000000'><u>" + w(i));
+    document.write("</u></th><th width=34  style='border-left-style:solid' bordercolor='000000'><u>" + rawbr(i) + "</u></th> ");
+    document.write("<th width=34><u>" + aftercor(i) + "</u></th>");
+    document.write("<th width=34><u>" + afterhcor(i) + "</u></th>");
+    document.write("<th width=34><u>" + dabr(i) + "</u></th>");
+    document.write("<th width=34><u>" + afterddcor(i) + "</u></th>");
+    document.write("<th width=34><u>" + afterdccor(i) + "</u></th>");
+    document.write("<th width=34><u>" + afterinp(i) + "</u></th>");
+    document.write("<th width=34  style='border-left-style:solid' bordercolor='000000'><u>" + afterall(i) + "</u></th><td align=center width=10 bgcolor='000000' ><font color='FFFFFF'>" + gg(i) + "</td></tr>");
+  }
+  document.write("</tbody></table>");
+  f = "Report is done!";
+  if (wf===1) {
+    const fso = /* FileSystemObject - use Blob API */ null;
+    const f1 = fso.OpenTextFile (fname + ".htm",2,true);
+    f1.write "Report from " + name + "<br>Age:" + age + "<br>Code:" + code + "<br><table cellspacing=5>";
+    for (let i = 1; i <= 24; i++) {
+      f1.write "<tr><td>" + gg(i) + "</td><td>" + afterall(i) + "</td></tr>";
+    }
+    f1.write "</table>";
+    f1.close;
+    if (fso.FileExists (fname + ".htm")) {
+      f = "A report has been successfully saved in file    " + fname + ".htm";
+    }
+  }
+  document.write("<b>X (Disclosure):" + xscore + "</b><br>");
+  document.write("<b>" + f);
   return null;
 }

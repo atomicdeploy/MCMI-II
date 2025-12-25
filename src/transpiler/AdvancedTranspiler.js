@@ -147,7 +147,7 @@ export class AdvancedTranspiler {
   _transpileBody(tokens, func) {
     const lines = [];
     let indentLevel = 1;
-    let ifStack = []; // Track if statement nesting
+    let contextStack = []; // Track context (if, for, switch, case)
 
     for (let i = 0; i < tokens.length; i++) {
       const token = tokens[i];
@@ -165,21 +165,25 @@ export class AdvancedTranspiler {
         const condition = this._transpileExpression(token.condition);
         lines.push('  '.repeat(indentLevel) + `if (${condition}) {`);
         indentLevel++;
-        ifStack.push('if');
+        contextStack.push('if');
       } else if (token.type === 'FOR_LOOP') {
         lines.push('  '.repeat(indentLevel) + `for (let ${token.variable} = ${token.start}; ${token.variable} <= ${token.end}; ${token.variable}++) {`);
         indentLevel++;
+        contextStack.push('for');
       } else if (token.type === 'STATEMENT') {
         const statement = this._transpileStatement(token.value, func, tokenType);
 
         // Check for control flow statements
         if (/^end\s+if$/i.test(token.value)) {
-          if (ifStack.length > 0) {
-            ifStack.pop();
+          if (contextStack[contextStack.length - 1] === 'if') {
+            contextStack.pop();
           }
           indentLevel--;
           lines.push('  '.repeat(indentLevel) + '}');
         } else if (/^next$/i.test(token.value)) {
+          if (contextStack[contextStack.length - 1] === 'for') {
+            contextStack.pop();
+          }
           indentLevel--;
           lines.push('  '.repeat(indentLevel) + '}');
         } else if (/^else\s+\w+/i.test(token.value)) {
@@ -198,8 +202,8 @@ export class AdvancedTranspiler {
             if (i + 1 < tokens.length && /^end\s+if$/i.test(tokens[i + 1].value)) {
               // Skip it as we already closed
               i++;
-              if (ifStack.length > 0) {
-                ifStack.pop();
+              if (contextStack[contextStack.length - 1] === 'if') {
+                contextStack.pop();
               }
             }
           }
@@ -221,8 +225,12 @@ export class AdvancedTranspiler {
             const condition = this._transpileExpression(match[1]);
             lines.push('  '.repeat(indentLevel) + `while (${condition}) {`);
             indentLevel++;
+            contextStack.push('while');
           }
         } else if (/^loop$/i.test(token.value)) {
+          if (contextStack[contextStack.length - 1] === 'while') {
+            contextStack.pop();
+          }
           indentLevel--;
           lines.push('  '.repeat(indentLevel) + '}');
         } else if (/^select\s+case/i.test(token.value)) {
@@ -231,8 +239,16 @@ export class AdvancedTranspiler {
             const expr = this._transpileExpression(match[1]);
             lines.push('  '.repeat(indentLevel) + `switch (${expr}) {`);
             indentLevel++;
+            contextStack.push('switch');
           }
         } else if (/^case\s+/i.test(token.value)) {
+          // Close previous case if we're already in one
+          if (contextStack[contextStack.length - 1] === 'case') {
+            indentLevel--;
+            lines.push('  '.repeat(indentLevel) + 'break;');
+            contextStack.pop();
+          }
+          
           if (/^case\s+else$/i.test(token.value)) {
             lines.push('  '.repeat(indentLevel) + 'default:');
           } else {
@@ -243,7 +259,18 @@ export class AdvancedTranspiler {
             }
           }
           indentLevel++;
+          contextStack.push('case');
         } else if (/^end\s+select$/i.test(token.value)) {
+          // Close the last case if still open
+          if (contextStack[contextStack.length - 1] === 'case') {
+            indentLevel--;
+            lines.push('  '.repeat(indentLevel) + 'break;');
+            contextStack.pop();
+          }
+          // Close the switch
+          if (contextStack[contextStack.length - 1] === 'switch') {
+            contextStack.pop();
+          }
           indentLevel--;
           lines.push('  '.repeat(indentLevel) + '}');
         } else if (/^exit\s+(function|sub|for|do)$/i.test(token.value)) {
@@ -294,6 +321,31 @@ export class AdvancedTranspiler {
   _transpileStatement(statement, func, tokenType) {
     if (!statement || statement.trim() === '') {
       return '';
+    }
+
+    // Handle single-line if-then-else: if condition then statement1 else statement2
+    const singleIfElseMatch = statement.match(/^if\s+(.*?)\s+then\s+(.+?)\s+else\s+(.+)$/i);
+    if (singleIfElseMatch) {
+      const condition = this._transpileExpression(singleIfElseMatch[1]);
+      const thenStatement = this._transpileStatement(singleIfElseMatch[2], func, 'STATEMENT');
+      const elseStatement = this._transpileStatement(singleIfElseMatch[3], func, 'STATEMENT');
+      return `if (${condition}) { ${thenStatement} } else { ${elseStatement} }`;
+    }
+
+    // Handle single-line if statements: if condition then statement
+    const singleIfMatch = statement.match(/^if\s+(.*?)\s+then\s+(.+)$/i);
+    if (singleIfMatch) {
+      const condition = this._transpileExpression(singleIfMatch[1]);
+      const thenStatement = this._transpileStatement(singleIfMatch[2], func, 'STATEMENT');
+      return `if (${condition}) { ${thenStatement} }`;
+    }
+
+    // Handle SET statements (VBScript object assignment)
+    const setMatch = statement.match(/^set\s+(\w+)\s*=\s*(.+)$/i);
+    if (setMatch) {
+      const varName = setMatch[1];
+      const value = this._transpileExpression(setMatch[2]);
+      return `const ${varName} = ${value};`;
     }
 
     // Check if this is a return statement (function name assignment)
@@ -376,7 +428,9 @@ export class AdvancedTranspiler {
     result = result.replace(/\s*<>\s*/gi, ' !== ');
 
     // Convert VBScript operators - handle all cases
-    // First, handle 'not' at word boundaries
+    // First, handle 'not' with comparisons - it applies to the whole comparison
+    result = result.replace(/\bnot\s+([a-zA-Z_][\w.()[\]]*)\s*=\s*"([^"]*)"/gi, '!($1 === "$2")');
+    result = result.replace(/\bnot\s+([a-zA-Z_][\w.()[\]]*)\s*=\s*([^=\s]+)/gi, '!($1 === $2)');
     result = result.replace(/\bnot\s+/gi, '!');
     
     // Then handle 'and' and 'or' - must have spaces or be at boundaries
@@ -402,15 +456,12 @@ export class AdvancedTranspiler {
     result = result.replace(/\bint\s*\(/gi, 'Math.floor(');
 
     // Convert equality checks (after comparison operators!)
+    // Only convert in condition contexts, not assignments
     result = result.replace(/\s*=\s*true\b/gi, ' === true');
     result = result.replace(/\s*=\s*false\b/gi, ' === false');
     
-    // Convert single = to === for comparisons (but not in assignments)
-    // This is tricky - only in condition contexts
-    if (result.match(/^[^=]*=[^=]/)) {
-      // If there's a single = and not already ==, ===, <=, >=, !=, !==
-      result = result.replace(/([^<>=!])=([^=])/g, '$1===$2');
-    }
+    // Don't convert single = to === in simple assignment contexts
+    // This would be better handled at the statement level
 
     // Convert string concatenation (careful not to touch &&)
     result = result.replace(/([^&])\s*&\s*([^&])/g, '$1 + $2');

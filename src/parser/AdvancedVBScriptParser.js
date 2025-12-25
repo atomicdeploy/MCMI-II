@@ -91,13 +91,27 @@ export class AdvancedVBScriptParser {
           });
         }
       } else if (/^if\s+.*\s+then/i.test(trimmed)) {
-        this.tokens.push({
-          type: 'IF_STATEMENT',
-          condition: trimmed.match(/^if\s+(.*?)\s+then/i)[1],
-          line: lineNumber,
-          originalLine: line,
-          isMultiline: !/then\s*$/i.test(trimmed)
-        });
+        // Check if this is a single-line if (has statement after then on same line)
+        const ifMatch = trimmed.match(/^if\s+(.*?)\s+then\s*(.*)$/i);
+        const isSingleLine = ifMatch && ifMatch[2].trim().length > 0;
+        
+        if (isSingleLine) {
+          // Single-line if: if condition then statement
+          this.tokens.push({
+            type: 'STATEMENT',
+            value: trimmed,
+            line: lineNumber,
+            originalLine: line
+          });
+        } else {
+          // Multi-line if: if condition then (with block)
+          this.tokens.push({
+            type: 'IF_STATEMENT',
+            condition: ifMatch[1],
+            line: lineNumber,
+            originalLine: line
+          });
+        }
       } else if (/^for\s+/i.test(trimmed)) {
         const match = trimmed.match(/^for\s+(\w+)\s*=\s*(\d+)\s+to\s+(\d+)/i);
         if (match) {

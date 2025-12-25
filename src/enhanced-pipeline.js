@@ -10,6 +10,7 @@ import Logger from './logger/Logger.js';
 import VBScriptExtractor from './parser/VBScriptExtractor.js';
 import AdvancedVBScriptParser from './parser/AdvancedVBScriptParser.js';
 import AdvancedTranspiler from './transpiler/AdvancedTranspiler.js';
+import PostProcessor from './transpiler/PostProcessor.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -40,8 +41,11 @@ class EnhancedPipeline {
       // Step 4: Advanced transpilation with context awareness
       const advancedJS = await this.advancedTranspilation(vbscriptData.code);
 
-      // Step 5: Generate enhanced outputs
-      await this.generateEnhancedOutputs(parsedData, advancedJS);
+      // Step 5: Post-process the generated JavaScript
+      const postProcessed = await this.postProcessJavaScript(advancedJS);
+
+      // Step 6: Generate enhanced outputs
+      await this.generateEnhancedOutputs(parsedData, postProcessed);
 
       this.logger.separator();
       this.logger.complete('✨ Enhanced pipeline completed successfully!');
@@ -109,8 +113,20 @@ class EnhancedPipeline {
     return jsCode;
   }
 
+  async postProcessJavaScript(jsCode) {
+    this.logger.step('Step 5: Post-processing JavaScript');
+
+    const postProcessor = new PostProcessor();
+    const processed = postProcessor.process(jsCode);
+
+    const stats = postProcessor.getStats();
+    this.logger.info(`Post-processing stats: ${JSON.stringify(stats)}`);
+
+    return processed;
+  }
+
   async generateEnhancedOutputs(parsedData, advancedJS) {
-    this.logger.step('Step 5: Generating enhanced outputs');
+    this.logger.step('Step 6: Generating enhanced outputs');
 
     // Write advanced transpiled JavaScript
     const advancedJSPath = join(this.outputDir, 'javascript', 'advanced-transpiled.js');
