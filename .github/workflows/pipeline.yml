@@ -80,6 +80,9 @@ jobs:
       - name: 🏃 Run parser pipeline
         run: npm run parse
 
+      - name: 🏃 Run enhanced parser pipeline
+        run: npm run parse:enhanced
+
       - name: 📊 Verify outputs
         run: |
           echo "🔍 Checking generated outputs..."
@@ -95,9 +98,16 @@ jobs:
             echo "✅ HTML outputs:"
             ls -lh output/html/
           fi
+          if [ -d output/vbscript-split ]; then
+            echo "✅ VBScript split files:"
+            ls -lh output/vbscript-split/ | head -20
+          fi
 
       - name: ✅ Validate outputs
         run: npm run validate
+
+      - name: ✅ Validate JavaScript (CRITICAL)
+        run: npm run validate:js
 
       - name: 📤 Upload artifacts
         uses: actions/upload-artifact@v4
@@ -122,12 +132,25 @@ jobs:
             JS_LINES=$(wc -l < output/javascript/transpiled.js)
             echo "- ✅ JavaScript lines generated: $JS_LINES" >> $GITHUB_STEP_SUMMARY
           fi
+          
+          if [ -f output/javascript/advanced-transpiled.js ]; then
+            ADV_JS_LINES=$(wc -l < output/javascript/advanced-transpiled.js)
+            echo "- ✅ Advanced JavaScript lines: $ADV_JS_LINES" >> $GITHUB_STEP_SUMMARY
+          fi
 
           if [ -f output/json/vbscript-metadata.json ]; then
             FUNC_COUNT=$(grep -o '"name":' output/json/vbscript-metadata.json | wc -l)
             echo "- ✅ Functions transpiled: $FUNC_COUNT" >> $GITHUB_STEP_SUMMARY
           fi
+          
+          if [ -d output/vbscript-split ]; then
+            SPLIT_COUNT=$(ls -1 output/vbscript-split/*.vbs 2>/dev/null | wc -l)
+            echo "- ✅ VBScript files split: $SPLIT_COUNT" >> $GITHUB_STEP_SUMMARY
+          fi
 
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### ✅ JavaScript Validation" >> $GITHUB_STEP_SUMMARY
+          echo "All generated JavaScript files are valid and loadable in Node.js/Browser" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### 📦 Artifacts" >> $GITHUB_STEP_SUMMARY
           echo "All outputs are available as workflow artifacts." >> $GITHUB_STEP_SUMMARY

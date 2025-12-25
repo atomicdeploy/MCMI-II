@@ -1,0 +1,40 @@
+function checkfzbr(fze)
+dim fzbr(36) 
+fzbr(0)=0 
+fzbr(1)=15 
+fzbr(2)=25 
+fzbr(3)=34 
+fzbr(4)=35 
+fzbr(5)=37 
+fzbr(6)=40 
+fzbr(7)=43 
+fzbr(8)=45 
+fzbr(9)=46 
+fzbr(10)=48 
+fzbr(11)=49 
+fzbr(12)=51 
+fzbr(13)=52 
+fzbr(14)=54 
+fzbr(15)=55 
+fzbr(16)=57 
+fzbr(17)=59 
+fzbr(18)=61 
+fzbr(19)=63 
+fzbr(20)=65 
+fzbr(21)=67 
+fzbr(22)=69 
+fzbr(23)=71 
+fzbr(24)=73 
+fzbr(25)=75 
+fzbr(26)=78 
+fzbr(27)=82 
+fzbr(28)=85 
+fzbr(29)=87 
+fzbr(30)=88 
+fzbr(31)=90 
+fzbr(32)=92 
+fzbr(33)=94 
+fzbr(34)=97 
+fzbr(35)=100 
+checkfzbr=fzbr(fze) 
+end function

@@ -1,0 +1,44 @@
+function checkfabr(fae)
+dim fabr(40) 
+fabr(0)=0 
+fabr(1)=0 
+fabr(2)=0 
+fabr(3)=5 
+fabr(4)=10 
+fabr(5)=15 
+fabr(6)=20 
+fabr(7)=30 
+fabr(8)=32 
+fabr(9)=35 
+fabr(10)=37 
+fabr(11)=40 
+fabr(12)=42 
+fabr(13)=48 
+fabr(14)=52 
+fabr(15)=57 
+fabr(16)=60 
+fabr(17)=64 
+fabr(18)=68 
+fabr(19)=72 
+fabr(20)=75 
+fabr(21)=77 
+fabr(22)=80 
+fabr(23)=82 
+fabr(24)=85 
+fabr(25)=87 
+fabr(26)=88 
+fabr(27)=89 
+fabr(28)=91 
+fabr(29)=93 
+fabr(30)=95 
+fabr(31)=97 
+fabr(32)=99 
+fabr(33)=101 
+fabr(34)=103 
+fabr(35)=105 
+fabr(36)=107 
+fabr(37)=109 
+fabr(38)=112 
+fabr(39)=115 
+checkfabr=fabr(fae) 
+end function

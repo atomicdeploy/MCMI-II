@@ -1,0 +1,41 @@
+function checkabr(ae)
+dim abr(37) 
+abr(0)=0 
+abr(1)=0 
+abr(2)=0 
+abr(3)=20 
+abr(4)=30 
+abr(5)=40 
+abr(6)=50 
+abr(7)=60 
+abr(8)=62 
+abr(9)=64 
+abr(10)=66 
+abr(11)=70 
+abr(12)=72 
+abr(13)=75 
+abr(14)=77 
+abr(15)=79 
+abr(16)=81 
+abr(17)=83 
+abr(18)=85 
+abr(19)=86 
+abr(20)=87 
+abr(21)=88 
+abr(22)=89 
+abr(23)=90 
+abr(24)=90 
+abr(25)=90 
+abr(26)=91 
+abr(27)=93 
+abr(28)=95 
+abr(29)=96 
+abr(30)=98 
+abr(31)=100 
+abr(32)=102 
+abr(33)=105 
+abr(34)=109 
+abr(35)=113 
+abr(36)=115 
+checkabr=abr(ae) 
+end function

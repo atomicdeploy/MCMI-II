@@ -1,0 +1,60 @@
+function five()
+	sum=0 
+	if k.r1(1).checked then sum=sum+3 
+	if k.r2(1).checked then sum=sum+1 
+	if k.r4(1).checked then sum=sum+2 
+	if k.r6(1).checked then sum=sum+3 
+	if k.r8(0).checked then sum=sum+1 
+	if k.r12(1).checked then sum=sum+1 
+	if k.r14(1).checked then sum=sum+2 
+	if k.r15(1).checked then sum=sum+3 
+	if k.r16(1).checked then sum=sum+2 
+	if k.r22(1).checked then sum=sum+1 
+	if k.r28(1).checked then sum=sum+1 
+	if k.r31(0).checked then sum=sum+1 
+	if k.r32(1).checked then sum=sum+1 
+	if k.r37(1).checked then sum=sum+3 
+	if k.r41(1).checked then sum=sum+2 
+	if k.r42(0).checked then sum=sum+2 
+	if k.r43(1).checked then sum=sum+1 
+	if k.r45(0).checked then sum=sum+1 
+	if k.r51(0).checked then sum=sum+1 
+	if k.r55(1).checked then sum=sum+1 
+	if k.r60(1).checked then sum=sum+1 
+	if k.r78(0).checked then sum=sum+1 
+	if k.r80(1).checked then sum=sum+1 
+	if k.r85(1).checked then sum=sum+1 
+	if k.r86(1).checked then sum=sum+2 
+	if k.r89(1).checked then sum=sum+3 
+	if k.r91(1).checked then sum=sum+3 
+	if k.r103(1).checked then sum=sum+2 
+	if k.r106(0).checked then sum=sum+1 
+	if k.r111(1).checked then sum=sum+2 
+	if k.r125(1).checked then sum=sum+2 
+	if k.r126(1).checked then sum=sum+1 
+	if k.r129(1).checked then sum=sum+3 
+	if k.r130(1).checked then sum=sum+1 
+	if k.r131(1).checked then sum=sum+3 
+	if k.r134(1).checked then sum=sum+1 
+	if k.r135(1).checked then sum=sum+1 
+	if k.r137(1).checked then sum=sum+2 
+	if k.r142(1).checked then sum=sum+3 
+	if k.r143(1).checked then sum=sum+1 
+	if k.r146(1).checked then sum=sum+1 
+	if k.r149(0).checked then sum=sum+2 
+	if k.r158(0).checked then sum=sum+2 
+	if k.r163(1).checked then sum=sum+1 
+	if k.r165(1).checked then sum=sum+2 
+	if k.r166(1).checked then sum=sum+3 
+	if k.r170(1).checked then sum=sum+2 
+	if k.r171(1).checked then sum=sum+2 
+	if k.r172(1).checked then sum=sum+2 
+	
+	if k.radgender(1).checked then
+		if sum>67 then sum=67
+	elseif sum>57 then sum=57
+	end if
+	five=sum 
+	w(7)=sum 
+	r(7)="Narcissistic" 
+end function

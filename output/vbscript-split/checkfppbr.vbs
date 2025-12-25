@@ -1,0 +1,41 @@
+function checkfppbr(fppe)
+dim fppbr(37) 
+fppbr(0)=0 
+fppbr(1)=0 
+fppbr(2)=0 
+fppbr(3)=15 
+fppbr(4)=35 
+fppbr(5)=37 
+fppbr(6)=40 
+fppbr(7)=45 
+fppbr(8)=55 
+fppbr(9)=60 
+fppbr(10)=60 
+fppbr(11)=60 
+fppbr(12)=60 
+fppbr(13)=60 
+fppbr(14)=60 
+fppbr(15)=60 
+fppbr(16)=61 
+fppbr(17)=62 
+fppbr(18)=64 
+fppbr(19)=65 
+fppbr(20)=67 
+fppbr(21)=70 
+fppbr(22)=71 
+fppbr(23)=73 
+fppbr(24)=74 
+fppbr(25)=76 
+fppbr(26)=82 
+fppbr(27)=86 
+fppbr(28)=87 
+fppbr(29)=88 
+fppbr(30)=91 
+fppbr(31)=94 
+fppbr(32)=97 
+fppbr(33)=100 
+fppbr(34)=105 
+fppbr(35)=110 
+fppbr(36)=115 
+checkfppbr=fppbr(fppe) 
+end function

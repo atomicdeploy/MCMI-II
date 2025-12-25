@@ -1,0 +1,41 @@
+function checkppbr(ppe)
+dim ppbr(37) 
+ppbr(0)=0 
+ppbr(1)=0 
+ppbr(2)=0 
+ppbr(3)=10 
+ppbr(4)=25 
+ppbr(5)=35 
+ppbr(6)=38 
+ppbr(7)=41 
+ppbr(8)=44 
+ppbr(9)=47 
+ppbr(10)=51 
+ppbr(11)=53 
+ppbr(12)=55 
+ppbr(13)=57 
+ppbr(14)=60 
+ppbr(15)=60 
+ppbr(16)=60 
+ppbr(17)=61 
+ppbr(18)=63 
+ppbr(19)=64 
+ppbr(20)=65 
+ppbr(21)=67 
+ppbr(22)=69 
+ppbr(23)=71 
+ppbr(24)=72 
+ppbr(25)=73 
+ppbr(26)=75 
+ppbr(27)=80 
+ppbr(28)=85 
+ppbr(29)=88 
+ppbr(30)=91 
+ppbr(31)=94 
+ppbr(32)=97 
+ppbr(33)=100 
+ppbr(34)=105 
+ppbr(35)=110 
+ppbr(36)=115 
+checkppbr=ppbr(ppe) 
+end function
