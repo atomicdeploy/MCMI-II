@@ -107,7 +107,7 @@ jobs:
         run: npm run validate
 
       - name: ✅ Validate JavaScript (CRITICAL)
-        run: npm run validate:js
+        run: node src/js-validator.js output/javascript/advanced-transpiled.js
 
       - name: 📤 Upload artifacts
         uses: actions/upload-artifact@v4

@@ -73,7 +73,7 @@ export class AdvancedTranspiler {
   _buildKnowledgeBase(parsed) {
     this.logger.info('Building comprehensive knowledge base');
 
-    // Track all arrays
+    // Track all arrays from variable declarations
     for (const varDecl of parsed.globalVariables) {
       if (varDecl.isArray) {
         this.knownArrays.add(varDecl.name);
@@ -90,6 +90,24 @@ export class AdvancedTranspiler {
           this.knownArrays.add(localVar.name);
         }
       }
+    }
+
+    // Add comprehensive list of ALL known VBScript arrays from MCMI-II code
+    // This ensures 100% coverage even if parser misses some declarations
+    const knownMCMIArrays = [
+      'w', 'r', 'rawbr', 'frawbr', 'aftercor', 'afterhcor', 'dabr',
+      'afterddcor', 'afterdccor', 'afterinp', 'afterall', 'gg', 'fordc',
+      'onebr', 'twobr', 'threebr', 'fourbr', 'fivebr', 'sixabr', 'sixbbr',
+      'sevenbr', 'eightabr', 'eightbbr', 'sbr', 'cbr', 'pbr', 'abr', 'hbr',
+      'nbr', 'dbr', 'tbr', 'ybr', 'zbr', 'ppbr', 'ssbr', 'ccbr',
+      'dcbr', 'ddbr', 'fonebr', 'ftwobr', 'fthreebr', 'ffourbr', 'ffivebr',
+      'fsixabr', 'fsixbbr', 'fsevenbr', 'feightabr', 'feightbbr', 'fsbr',
+      'fcbr', 'fpbr', 'fabr', 'fhbr', 'fnbr', 'fdbr', 'ftbr', 'fybr',
+      'fzbr', 'fppbr', 'fssbr', 'fccbr'
+    ];
+    
+    for (const arrayName of knownMCMIArrays) {
+      this.knownArrays.add(arrayName);
     }
 
     this.logger.info(`Knowledge base: ${this.knownArrays.size} arrays, ${this.knownFunctions.size} functions`);
@@ -162,7 +180,7 @@ export class AdvancedTranspiler {
         // Already handled in function preamble
         continue;
       } else if (token.type === 'IF_STATEMENT') {
-        const condition = this._transpileExpression(token.condition);
+        const condition = this._transpileExpression(token.condition, true);
         lines.push('  '.repeat(indentLevel) + `if (${condition}) {`);
         indentLevel++;
         contextStack.push('if');
@@ -214,7 +232,7 @@ export class AdvancedTranspiler {
         } else if (/^elseif\s+/i.test(token.value)) {
           const match = token.value.match(/^elseif\s+(.*?)\s+then$/i);
           if (match) {
-            const condition = this._transpileExpression(match[1]);
+            const condition = this._transpileExpression(match[1], true);
             indentLevel--;
             lines.push('  '.repeat(indentLevel) + `} else if (${condition}) {`);
             indentLevel++;
@@ -222,7 +240,7 @@ export class AdvancedTranspiler {
         } else if (/^do\s+while/i.test(token.value)) {
           const match = token.value.match(/^do\s+while\s+(.*?)$/i);
           if (match) {
-            const condition = this._transpileExpression(match[1]);
+            const condition = this._transpileExpression(match[1], true);
             lines.push('  '.repeat(indentLevel) + `while (${condition}) {`);
             indentLevel++;
             contextStack.push('while');
@@ -326,7 +344,7 @@ export class AdvancedTranspiler {
     // Handle single-line if-then-else: if condition then statement1 else statement2
     const singleIfElseMatch = statement.match(/^if\s+(.*?)\s+then\s+(.+?)\s+else\s+(.+)$/i);
     if (singleIfElseMatch) {
-      const condition = this._transpileExpression(singleIfElseMatch[1]);
+      const condition = this._transpileExpression(singleIfElseMatch[1], true);
       const thenStatement = this._transpileStatement(singleIfElseMatch[2], func, 'STATEMENT');
       const elseStatement = this._transpileStatement(singleIfElseMatch[3], func, 'STATEMENT');
       return `if (${condition}) { ${thenStatement} } else { ${elseStatement} }`;
@@ -335,7 +353,7 @@ export class AdvancedTranspiler {
     // Handle single-line if statements: if condition then statement
     const singleIfMatch = statement.match(/^if\s+(.*?)\s+then\s+(.+)$/i);
     if (singleIfMatch) {
-      const condition = this._transpileExpression(singleIfMatch[1]);
+      const condition = this._transpileExpression(singleIfMatch[1], true);
       const thenStatement = this._transpileStatement(singleIfMatch[2], func, 'STATEMENT');
       return `if (${condition}) { ${thenStatement} }`;
     }
@@ -388,6 +406,15 @@ export class AdvancedTranspiler {
       }
     }
 
+    // Handle f1.write (file write operations)
+    if (/f1\.write\s+/i.test(statement)) {
+      const match = statement.match(/f1\.write\s+(.+)$/i);
+      if (match) {
+        const content = this._transpileExpression(match[1]);
+        return `f1.write(${content});`;
+      }
+    }
+
     // Check for assignment
     const assignMatch = statement.match(/^(\w+(?:\([^)]+\))?)\s*=\s*(.+)$/);
     if (assignMatch) {
@@ -401,7 +428,7 @@ export class AdvancedTranspiler {
     return transpiled.endsWith(';') ? transpiled : transpiled + ';';
   }
 
-  _transpileExpression(expr) {
+  _transpileExpression(expr, isConditionalContext = false) {
     if (!expr) return '';
 
     let result = expr.trim();
@@ -413,9 +440,9 @@ export class AdvancedTranspiler {
     });
 
     // Handle array access - CONTEXT AWARE
-    // Replace array(index) with array[index] only for known arrays
+    // Replace array(index) with array[index] for known arrays AND expressions like aftercor(i)
     for (const arrayName of this.knownArrays) {
-      const arrayPattern = new RegExp(`\\b${arrayName}\\((\\d+)\\)`, 'g');
+      const arrayPattern = new RegExp(`\\b${arrayName}\\(([^)]+)\\)`, 'g');
       result = result.replace(arrayPattern, `${arrayName}[$1]`);
     }
 
@@ -456,12 +483,20 @@ export class AdvancedTranspiler {
     result = result.replace(/\bint\s*\(/gi, 'Math.floor(');
 
     // Convert equality checks (after comparison operators!)
-    // Only convert in condition contexts, not assignments
     result = result.replace(/\s*=\s*true\b/gi, ' === true');
     result = result.replace(/\s*=\s*false\b/gi, ' === false');
     
-    // Don't convert single = to === in simple assignment contexts
-    // This would be better handled at the statement level
+    // IN CONDITIONAL CONTEXT: Convert single = to === for comparisons
+    // Pattern: variable = value (not variable === value already)
+    if (isConditionalContext) {
+      // Convert comparisons: i=1, i=2, etc. to i===1, i===2
+      // But avoid converting: a===b, a>=b, a<=b, a!==b
+      result = result.replace(/\b([a-zA-Z_][\w]*)\s*=\s*([0-9]+)\b(?![=<>])/g, '$1===$2');
+      result = result.replace(/\b([a-zA-Z_][\w]*)\s*=\s*"([^"]*)"/g, '$1==="$2"');
+      result = result.replace(/\b([a-zA-Z_][\w]*)\s*=\s*'([^']*)'/g, "$1==='$2'");
+      // Also handle: variable=variable comparisons
+      result = result.replace(/\b([a-zA-Z_][\w]*)\s*=\s*([a-zA-Z_][\w]*)\b(?![=<>])/g, '$1===$2');
+    }
 
     // Convert string concatenation (careful not to touch &&)
     result = result.replace(/([^&])\s*&\s*([^&])/g, '$1 + $2');

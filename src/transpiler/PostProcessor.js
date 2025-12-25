@@ -98,18 +98,25 @@ export class PostProcessor {
   _fixArrayAccess(code) {
     this.logger.info('Fixing array access patterns');
 
-    // List of known array names from the VBScript
+    // Comprehensive list of ALL array names from the VBScript
     const arrayNames = [
       'w', 'r', 'rawbr', 'frawbr', 'aftercor', 'afterhcor', 'dabr',
-      'afterddcor', 'afterdccor', 'afterinp', 'afterall', 'gg', 'fordc'
+      'afterddcor', 'afterdccor', 'afterinp', 'afterall', 'gg', 'fordc',
+      'onebr', 'twobr', 'threebr', 'fourbr', 'fivebr', 'sixabr', 'sixbbr',
+      'sevenbr', 'eightabr', 'eightbbr', 'sbr', 'cbr', 'pbr', 'abr', 'hbr',
+      'nbr', 'dbr', 'tbr', 'ybr', 'zbr', 'ppbr', 'ssbr', 'ccbr',
+      'dcbr', 'ddbr', 'fonebr', 'ftwobr', 'fthreebr', 'ffourbr', 'ffivebr',
+      'fsixabr', 'fsixbbr', 'fsevenbr', 'feightabr', 'feightbbr', 'fsbr',
+      'fcbr', 'fpbr', 'fabr', 'fhbr', 'fnbr', 'fdbr', 'ftbr', 'fybr',
+      'fzbr', 'fppbr', 'fssbr', 'fccbr'
     ];
 
     let result = code;
 
-    // Fix array access for each known array
+    // Fix array access for each known array - support variables as indices too
     for (const arrayName of arrayNames) {
-      // Pattern: arrayName(number) -> arrayName[number]
-      const pattern = new RegExp(`\\b${arrayName}\\((\\d+)\\)`, 'g');
+      // Pattern: arrayName(index) -> arrayName[index] where index can be variable or number
+      const pattern = new RegExp(`\\b${arrayName}\\(([^)]+)\\)`, 'g');
       const before = result;
       result = result.replace(pattern, `${arrayName}[$1]`);
       

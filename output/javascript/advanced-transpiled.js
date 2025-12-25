@@ -1,7 +1,7 @@
 /**
  * Transpiled JavaScript from VBScript
  * Generated with comprehensive token-aware transpiler
- * Date: 2025-12-25T21:06:43.812Z
+ * Date: 2025-12-25T21:17:23.372Z
  * All VBScript tokens handled systematically
  */
 
@@ -1277,7 +1277,7 @@ function checkonebr(onee) {
   onebr[38] = 111;
   onebr[39] = 116;
   onebr[40] = 121;
-  return onebr(onee);
+  return onebr[onee];
 }
 
 function checktwobr(twoe) {
@@ -1330,7 +1330,7 @@ function checktwobr(twoe) {
   twobr[44] = 116;
   twobr[45] = 118;
   twobr[46] = 121;
-  return twobr(twoe);
+  return twobr[twoe];
 }
 
 function checkthreebr(threee) {
@@ -1388,7 +1388,7 @@ function checkthreebr(threee) {
   threebr[49] = 111;
   threebr[50] = 116;
   threebr[51] = 121;
-  return threebr(threee);
+  return threebr[threee];
 }
 
 function checkfourbr(foure) {
@@ -1453,7 +1453,7 @@ function checkfourbr(foure) {
   fourbr[56] = 116;
   fourbr[57] = 118;
   fourbr[58] = 121;
-  return fourbr(foure);
+  return fourbr[foure];
 }
 
 function checkfivebr(fivee) {
@@ -1527,7 +1527,7 @@ function checkfivebr(fivee) {
   fivebr[65] = 119;
   fivebr[66] = 120;
   fivebr[67] = 121;
-  return fivebr(fivee);
+  return fivebr[fivee];
 }
 
 function checksixabr(sixae) {
@@ -1588,7 +1588,7 @@ function checksixabr(sixae) {
   sixabr[52] = 116;
   sixabr[53] = 118;
   sixabr[54] = 121;
-  return sixabr(sixae);
+  return sixabr[sixae];
 }
 
 function checksixbbr(sixbe) {
@@ -1648,7 +1648,7 @@ function checksixbbr(sixbe) {
   sixbbr[51] = 118;
   sixbbr[52] = 119;
   sixbbr[53] = 121;
-  return sixbbr(sixbe);
+  return sixbbr[sixbe];
 }
 
 function checksevenbr(sevene) {
@@ -1716,7 +1716,7 @@ function checksevenbr(sevene) {
   sevenbr[59] = 116;
   sevenbr[60] = 118;
   sevenbr[61] = 121;
-  return sevenbr(sevene);
+  return sevenbr[sevene];
 }
 
 function checkeightabr(eightae) {
@@ -1778,7 +1778,7 @@ function checkeightabr(eightae) {
   eightabr[53] = 119;
   eightabr[54] = 120;
   eightabr[55] = 121;
-  return eightabr(eightae);
+  return eightabr[eightae];
 }
 
 function checkeightbbr(eightbe) {
@@ -1828,7 +1828,7 @@ function checkeightbbr(eightbe) {
   eightbbr[41] = 120;
   eightbbr[42] = 120;
   eightbbr[43] = 121;
-  return eightbbr(eightbe);
+  return eightbbr[eightbe];
 }
 
 function checksbr(se) {
@@ -1883,7 +1883,7 @@ function checksbr(se) {
   sbr[46] = 116;
   sbr[47] = 119;
   sbr[48] = 121;
-  return sbr(se);
+  return sbr[se];
 }
 
 function checkcbr(ce) {
@@ -1954,7 +1954,7 @@ function checkcbr(ce) {
   cbr[62] = 118;
   cbr[63] = 119;
   cbr[64] = 121;
-  return cbr(ce);
+  return cbr[ce];
 }
 
 function checkpbr(pe) {
@@ -2023,7 +2023,7 @@ function checkpbr(pe) {
   pbr[60] = 117;
   pbr[61] = 120;
   pbr[62] = 121;
-  return pbr(pe);
+  return pbr[pe];
 }
 
 function checkabr(ae) {
@@ -2066,7 +2066,7 @@ function checkabr(ae) {
   abr[34] = 109;
   abr[35] = 113;
   abr[36] = 115;
-  return abr(ae);
+  return abr[ae];
 }
 
 function checkhbr(he) {
@@ -2116,7 +2116,7 @@ function checkhbr(he) {
   hbr[41] = 105;
   hbr[42] = 110;
   hbr[43] = 115;
-  return hbr(he);
+  return hbr[he];
 }
 
 function checknbr(ne) {
@@ -2167,7 +2167,7 @@ function checknbr(ne) {
   nbr[42] = 95;
   nbr[43] = 110;
   nbr[44] = 115;
-  return nbr(ne);
+  return nbr[ne];
 }
 
 function checkdbr(de) {
@@ -2230,7 +2230,7 @@ function checkdbr(de) {
   dbr[54] = 112;
   dbr[55] = 114;
   dbr[56] = 115;
-  return dbr(de);
+  return dbr[de];
 }
 
 function checkbbr(be) {
@@ -2288,7 +2288,7 @@ function checkbbr(be) {
   bbr[49] = 111;
   bbr[50] = 113;
   bbr[51] = 115;
-  return bbr(be);
+  return bbr[be];
 }
 
 function checktbr(te) {
@@ -2355,7 +2355,7 @@ function checktbr(te) {
   tbr[58] = 109;
   tbr[59] = 112;
   tbr[60] = 115;
-  return tbr(te);
+  return tbr[te];
 }
 
 function checkssbr(sse) {
@@ -2401,7 +2401,7 @@ function checkssbr(sse) {
   ssbr[37] = 100;
   ssbr[38] = 110;
   ssbr[39] = 115;
-  return ssbr(sse);
+  return ssbr[sse];
 }
 
 function checkccbr(cce) {
@@ -2454,7 +2454,7 @@ function checkccbr(cce) {
   ccbr[44] = 100;
   ccbr[45] = 110;
   ccbr[46] = 115;
-  return ccbr(cce);
+  return ccbr[cce];
 }
 
 function checkppbr(ppe) {
@@ -2497,7 +2497,7 @@ function checkppbr(ppe) {
   ppbr[34] = 105;
   ppbr[35] = 110;
   ppbr[36] = 115;
-  return ppbr(ppe);
+  return ppbr[ppe];
 }
 
 function checkybr(ye) {
@@ -2526,7 +2526,7 @@ function checkybr(ye) {
   ybr[20] = 90;
   ybr[21] = 95;
   ybr[22] = 100;
-  return ybr(ye);
+  return ybr[ye];
 }
 
 function checkzbr(ze) {
@@ -2567,7 +2567,7 @@ function checkzbr(ze) {
   zbr[32] = 95;
   zbr[33] = 97;
   zbr[34] = 100;
-  return zbr(ze);
+  return zbr[ze];
 }
 
 function checkfonebr(fonee) {
@@ -2618,7 +2618,7 @@ function checkfonebr(fonee) {
   fonebr[42] = 111;
   fonebr[43] = 118;
   fonebr[44] = 121;
-  return fonebr(fonee);
+  return fonebr[fonee];
 }
 
 function checkftwobr(ftwoe) {
@@ -2676,7 +2676,7 @@ function checkftwobr(ftwoe) {
   ftwobr[49] = 118;
   ftwobr[50] = 120;
   ftwobr[51] = 121;
-  return ftwobr(ftwoe);
+  return ftwobr[ftwoe];
 }
 
 function checkfthreebr(fthreee) {
@@ -2736,7 +2736,7 @@ function checkfthreebr(fthreee) {
   fthreebr[51] = 116;
   fthreebr[52] = 118;
   fthreebr[53] = 121;
-  return fthreebr(fthreee);
+  return fthreebr[fthreee];
 }
 
 function checkffourbr(ffoure) {
@@ -2795,7 +2795,7 @@ function checkffourbr(ffoure) {
   ffourbr[50] = 101;
   ffourbr[51] = 106;
   ffourbr[52] = 121;
-  return ffourbr(ffoure);
+  return ffourbr[ffoure];
 }
 
 function checkffivebr(ffivee) {
@@ -2859,7 +2859,7 @@ function checkffivebr(ffivee) {
   ffivebr[55] = 112;
   ffivebr[56] = 118;
   ffivebr[57] = 121;
-  return ffivebr(ffivee);
+  return ffivebr[ffivee];
 }
 
 function checkfsixabr(fsixae) {
@@ -2922,7 +2922,7 @@ function checkfsixabr(fsixae) {
   fsixabr[54] = 111;
   fsixabr[55] = 116;
   fsixabr[56] = 121;
-  return fsixabr(fsixae);
+  return fsixabr[fsixae];
 }
 
 function checkfsixbbr(fsixbe) {
@@ -2991,7 +2991,7 @@ function checkfsixbbr(fsixbe) {
   fsixbbr[60] = 117;
   fsixbbr[61] = 119;
   fsixbbr[62] = 121;
-  return fsixbbr(fsixbe);
+  return fsixbbr[fsixbe];
 }
 
 function checkfsevenbr(fsevene) {
@@ -3058,7 +3058,7 @@ function checkfsevenbr(fsevene) {
   fsevenbr[58] = 111;
   fsevenbr[59] = 116;
   fsevenbr[60] = 121;
-  return fsevenbr(fsevene);
+  return fsevenbr[fsevene];
 }
 
 function checkfeightabr(feightae) {
@@ -3118,7 +3118,7 @@ function checkfeightabr(feightae) {
   feightabr[51] = 115;
   feightabr[52] = 118;
   feightabr[53] = 121;
-  return feightabr(feightae);
+  return feightabr[feightae];
 }
 
 function checkfeightbbr(feightbe) {
@@ -3173,7 +3173,7 @@ function checkfeightbbr(feightbe) {
   feightbbr[46] = 116;
   feightbbr[47] = 118;
   feightbbr[48] = 121;
-  return feightbbr(feightbe);
+  return feightbbr[feightbe];
 }
 
 function checkfsbr(fse) {
@@ -3228,7 +3228,7 @@ function checkfsbr(fse) {
   fsbr[46] = 108;
   fsbr[47] = 116;
   fsbr[48] = 121;
-  return fsbr(fse);
+  return fsbr[fse];
 }
 
 function checkfcbr(fce) {
@@ -3300,7 +3300,7 @@ function checkfcbr(fce) {
   fcbr[63] = 112;
   fcbr[64] = 115;
   fcbr[65] = 121;
-  return fcbr(fce);
+  return fcbr[fce];
 }
 
 function checkfpbr(fpe) {
@@ -3366,7 +3366,7 @@ function checkfpbr(fpe) {
   fpbr[57] = 117;
   fpbr[58] = 119;
   fpbr[59] = 121;
-  return fpbr(fpe);
+  return fpbr[fpe];
 }
 
 function checkfabr(fae) {
@@ -3412,7 +3412,7 @@ function checkfabr(fae) {
   fabr[37] = 109;
   fabr[38] = 112;
   fabr[39] = 115;
-  return fabr(fae);
+  return fabr[fae];
 }
 
 function checkfhbr(fhe) {
@@ -3463,7 +3463,7 @@ function checkfhbr(fhe) {
   fhbr[42] = 105;
   fhbr[43] = 110;
   fhbr[44] = 115;
-  return fhbr(fhe);
+  return fhbr[fhe];
 }
 
 function checkfnbr(fne) {
@@ -3515,7 +3515,7 @@ function checkfnbr(fne) {
   fnbr[43] = 97;
   fnbr[44] = 110;
   fnbr[45] = 115;
-  return fnbr(fne);
+  return fnbr[fne];
 }
 
 function checkfdbr(fde) {
@@ -3579,7 +3579,7 @@ function checkfdbr(fde) {
   fdbr[55] = 105;
   fdbr[56] = 110;
   fdbr[57] = 115;
-  return fdbr(fde);
+  return fdbr[fde];
 }
 
 function checkfbbr(fbe) {
@@ -3636,7 +3636,7 @@ function checkfbbr(fbe) {
   fbbr[48] = 109;
   fbbr[49] = 112;
   fbbr[50] = 115;
-  return fbbr(fbe);
+  return fbbr[fbe];
 }
 
 function checkftbr(fte) {
@@ -3706,7 +3706,7 @@ function checkftbr(fte) {
   ftbr[61] = 107;
   ftbr[62] = 110;
   ftbr[63] = 115;
-  return ftbr(fte);
+  return ftbr[fte];
 }
 
 function checkfssbr(fsse) {
@@ -3760,7 +3760,7 @@ function checkfssbr(fsse) {
   fssbr[45] = 105;
   fssbr[46] = 110;
   fssbr[47] = 115;
-  return fssbr(fsse);
+  return fssbr[fsse];
 }
 
 function checkfccbr(fcce) {
@@ -3815,7 +3815,7 @@ function checkfccbr(fcce) {
   fccbr[46] = 100;
   fccbr[47] = 110;
   fccbr[48] = 115;
-  return fccbr(fcce);
+  return fccbr[fcce];
 }
 
 function checkfppbr(fppe) {
@@ -3858,7 +3858,7 @@ function checkfppbr(fppe) {
   fppbr[34] = 105;
   fppbr[35] = 110;
   fppbr[36] = 115;
-  return fppbr(fppe);
+  return fppbr[fppe];
 }
 
 function checkfybr(fye) {
@@ -3886,7 +3886,7 @@ function checkfybr(fye) {
   fybr[19] = 91;
   fybr[20] = 95;
   fybr[21] = 100;
-  return fybr(fye);
+  return fybr[fye];
 }
 
 function checkfzbr(fze) {
@@ -3928,7 +3928,7 @@ function checkfzbr(fze) {
   fzbr[33] = 94;
   fzbr[34] = 97;
   fzbr[35] = 100;
-  return fzbr(fze);
+  return fzbr[fze];
 }
 
 function male() {
@@ -4020,15 +4020,15 @@ function dcadjust() {
   biggest = 0;
   bigger = 0;
   for (let j = 3; j <= 12; j++) {
-    if (biggest<fordc(j)) {
-      biggest = fordc(j);
+    if (biggest<fordc[j]) {
+      biggest = fordc[j];
       g = j;
     }
   }
   for (let j = 3; j <= 12; j++) {
     if (j===g) { j = j+1; }
-    if (bigger<fordc(j)) {
-      bigger = fordc(j);
+    if (bigger<fordc[j]) {
+      bigger = fordc[j];
       gp = j;
     }
   }
@@ -4295,110 +4295,110 @@ function buttclick() {
     } else {
       xx = "c0c0c0";
     }
-    if (i=1 || i=2 || i=13 || i=14 || i=15 || i=22 || i=23 || i===24) { aftercor(i) = ""; } else { aftercor(i) = rawbr(i)+xcor; }
-    if (i=13 || i=14 || i=15 || i=22 || i=23 || i===24) { afterhcor(i) = rawbr(i)+hxcor; } else { afterhcor(i) = ""; }
-    if (i=4 || i===12) {
-      dabr(i) = aftercor(i)-da;
+    if (i===1 || i===2 || i===13 || i===14 || i===15 || i===22 || i===23 || i===24) { aftercor[i] = ""; } else { aftercor[i] = rawbr[i]+xcor; }
+    if (i===13 || i===14 || i===15 || i===22 || i===23 || i===24) { afterhcor[i] = rawbr[i]+hxcor; } else { afterhcor[i] = ""; }
+    if (i===4 || i===12) {
+      dabr[i] = aftercor[i]-da;
     } else if (i===14) {
-      dabr(i) = afterhcor(i)-dac;
+      dabr[i] = afterhcor[i]-dac;
     } else {
-      dabr(i) = "";
+      dabr[i] = "";
     }
     if (i===13) {
-      afterddcor(i) = afterhcor(i)+ddcontain;
+      afterddcor[i] = afterhcor[i]+ddcontain;
     } else if (i===14) {
-      afterddcor(i) = dabr(i)+ddcontain;
-    } else if (i=16 || i=17 || i===19) {
-      afterddcor(i) = aftercor(i)+ddcontain;
+      afterddcor[i] = dabr[i]+ddcontain;
+    } else if (i===16 || i===17 || i===19) {
+      afterddcor[i] = aftercor[i]+ddcontain;
     } else {
-      afterddcor(i) = "";
+      afterddcor[i] = "";
     }
-    if (i=4 || i===12) { fordc(i) = dabr(i); } else { fordc(i) = aftercor(i); }
+    if (i===4 || i===12) { fordc[i] = dabr[i]; } else { fordc[i] = aftercor[i]; }
     if (i===13) { dcadjust(); }
     if (i>12) {
       switch (i) {
         case 13,14,16,17,19:
-          afterdccor(i) = afterddcor(i);
+          afterdccor[i] = afterddcor[i];
         break;
         case 15:
-          afterdccor(i) = afterhcor(i);
+          afterdccor[i] = afterhcor[i];
         break;
         default:
-          afterdccor(i) = "";
+          afterdccor[i] = "";
         break;
       }
-      if (g=6 || g=7 || g=10 || gp===10) {
+      if (g===6 || g===7 || g===10 || gp===10) {
         switch (i) {
           case 13,14:
-            afterdccor(i) = afterdccor(i)+4;
+            afterdccor[i] = afterdccor[i]+4;
           break;
           case 15:
-            afterdccor(i) = afterdccor(i)+2;
+            afterdccor[i] = afterdccor[i]+2;
           break;
           case 16,19:
-            afterdccor(i) = afterdccor(i)+15;
+            afterdccor[i] = afterdccor[i]+15;
           break;
           case 17:
-            afterdccor(i) = afterdccor(i)+13;
+            afterdccor[i] = afterdccor[i]+13;
           break;
         }
       }
-      if (g=12 || g=4 || gp===4) {
+      if (g===12 || g===4 || gp===4) {
         switch (i) {
           case 13:
-            afterdccor(i) = afterdccor(i)-2;
+            afterdccor[i] = afterdccor[i]-2;
           break;
           case 14,15:
-            afterdccor(i) = afterdccor(i)-6;
+            afterdccor[i] = afterdccor[i]-6;
           break;
           case 16:
-            afterdccor(i) = afterdccor(i)-7;
+            afterdccor[i] = afterdccor[i]-7;
           break;
           case 17,19:
-            afterdccor(i) = afterdccor(i)-5;
+            afterdccor[i] = afterdccor[i]-5;
           break;
         }
       }
     }
-    if (i=22 || i=23 || i===24) { afterinp(i) = afterhcor(i)+afterinp(i); } else { afterinp(i) = ""; }
+    if (i===22 || i===23 || i===24) { afterinp[i] = afterhcor[i]+afterinp[i]; } else { afterinp[i] = ""; }
     switch (i) {
       case 1,2:
-        afterall(i) = rawbr(i);
+        afterall[i] = rawbr[i];
       break;
       case 3,5,6,7,8,9,10,11,18,20,21:
-        afterall(i) = aftercor(i);
+        afterall[i] = aftercor[i];
       break;
       case 4,12:
-        afterall(i) = dabr(i);
+        afterall[i] = dabr[i];
       break;
       case 13,14,15,16,17,19:
-        afterall(i) = afterdccor(i);
+        afterall[i] = afterdccor[i];
       break;
       case 22,23,24:
-        afterall(i) = afterinp(i);
+        afterall[i] = afterinp[i];
       break;
     }
-    document.write("<tr bgcolor=#" + xx + "><td align=center width=10 bgcolor=000000><font color=ffffff>" + gg(i) + "</td><th align=left width=164>" + r(i));
-    document.write("</th><th align=center width=34  style='border-left-style:solid' bordercolor='000000'><u>" + w(i));
-    document.write("</u></th><th width=34  style='border-left-style:solid' bordercolor='000000'><u>" + rawbr(i) + "</u></th> ");
-    document.write("<th width=34><u>" + aftercor(i) + "</u></th>");
-    document.write("<th width=34><u>" + afterhcor(i) + "</u></th>");
-    document.write("<th width=34><u>" + dabr(i) + "</u></th>");
-    document.write("<th width=34><u>" + afterddcor(i) + "</u></th>");
-    document.write("<th width=34><u>" + afterdccor(i) + "</u></th>");
-    document.write("<th width=34><u>" + afterinp(i) + "</u></th>");
-    document.write("<th width=34  style='border-left-style:solid' bordercolor='000000'><u>" + afterall(i) + "</u></th><td align=center width=10 bgcolor='000000' ><font color='FFFFFF'>" + gg(i) + "</td></tr>");
+    document.write("<tr bgcolor=#" + xx + "><td align=center width=10 bgcolor=000000><font color=ffffff>" + gg[i] + "</td><th align=left width=164>" + r[i]);
+    document.write("</th><th align=center width=34  style='border-left-style:solid' bordercolor='000000'><u>" + w[i]);
+    document.write("</u></th><th width=34  style='border-left-style:solid' bordercolor='000000'><u>" + rawbr[i] + "</u></th> ");
+    document.write("<th width=34><u>" + aftercor[i] + "</u></th>");
+    document.write("<th width=34><u>" + afterhcor[i] + "</u></th>");
+    document.write("<th width=34><u>" + dabr[i] + "</u></th>");
+    document.write("<th width=34><u>" + afterddcor[i] + "</u></th>");
+    document.write("<th width=34><u>" + afterdccor[i] + "</u></th>");
+    document.write("<th width=34><u>" + afterinp[i] + "</u></th>");
+    document.write("<th width=34  style='border-left-style:solid' bordercolor='000000'><u>" + afterall[i] + "</u></th><td align=center width=10 bgcolor='000000' ><font color='FFFFFF'>" + gg[i] + "</td></tr>");
   }
   document.write("</tbody></table>");
   f = "Report is done!";
   if (wf===1) {
     const fso = /* FileSystemObject - use Blob API */ null;
     const f1 = fso.OpenTextFile (fname + ".htm",2,true);
-    f1.write "Report from " + name + "<br>Age:" + age + "<br>Code:" + code + "<br><table cellspacing=5>";
+    f1.write("Report from " + name + "<br>Age:" + age + "<br>Code:" + code + "<br><table cellspacing=5>");
     for (let i = 1; i <= 24; i++) {
-      f1.write "<tr><td>" + gg(i) + "</td><td>" + afterall(i) + "</td></tr>";
+      f1.write("<tr><td>" + gg[i] + "</td><td>" + afterall[i] + "</td></tr>");
     }
-    f1.write "</table>";
+    f1.write("</table>");
     f1.close;
     if (fso.FileExists (fname + ".htm")) {
       f = "A report has been successfully saved in file    " + fname + ".htm";
