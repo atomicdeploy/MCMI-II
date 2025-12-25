@@ -80,9 +80,6 @@ jobs:
       - name: 🏃 Run parser pipeline
         run: npm run parse
 
-      - name: 🏃 Run enhanced parser pipeline
-        run: npm run parse:enhanced
-
       - name: 📊 Verify outputs
         run: |
           echo "🔍 Checking generated outputs..."
@@ -107,7 +104,7 @@ jobs:
         run: npm run validate
 
       - name: ✅ Validate JavaScript (CRITICAL)
-        run: node src/js-validator.js output/javascript/advanced-transpiled.js
+        run: npm run validate:js
 
       - name: 📤 Upload artifacts
         uses: actions/upload-artifact@v4

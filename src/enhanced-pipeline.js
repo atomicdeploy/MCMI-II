@@ -128,10 +128,10 @@ class EnhancedPipeline {
   async generateEnhancedOutputs(parsedData, advancedJS) {
     this.logger.step('Step 6: Generating enhanced outputs');
 
-    // Write advanced transpiled JavaScript
-    const advancedJSPath = join(this.outputDir, 'javascript', 'advanced-transpiled.js');
-    writeFileSync(advancedJSPath, advancedJS);
-    this.logger.success(`✓ Advanced JavaScript: ${advancedJSPath}`);
+    // Write transpiled JavaScript (advanced context-aware version)
+    const transpiledJSPath = join(this.outputDir, 'javascript', 'transpiled.js');
+    writeFileSync(transpiledJSPath, advancedJS);
+    this.logger.success(`✓ Transpiled JavaScript: ${transpiledJSPath}`);
 
     // Write parsed analysis
     const parser = new AdvancedVBScriptParser('');
