@@ -21,6 +21,7 @@
 8. [Final Score Calculation](#final-score-calculation)
 9. [Interpretation Guidelines](#interpretation-guidelines)
 10. [Implementation Guide](#implementation-guide)
+11. [Glossary of Terms](#glossary-of-terms)
 
 ---
 
@@ -1080,6 +1081,288 @@ This manual is derived from:
 - Complete scoring algorithm with all adjustments
 
 All formulas, tables, and procedures are exact reproductions of the original implementation.
+
+---
+
+
+
+---
+
+## Glossary of Terms
+
+### A
+
+**Adjustment** - A mathematical correction applied to Base Rate scores to account for various factors like response style, clinical setting, or personality patterns. (تعدیل)
+
+**Aggressive/Sadistic (Scale 6B)** - Personality pattern characterized by hostility, assertiveness, and potentially harmful behavior toward others. (پرخاشگر/سادیستی)
+
+**Algorithm** - A step-by-step procedure for calculations and data processing, specifically the scoring methodology in MCMI-II. (الگوریتم)
+
+**Antisocial (Scale 6A)** - Personality pattern marked by disregard for social norms, rules, and the rights of others. (ضد اجتماعی)
+
+**Anxiety (Scale A)** - A clinical syndrome characterized by excessive worry, tension, and nervousness. (اضطراب)
+
+**Array** - A data structure that stores multiple values in a single variable, used extensively in the scoring algorithm. (آرایه)
+
+**Assessment** - The process of evaluating psychological characteristics through standardized instruments like MCMI-II. (ارزیابی)
+
+**Avoidant (Scale 2)** - Personality pattern characterized by social anxiety, fear of rejection, and interpersonal hypersensitivity. (اجتنابی)
+
+### B
+
+**Base Rate (BR)** - A standardized score (0-115 scale) representing the prevalence of a trait in clinical populations; the primary scoring metric of MCMI-II. (نرخ پایه)
+
+**Binary Response** - A two-choice answer format (True/False, Yes/No) used in MCMI-II questions. (پاسخ دوتایی)
+
+**Bipolar Manic (Scale N)** - A clinical syndrome characterized by elevated mood, increased energy, and impulsivity. (شیدایی دوقطبی)
+
+**Borderline (Scale C)** - Severe personality pathology marked by instability in relationships, self-image, and emotions. (مرزی)
+
+### C
+
+**Clinical Scale** - A measurement dimension that quantifies a specific personality trait, syndrome, or response pattern. (مقیاس بالینی)
+
+**Clinical Significance** - A BR score level (typically ≥75) indicating the trait is prominent enough to be clinically relevant. (اهمیت بالینی)
+
+**Clinical Syndrome** - A pattern of psychological symptoms that constitute a recognizable disorder or condition. (سندرم بالینی)
+
+**Compulsive (Scale 7)** - Personality pattern characterized by perfectionism, rigidity, and adherence to rules and order. (وسواسی)
+
+**Conversion Table** - A lookup table that transforms raw scores into Base Rate scores based on gender-specific norms. (جدول تبدیل)
+
+**Correction** - See Adjustment. Mathematical modification applied to scores to improve accuracy. (تصحیح)
+
+### D
+
+**DA (Anxiety/Depression) Adjustment** - A scoring correction that reduces certain scale scores when anxiety and depression are significantly elevated. (تعدیل اضطراب/افسردگی)
+
+**DC (Denial/Complaint) Adjustment** - A scoring correction based on the highest personality pattern scales to adjust clinical syndrome scores. (تعدیل انکار/شکایت)
+
+**DD (Desirability/Debasement) Adjustment** - A scoring correction based on the difference between Y and Z scales to account for response style. (تعدیل مطلوبیت/تحقیر)
+
+**Debasement (Scale Z)** - A modifier index measuring the tendency to present oneself negatively or exaggerate problems. (تحقیر)
+
+**Defensive** - Response style characterized by minimizing problems and presenting oneself in an overly positive light. (تدافعی)
+
+**Delusional Disorder (Scale PP)** - Severe clinical syndrome characterized by fixed false beliefs and paranoid ideation. (اختلال هذیانی)
+
+**Dependent (Scale 3)** - Personality pattern marked by submissiveness, need for reassurance, and difficulty making independent decisions. (وابسته)
+
+**Diagnosis** - Clinical identification of a disorder based on standardized criteria and assessment results. (تشخیص)
+
+**Disclosure (Scale X)** - A computed index reflecting overall openness versus guardedness in test-taking approach. (افشاء)
+
+**Dysthymia (Scale D)** - A chronic form of mild to moderate depression lasting at least two years. (دیس‌تایمیا)
+
+### E
+
+**Elevation** - A high score on a clinical scale, typically BR ≥75, indicating clinical significance. (ارتفاع)
+
+**Exaggeration** - Response style characterized by overstating problems or symptoms, often detected by high Z and X scores. (اغراق)
+
+### F
+
+**FALSE Response** - A "No" or disagreement answer to a test question, coded as 0. (پاسخ خیر)
+
+**Final BR Score** - The Base Rate score after all adjustments (X, DA, DD, DC, INP) have been applied. (نمره نهایی نرخ پایه)
+
+**Function** - In programming, a reusable block of code that performs a specific calculation, such as computing a scale score. (تابع)
+
+### G
+
+**Gender-Specific** - Scoring elements (maximums, conversion tables) that differ between males and females. (اختصاصی جنسیت)
+
+**Grandiosity** - An inflated sense of self-importance, characteristic of narcissistic personality. (خودبزرگ‌بینی)
+
+**Guardedness** - Defensive response style where the test-taker is reluctant to disclose problems. (محافظه‌کاری)
+
+### H
+
+**Histrionic (Scale 4)** - Personality pattern characterized by excessive emotionality, attention-seeking, and dramatic behavior. (هیستریونیک)
+
+**Hypersensitivity** - Excessive sensitivity to criticism or rejection, common in avoidant personality. (حساسیت بیش از حد)
+
+**Hypomanic** - A milder form of mania with elevated mood and increased activity. (هایپومانیک)
+
+### I
+
+**Implementation** - The process of converting the scoring algorithm into working computer code. (پیاده‌سازی)
+
+**Index** - A numbered position in an array or list; also refers to modifier scales like validity indices. (شاخص)
+
+**INP (Inpatient) Adjustment** - A scoring correction applied to severe syndrome scales for patients in inpatient or partial hospitalization settings. (تعدیل بستری)
+
+**Interpretation** - The process of analyzing and understanding test scores to draw clinical conclusions. (تفسیر)
+
+**Item** - A single question on the assessment instrument. (آیتم)
+
+### L
+
+**Lookup Table** - See Conversion Table. A reference table for transforming one value to another. (جدول جستجو)
+
+### M
+
+**Major Depression (Scale CC)** - Severe clinical syndrome characterized by persistent sadness, loss of interest, and neurovegetative symptoms. (افسردگی اساسی)
+
+**Manic** - State of abnormally elevated mood, energy, and activity. (شیدایی)
+
+**Masochistic** - See Self-Defeating. Pattern of self-sabotaging behavior. (مازوخیستی)
+
+**Maximum Score** - The highest possible raw score on a scale, often gender-specific. (حداکثر نمره)
+
+**MCMI-II** - Millon Clinical Multiaxial Inventory, Second Edition - the psychological assessment instrument. (پرسشنامه چندمحوری بالینی میلون - ویرایش دوم)
+
+**Modifier Index** - A scale that measures response style rather than clinical traits (V, Y, Z, X). (شاخص تعدیل‌کننده)
+
+### N
+
+**Narcissistic (Scale 5)** - Personality pattern characterized by grandiosity, need for admiration, and lack of empathy. (خودشیفته)
+
+**Negativistic** - See Passive-Aggressive. Pattern of indirect resistance and negativity. (منفی‌گرایی)
+
+**Norm** - A standard of comparison based on the scores of a reference population. (هنجار)
+
+**Normative Data** - Statistical information about how a reference group scores on the test. (داده‌های هنجاری)
+
+### O
+
+**Openness** - Response style characterized by willingness to disclose problems and symptoms. (باز بودن)
+
+### P
+
+**Paranoid (Scale P)** - Severe personality pathology marked by pervasive distrust, suspiciousness, and hypersensitivity to criticism. (پارانوئید)
+
+**Passive-Aggressive (Scale 8A)** - Personality pattern characterized by indirect expression of anger and resistance to demands. (منفعل-پرخاشگر)
+
+**Pathology** - The presence of disease or disorder; abnormal psychological functioning. (آسیب‌شناسی)
+
+**Personality Pattern** - An enduring way of thinking, feeling, and behaving that characterizes an individual. (الگوی شخصیتی)
+
+**Prevalence** - The proportion of a population that has a particular trait or condition at a given time. (شیوع)
+
+**Profile** - The overall pattern of scores across all clinical scales. (پروفایل)
+
+**Protocol** - The complete set of responses and resulting scores for one administration of the test. (پروتکل)
+
+**Psychopathology** - The scientific study of mental disorders and abnormal behavior. (روان‌آسیب‌شناسی)
+
+### R
+
+**Raw Score** - The initial weighted sum of item responses before conversion to Base Rate scores. (نمره خام)
+
+**Response Style** - The overall approach a person takes to answering test questions (e.g., defensive, exaggerating). (سبک پاسخ‌دهی)
+
+**Rounding** - Mathematical procedure to convert decimals to whole numbers; special rules apply in MCMI-II. (گرد کردن)
+
+### S
+
+**Sadistic** - See Aggressive. Pattern of deriving satisfaction from causing pain or harm. (سادیستی)
+
+**Scale** - A measurement dimension composed of multiple items that together assess a specific trait or syndrome. (مقیاس)
+
+**Schizoid (Scale 1)** - Personality pattern characterized by social detachment, emotional coldness, and indifference to relationships. (اسکیزوئید)
+
+**Schizophrenia (Scale SS)** - Severe clinical syndrome characterized by thought disorder, hallucinations, and loss of contact with reality. (اسکیزوفرنیا / اختلال فکری)
+
+**Schizotypal (Scale S)** - Severe personality pathology marked by odd thinking, eccentric behavior, and social isolation. (اسکیزوتایپال)
+
+**Self-Defeating (Scale 8B)** - Personality pattern characterized by self-sabotaging behavior and rejection of opportunities for pleasure. (خودشکست)
+
+**Setting** - The clinical environment where assessment occurs (outpatient, inpatient, partial hospitalization, counseling, no treatment). (محیط)
+
+**Somatization** - The expression of psychological distress through physical symptoms. (جسمانی‌سازی)
+
+**Somatoform (Scale H)** - Clinical syndrome characterized by multiple physical complaints without clear medical cause. (جسمانی‌سازی)
+
+**Substance Abuse** - Problematic pattern of using alcohol or drugs leading to impairment or distress. (سوء مصرف مواد)
+
+**Syndrome** - A group of symptoms that consistently occur together and characterize a particular condition. (سندرم)
+
+### T
+
+**Test-Taking Attitude** - The overall approach and mindset with which a person completes the assessment. (نگرش آزمون‌دهی)
+
+**Thought Disorder** - Disruption in organized thinking, characteristic of schizophrenia. (اختلال فکری)
+
+**TRUE Response** - A "Yes" or agreement answer to a test question, coded as 1. (پاسخ بلی)
+
+### V
+
+**Validation** - The process of verifying that test scores are accurate and the protocol is valid. (اعتبارسنجی)
+
+**Validity (Scale V)** - A modifier index that detects random, careless, or inconsistent responding. (اعتبار)
+
+**Variable** - In programming, a named storage location for data values. (متغیر)
+
+### W
+
+**Weight** - The numerical value (0, 1, 2, or 3) assigned to an item based on its importance for a scale. (وزن)
+
+**Weighted Score** - A score calculated by multiplying responses by their assigned weights before summing. (نمره وزن‌دار)
+
+### X
+
+**X Correction** - See X (Disclosure). The first major adjustment applied to Base Rate scores based on overall disclosure level. (تصحیح X)
+
+**xcor** - The correction value applied to most personality and moderate syndrome scales. (xcor)
+
+**hxcor** - The correction value applied to severe pathology and severe syndrome scales (half of xcor). (hxcor)
+
+---
+
+### Scale Abbreviations
+
+| Abbreviation | Full Name | Persian |
+|--------------|-----------|---------|
+| **V** | Validity | اعتبار |
+| **Y** | Desirability | مطلوبیت |
+| **Z** | Debasement | تحقیر |
+| **X** | Disclosure | افشاء |
+| **1** | Schizoid | اسکیزوئید |
+| **2** | Avoidant | اجتنابی |
+| **3** | Dependent | وابسته |
+| **4** | Histrionic | هیستریونیک |
+| **5** | Narcissistic | خودشیفته |
+| **6A** | Antisocial | ضد اجتماعی |
+| **6B** | Aggressive/Sadistic | پرخاشگر/سادیستی |
+| **7** | Compulsive | وسواسی |
+| **8A** | Passive-Aggressive | منفعل-پرخاشگر |
+| **8B** | Self-Defeating | خودشکست |
+| **S** | Schizotypal | اسکیزوتایپال |
+| **C** | Borderline | مرزی |
+| **P** | Paranoid | پارانوئید |
+| **A** | Anxiety | اضطراب |
+| **H** | Somatoform | جسمانی‌سازی |
+| **N** | Bipolar Manic | شیدایی دوقطبی |
+| **D** | Dysthymia | دیس‌تایمیا |
+| **B** | Alcohol Dependence | وابستگی به الکل |
+| **T** | Drug Dependence | وابستگی به مواد |
+| **SS** | Thought Disorder | اختلال فکری |
+| **CC** | Major Depression | افسردگی اساسی |
+| **PP** | Delusional Disorder | اختلال هذیانی |
+
+---
+
+### Clinical Settings
+
+| Code | Setting | Persian | Description |
+|------|---------|---------|-------------|
+| **1** | Outpatient | سرپایی | Patient receiving treatment while living at home |
+| **2** | Inpatient | بستری | Patient admitted to psychiatric hospital |
+| **3** | Partial Hospitalization | بستری جزئی | Day treatment program |
+| **4** | No Treatment | بدون درمان | Not currently in treatment |
+| **5** | Counseling/Therapy | مشاوره/درمان | Outpatient counseling services |
+
+---
+
+### Common Abbreviations
+
+- **BR** - Base Rate (نرخ پایه)
+- **DA** - Anxiety/Depression Adjustment (تعدیل اضطراب/افسردگی)
+- **DC** - Denial/Complaint Adjustment (تعدیل انکار/شکایت)
+- **DD** - Desirability/Debasement Adjustment (تعدیل مطلوبیت/تحقیر)
+- **INP** - Inpatient Adjustment (تعدیل بستری)
+- **MCMI-II** - Millon Clinical Multiaxial Inventory-II (پرسشنامه چندمحوری بالینی میلون - ویرایش دوم)
 
 ---
 
