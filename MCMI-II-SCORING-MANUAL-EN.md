@@ -1262,7 +1262,7 @@ All formulas, tables, and procedures are exact reproductions of the original imp
 
 **Schizoid (Scale 1)** - Personality pattern characterized by social detachment, emotional coldness, and indifference to relationships. (اسکیزوئید)
 
-**Schizophrenia (Scale SS)** - Severe clinical syndrome characterized by thought disorder, hallucinations, and loss of contact with reality. (اسکیزوفرنیا / اختلال فکری)
+**Schizophrenia (Scale SS)** - Severe clinical syndrome characterized by thought disorder, delusions, and loss of contact with reality. (اسکیزوفرنیا / اختلال فکری)
 
 **Schizotypal (Scale S)** - Severe personality pathology marked by odd thinking, eccentric behavior, and social isolation. (اسکیزوتایپال)
 
@@ -1304,9 +1304,9 @@ All formulas, tables, and procedures are exact reproductions of the original imp
 
 **X Correction** - See X (Disclosure). The first major adjustment applied to Base Rate scores based on overall disclosure level. (تصحیح X)
 
-**xcor** - The correction value applied to most personality and moderate syndrome scales. (xcor)
+**xcor** - The correction value applied to most personality and moderate syndrome scales. (مقدار تصحیح xcor)
 
-**hxcor** - The correction value applied to severe pathology and severe syndrome scales (half of xcor). (hxcor)
+**hxcor** - The correction value applied to severe pathology and severe syndrome scales (half of xcor). (مقدار تصحیح hxcor)
 
 ---
 
