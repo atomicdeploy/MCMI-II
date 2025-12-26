@@ -88,6 +88,7 @@ describe('MCMI2-modern.html', () => {
   it('should have submit button', () => {
     const html = readFileSync(modernHtmlPath, 'utf-8');
     
-    assert.ok(html.includes('type=button') && html.includes('Submit'), 'Should have Submit button');
+    assert.ok(html.includes('type=button'), 'Should have button element');
+    assert.ok(html.includes('Submit'), 'Should have Submit button text');
   });
 });
