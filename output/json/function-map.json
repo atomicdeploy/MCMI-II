@@ -1,0 +1,836 @@
+[
+  {
+    "name": "window_onload",
+    "type": "sub",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 0,
+    "lineCount": 3,
+    "file": "vbscript-split/window_onload.vbs"
+  },
+  {
+    "name": "c1_onclick",
+    "type": "sub",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 0,
+    "lineCount": 8,
+    "file": "vbscript-split/c1_onclick.vbs"
+  },
+  {
+    "name": "v",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 1,
+    "lineCount": 10,
+    "file": "vbscript-split/v.vbs"
+  },
+  {
+    "name": "pp",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 1,
+    "lineCount": 33,
+    "file": "vbscript-split/pp.vbs"
+  },
+  {
+    "name": "cc",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 1,
+    "lineCount": 42,
+    "file": "vbscript-split/cc.vbs"
+  },
+  {
+    "name": "ss",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 1,
+    "lineCount": 44,
+    "file": "vbscript-split/ss.vbs"
+  },
+  {
+    "name": "t",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 1,
+    "lineCount": 68,
+    "file": "vbscript-split/t.vbs"
+  },
+  {
+    "name": "b",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 1,
+    "lineCount": 57,
+    "file": "vbscript-split/b.vbs"
+  },
+  {
+    "name": "d",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 1,
+    "lineCount": 47,
+    "file": "vbscript-split/d.vbs"
+  },
+  {
+    "name": "n",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 1,
+    "lineCount": 48,
+    "file": "vbscript-split/n.vbs"
+  },
+  {
+    "name": "h",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 1,
+    "lineCount": 42,
+    "file": "vbscript-split/h.vbs"
+  },
+  {
+    "name": "a",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 1,
+    "lineCount": 36,
+    "file": "vbscript-split/a.vbs"
+  },
+  {
+    "name": "p",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 1,
+    "lineCount": 55,
+    "file": "vbscript-split/p.vbs"
+  },
+  {
+    "name": "c",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 1,
+    "lineCount": 73,
+    "file": "vbscript-split/c.vbs"
+  },
+  {
+    "name": "s",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 1,
+    "lineCount": 52,
+    "file": "vbscript-split/s.vbs"
+  },
+  {
+    "name": "eightb",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 1,
+    "lineCount": 51,
+    "file": "vbscript-split/eightb.vbs"
+  },
+  {
+    "name": "eighta",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 1,
+    "lineCount": 52,
+    "file": "vbscript-split/eighta.vbs"
+  },
+  {
+    "name": "seven",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 1,
+    "lineCount": 49,
+    "file": "vbscript-split/seven.vbs"
+  },
+  {
+    "name": "sixb",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 1,
+    "lineCount": 56,
+    "file": "vbscript-split/sixb.vbs"
+  },
+  {
+    "name": "sixa",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 1,
+    "lineCount": 56,
+    "file": "vbscript-split/sixa.vbs"
+  },
+  {
+    "name": "five",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 1,
+    "lineCount": 60,
+    "file": "vbscript-split/five.vbs"
+  },
+  {
+    "name": "four",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 1,
+    "lineCount": 51,
+    "file": "vbscript-split/four.vbs"
+  },
+  {
+    "name": "three",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 1,
+    "lineCount": 48,
+    "file": "vbscript-split/three.vbs"
+  },
+  {
+    "name": "two",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 1,
+    "lineCount": 52,
+    "file": "vbscript-split/two.vbs"
+  },
+  {
+    "name": "one",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 1,
+    "lineCount": 46,
+    "file": "vbscript-split/one.vbs"
+  },
+  {
+    "name": "z",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 1,
+    "lineCount": 57,
+    "file": "vbscript-split/z.vbs"
+  },
+  {
+    "name": "y",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 1,
+    "lineCount": 34,
+    "file": "vbscript-split/y.vbs"
+  },
+  {
+    "name": "checkonebr",
+    "type": "function",
+    "parameters": [
+      "onee"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 46,
+    "file": "vbscript-split/checkonebr.vbs"
+  },
+  {
+    "name": "checktwobr",
+    "type": "function",
+    "parameters": [
+      "twoe"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 51,
+    "file": "vbscript-split/checktwobr.vbs"
+  },
+  {
+    "name": "checkthreebr",
+    "type": "function",
+    "parameters": [
+      "threee"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 56,
+    "file": "vbscript-split/checkthreebr.vbs"
+  },
+  {
+    "name": "checkfourbr",
+    "type": "function",
+    "parameters": [
+      "foure"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 63,
+    "file": "vbscript-split/checkfourbr.vbs"
+  },
+  {
+    "name": "checkfivebr",
+    "type": "function",
+    "parameters": [
+      "fivee"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 72,
+    "file": "vbscript-split/checkfivebr.vbs"
+  },
+  {
+    "name": "checksixabr",
+    "type": "function",
+    "parameters": [
+      "sixae"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 59,
+    "file": "vbscript-split/checksixabr.vbs"
+  },
+  {
+    "name": "checksixbbr",
+    "type": "function",
+    "parameters": [
+      "sixbe"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 59,
+    "file": "vbscript-split/checksixbbr.vbs"
+  },
+  {
+    "name": "checksevenbr",
+    "type": "function",
+    "parameters": [
+      "sevene"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 67,
+    "file": "vbscript-split/checksevenbr.vbs"
+  },
+  {
+    "name": "checkeightabr",
+    "type": "function",
+    "parameters": [
+      "eightae"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 60,
+    "file": "vbscript-split/checkeightabr.vbs"
+  },
+  {
+    "name": "checkeightbbr",
+    "type": "function",
+    "parameters": [
+      "eightbe"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 48,
+    "file": "vbscript-split/checkeightbbr.vbs"
+  },
+  {
+    "name": "checksbr",
+    "type": "function",
+    "parameters": [
+      "se"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 53,
+    "file": "vbscript-split/checksbr.vbs"
+  },
+  {
+    "name": "checkcbr",
+    "type": "function",
+    "parameters": [
+      "ce"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 69,
+    "file": "vbscript-split/checkcbr.vbs"
+  },
+  {
+    "name": "checkpbr",
+    "type": "function",
+    "parameters": [
+      "pe"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 67,
+    "file": "vbscript-split/checkpbr.vbs"
+  },
+  {
+    "name": "checkabr",
+    "type": "function",
+    "parameters": [
+      "ae"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 41,
+    "file": "vbscript-split/checkabr.vbs"
+  },
+  {
+    "name": "checkhbr",
+    "type": "function",
+    "parameters": [
+      "he"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 48,
+    "file": "vbscript-split/checkhbr.vbs"
+  },
+  {
+    "name": "checknbr",
+    "type": "function",
+    "parameters": [
+      "ne"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 49,
+    "file": "vbscript-split/checknbr.vbs"
+  },
+  {
+    "name": "checkdbr",
+    "type": "function",
+    "parameters": [
+      "de"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 61,
+    "file": "vbscript-split/checkdbr.vbs"
+  },
+  {
+    "name": "checkbbr",
+    "type": "function",
+    "parameters": [
+      "be"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 56,
+    "file": "vbscript-split/checkbbr.vbs"
+  },
+  {
+    "name": "checktbr",
+    "type": "function",
+    "parameters": [
+      "te"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 65,
+    "file": "vbscript-split/checktbr.vbs"
+  },
+  {
+    "name": "checkssbr",
+    "type": "function",
+    "parameters": [
+      "sse"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 44,
+    "file": "vbscript-split/checkssbr.vbs"
+  },
+  {
+    "name": "checkccbr",
+    "type": "function",
+    "parameters": [
+      "cce"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 51,
+    "file": "vbscript-split/checkccbr.vbs"
+  },
+  {
+    "name": "checkppbr",
+    "type": "function",
+    "parameters": [
+      "ppe"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 41,
+    "file": "vbscript-split/checkppbr.vbs"
+  },
+  {
+    "name": "checkybr",
+    "type": "function",
+    "parameters": [
+      "ye"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 27,
+    "file": "vbscript-split/checkybr.vbs"
+  },
+  {
+    "name": "checkzbr",
+    "type": "function",
+    "parameters": [
+      "ze"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 39,
+    "file": "vbscript-split/checkzbr.vbs"
+  },
+  {
+    "name": "checkfonebr",
+    "type": "function",
+    "parameters": [
+      "fonee"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 50,
+    "file": "vbscript-split/checkfonebr.vbs"
+  },
+  {
+    "name": "checkftwobr",
+    "type": "function",
+    "parameters": [
+      "ftwoe"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 56,
+    "file": "vbscript-split/checkftwobr.vbs"
+  },
+  {
+    "name": "checkfthreebr",
+    "type": "function",
+    "parameters": [
+      "fthreee"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 58,
+    "file": "vbscript-split/checkfthreebr.vbs"
+  },
+  {
+    "name": "checkffourbr",
+    "type": "function",
+    "parameters": [
+      "ffoure"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 57,
+    "file": "vbscript-split/checkffourbr.vbs"
+  },
+  {
+    "name": "checkffivebr",
+    "type": "function",
+    "parameters": [
+      "ffivee"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 62,
+    "file": "vbscript-split/checkffivebr.vbs"
+  },
+  {
+    "name": "checkfsixabr",
+    "type": "function",
+    "parameters": [
+      "fsixae"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 61,
+    "file": "vbscript-split/checkfsixabr.vbs"
+  },
+  {
+    "name": "checkfsixbbr",
+    "type": "function",
+    "parameters": [
+      "fsixbe"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 67,
+    "file": "vbscript-split/checkfsixbbr.vbs"
+  },
+  {
+    "name": "checkfsevenbr",
+    "type": "function",
+    "parameters": [
+      "fsevene"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 65,
+    "file": "vbscript-split/checkfsevenbr.vbs"
+  },
+  {
+    "name": "checkfeightabr",
+    "type": "function",
+    "parameters": [
+      "feightae"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 58,
+    "file": "vbscript-split/checkfeightabr.vbs"
+  },
+  {
+    "name": "checkfeightbbr",
+    "type": "function",
+    "parameters": [
+      "feightbe"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 53,
+    "file": "vbscript-split/checkfeightbbr.vbs"
+  },
+  {
+    "name": "checkfsbr",
+    "type": "function",
+    "parameters": [
+      "fse"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 53,
+    "file": "vbscript-split/checkfsbr.vbs"
+  },
+  {
+    "name": "checkfcbr",
+    "type": "function",
+    "parameters": [
+      "fce"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 70,
+    "file": "vbscript-split/checkfcbr.vbs"
+  },
+  {
+    "name": "checkfpbr",
+    "type": "function",
+    "parameters": [
+      "fpe"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 64,
+    "file": "vbscript-split/checkfpbr.vbs"
+  },
+  {
+    "name": "checkfabr",
+    "type": "function",
+    "parameters": [
+      "fae"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 44,
+    "file": "vbscript-split/checkfabr.vbs"
+  },
+  {
+    "name": "checkfhbr",
+    "type": "function",
+    "parameters": [
+      "fhe"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 49,
+    "file": "vbscript-split/checkfhbr.vbs"
+  },
+  {
+    "name": "checkfnbr",
+    "type": "function",
+    "parameters": [
+      "fne"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 50,
+    "file": "vbscript-split/checkfnbr.vbs"
+  },
+  {
+    "name": "checkfdbr",
+    "type": "function",
+    "parameters": [
+      "fde"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 62,
+    "file": "vbscript-split/checkfdbr.vbs"
+  },
+  {
+    "name": "checkfbbr",
+    "type": "function",
+    "parameters": [
+      "fbe"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 55,
+    "file": "vbscript-split/checkfbbr.vbs"
+  },
+  {
+    "name": "checkftbr",
+    "type": "function",
+    "parameters": [
+      "fte"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 68,
+    "file": "vbscript-split/checkftbr.vbs"
+  },
+  {
+    "name": "checkfssbr",
+    "type": "function",
+    "parameters": [
+      "fsse"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 52,
+    "file": "vbscript-split/checkfssbr.vbs"
+  },
+  {
+    "name": "checkfccbr",
+    "type": "function",
+    "parameters": [
+      "fcce"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 53,
+    "file": "vbscript-split/checkfccbr.vbs"
+  },
+  {
+    "name": "checkfppbr",
+    "type": "function",
+    "parameters": [
+      "fppe"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 41,
+    "file": "vbscript-split/checkfppbr.vbs"
+  },
+  {
+    "name": "checkfybr",
+    "type": "function",
+    "parameters": [
+      "fye"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 26,
+    "file": "vbscript-split/checkfybr.vbs"
+  },
+  {
+    "name": "checkfzbr",
+    "type": "function",
+    "parameters": [
+      "fze"
+    ],
+    "localVariables": 1,
+    "returnStatements": 1,
+    "lineCount": 40,
+    "file": "vbscript-split/checkfzbr.vbs"
+  },
+  {
+    "name": "male",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 0,
+    "lineCount": 26,
+    "file": "vbscript-split/male.vbs"
+  },
+  {
+    "name": "female",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 0,
+    "lineCount": 26,
+    "file": "vbscript-split/female.vbs"
+  },
+  {
+    "name": "daadjust",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 2,
+    "lineCount": 12,
+    "file": "vbscript-split/daadjust.vbs"
+  },
+  {
+    "name": "ddadjust",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 1,
+    "lineCount": 14,
+    "file": "vbscript-split/ddadjust.vbs"
+  },
+  {
+    "name": "dcadjust",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 0,
+    "lineCount": 21,
+    "file": "vbscript-split/dcadjust.vbs"
+  },
+  {
+    "name": "buttvalidate",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 0,
+    "lineCount": 21,
+    "file": "vbscript-split/buttvalidate.vbs"
+  },
+  {
+    "name": "buttclick",
+    "type": "function",
+    "parameters": [],
+    "localVariables": 0,
+    "returnStatements": 0,
+    "lineCount": 358,
+    "file": "vbscript-split/buttclick.vbs"
+  }
+]

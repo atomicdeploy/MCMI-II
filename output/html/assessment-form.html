@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCMI-II</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .question {
+      margin: 20px 0;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .question-number {
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    .question-text {
+      margin: 10px 0;
+    }
+    .question-options label {
+      display: inline-block;
+      margin-right: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>MCMI-II</h1>
+  <form id="mcmi-assessment" name="frm1">
+    <!-- Questions will be inserted here -->
+    <div id="questions-container">
+      <!-- Generated dynamically from questions.json -->
+    </div>
+    <button type="submit">Submit Assessment</button>
+  </form>
+  <script src="../javascript/transpiled.js"></script>
+</body>
+</html>

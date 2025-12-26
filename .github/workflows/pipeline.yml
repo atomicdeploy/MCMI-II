@@ -1,0 +1,153 @@
+name: 🚀 MCMI-II Parser Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  lint:
+    name: 🔍 Lint Code
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🔧 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: 📦 Install dependencies
+        run: npm ci
+
+      - name: 🔍 Run ESLint
+        run: npm run lint
+
+  test:
+    name: 🧪 Run Tests
+    runs-on: ubuntu-latest
+    needs: lint
+
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🔧 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: 📦 Install dependencies
+        run: npm ci
+
+      - name: 🧪 Run tests
+        run: npm test
+
+  parse-and-process:
+    name: 📊 Parse & Process MCMI-II
+    runs-on: ubuntu-latest
+    needs: test
+
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🔧 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: 📦 Install dependencies
+        run: npm ci
+
+      - name: ✅ Verify source file exists
+        run: |
+          if [ -f MCMI2_DRS.html ]; then
+            echo "✅ Source file found"
+            ls -lh MCMI2_DRS.html
+          else
+            echo "❌ Source file not found"
+            exit 1
+          fi
+
+      - name: 🏃 Run parser pipeline
+        run: npm run parse
+
+      - name: 📊 Verify outputs
+        run: |
+          echo "🔍 Checking generated outputs..."
+          if [ -d output/json ]; then
+            echo "✅ JSON outputs:"
+            ls -lh output/json/
+          fi
+          if [ -d output/javascript ]; then
+            echo "✅ JavaScript outputs:"
+            ls -lh output/javascript/
+          fi
+          if [ -d output/html ]; then
+            echo "✅ HTML outputs:"
+            ls -lh output/html/
+          fi
+          if [ -d output/vbscript-split ]; then
+            echo "✅ VBScript split files:"
+            ls -lh output/vbscript-split/ | head -20
+          fi
+
+      - name: ✅ Validate outputs
+        run: npm run validate
+
+      - name: ✅ Validate JavaScript (CRITICAL)
+        run: npm run validate:js
+
+      - name: 📤 Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: mcmi-ii-outputs
+          path: output/
+          retention-days: 30
+
+      - name: 📝 Generate summary
+        run: |
+          echo "## 🎉 Pipeline Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Generated Outputs" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          if [ -f output/json/questions.json ]; then
+            QUESTION_COUNT=$(grep -o '"number":' output/json/questions.json | wc -l)
+            echo "- ✅ Questions extracted: $QUESTION_COUNT" >> $GITHUB_STEP_SUMMARY
+          fi
+
+          if [ -f output/javascript/transpiled.js ]; then
+            JS_LINES=$(wc -l < output/javascript/transpiled.js)
+            echo "- ✅ JavaScript lines generated: $JS_LINES" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          if [ -f output/javascript/advanced-transpiled.js ]; then
+            ADV_JS_LINES=$(wc -l < output/javascript/advanced-transpiled.js)
+            echo "- ✅ Advanced JavaScript lines: $ADV_JS_LINES" >> $GITHUB_STEP_SUMMARY
+          fi
+
+          if [ -f output/json/vbscript-metadata.json ]; then
+            FUNC_COUNT=$(grep -o '"name":' output/json/vbscript-metadata.json | wc -l)
+            echo "- ✅ Functions transpiled: $FUNC_COUNT" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          if [ -d output/vbscript-split ]; then
+            SPLIT_COUNT=$(ls -1 output/vbscript-split/*.vbs 2>/dev/null | wc -l)
+            echo "- ✅ VBScript files split: $SPLIT_COUNT" >> $GITHUB_STEP_SUMMARY
+          fi
+
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### ✅ JavaScript Validation" >> $GITHUB_STEP_SUMMARY
+          echo "All generated JavaScript files are valid and loadable in Node.js/Browser" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 📦 Artifacts" >> $GITHUB_STEP_SUMMARY
+          echo "All outputs are available as workflow artifacts." >> $GITHUB_STEP_SUMMARY

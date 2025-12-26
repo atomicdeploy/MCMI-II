@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MCMI-II Psychological Assessment Tool - Modern Web Application">
+  <meta name="theme-color" content="#3498db">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="assets/icon-192.png">
+  <title data-i18n="app.title">ارزیابی MCMI-II</title>
+  <link rel="stylesheet" href="styles/app.css">
+</head>
+<body>
+  <div id="app">
+    <header class="app-header">
+      <div class="container">
+        <h1 class="logo" data-i18n="app.title">ارزیابی MCMI-II</h1>
+        <div class="header-controls">
+          <select id="language-selector" class="language-selector" aria-label="Select Language">
+            <option value="fa">فارسی</option>
+            <option value="en">English</option>
+          </select>
+          <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">
+            <span class="theme-icon">🌙</span>
+          </button>
+          <div class="progress-indicator">
+            <span id="progress-text">0 <span data-i18n="progress.of">از</span> 175</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <div class="container">
+        <!-- Welcome Screen -->
+        <section id="welcome-screen" class="screen active">
+          <div class="card welcome-card">
+            <h2 data-i18n="welcome.title">به ارزیابی MCMI-II خوش آمدید</h2>
+            <p class="subtitle" data-i18n="welcome.subtitle">آزمون چند محوری بالینی میلون - نسخه دوم</p>
+            
+            <div class="info-box">
+              <p>📋 <strong data-i18n="welcome.info.questions">۱۷۵ سوال</strong> - <span data-i18n="welcome.info.duration">تقریباً ۲۵-۳۰ دقیقه</span></p>
+              <p>🔒 <strong data-i18n="welcome.info.confidential">محرمانه</strong> - <span data-i18n="welcome.info.confidential_desc">پاسخ‌های شما خصوصی هستند</span></p>
+              <p>✅ <strong data-i18n="welcome.info.honest">پاسخ صادقانه</strong> - <span data-i18n="welcome.info.honest_desc">هیچ پاسخ درست یا غلطی وجود ندارد</span></p>
+            </div>
+
+            <form id="demographic-form" class="demographic-form">
+              <div class="form-group">
+                <label for="patient-name" data-i18n="welcome.form.name">نام:</label>
+                <input type="text" id="patient-name" required data-i18n="welcome.form.name_placeholder">
+              </div>
+
+              <div class="form-group">
+                <label for="patient-age" data-i18n="welcome.form.age">سن:</label>
+                <input type="number" id="patient-age" min="18" max="120" required data-i18n="welcome.form.age_placeholder">
+              </div>
+
+              <div class="form-group">
+                <label for="patient-code" data-i18n="welcome.form.code">کد (اختیاری):</label>
+                <input type="text" id="patient-code" data-i18n="welcome.form.code_placeholder">
+              </div>
+
+              <div class="form-group">
+                <label data-i18n="welcome.form.gender">جنسیت:</label>
+                <div class="radio-group">
+                  <label class="radio-label">
+                    <input type="radio" name="gender" value="female" required>
+                    <span data-i18n="welcome.form.female">زن</span>
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="gender" value="male" required>
+                    <span data-i18n="welcome.form.male">مرد</span>
+                  </label>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-large" data-i18n="welcome.form.start">شروع ارزیابی</button>
+            </form>
+          </div>
+        </section>
+
+        <!-- Assessment Screen -->
+        <section id="assessment-screen" class="screen">
+          <div class="card assessment-card">
+            <div class="question-header">
+              <span class="question-number"><span data-i18n="assessment.question">سوال</span> <span id="current-q">1</span> <span data-i18n="assessment.of">از</span> 175</span>
+              <div class="progress-bar">
+                <div id="progress-fill" class="progress-fill"></div>
+              </div>
+            </div>
+
+            <div id="question-container" class="question-container">
+              <p id="question-text" class="question-text"></p>
+              
+              <div id="answer-options" class="answer-options">
+                <label class="answer-option">
+                  <input type="radio" name="answer" value="false">
+                  <span class="answer-label">
+                    <span class="answer-icon">✗</span>
+                    <span class="answer-text"><span data-i18n="assessment.false">خیر</span> - FALSE</span>
+                  </span>
+                </label>
+                <label class="answer-option">
+                  <input type="radio" name="answer" value="true">
+                  <span class="answer-label">
+                    <span class="answer-icon">✓</span>
+                    <span class="answer-text"><span data-i18n="assessment.true">بلی</span> - TRUE</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <div class="question-nav">
+              <button id="prev-btn" class="btn btn-secondary" disabled data-i18n="assessment.previous">قبلی</button>
+              <button id="next-btn" class="btn btn-primary" data-i18n="assessment.next">بعدی</button>
+              <button id="submit-btn" class="btn btn-success" style="display:none;" data-i18n="assessment.submit">ارسال ارزیابی</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Results Screen -->
+        <section id="results-screen" class="screen">
+          <div class="card results-card">
+            <div class="results-header">
+              <h2 data-i18n="results.title">ارزیابی کامل شد!</h2>
+              <div class="completion-badge">✅</div>
+            </div>
+
+            <div id="results-summary" class="results-summary"></div>
+
+            <div class="results-actions">
+              <button id="download-report-btn" class="btn btn-primary btn-large" data-i18n="results.download">
+                📥 دانلود گزارش
+              </button>
+              <button id="restart-btn" class="btn btn-secondary" data-i18n="results.restart">
+                🔄 شروع ارزیابی جدید
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="app-footer">
+      <div class="container">
+        <p>MCMI-II Assessment Tool - Modernized Version | <span id="year"></span></p>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

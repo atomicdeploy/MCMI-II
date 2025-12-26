@@ -1,0 +1,39 @@
+function checkzbr(ze)
+dim zbr(35) 
+zbr(0)=12 
+zbr(1)=24 
+zbr(2)=35 
+zbr(3)=38 
+zbr(4)=42 
+zbr(5)=45 
+zbr(6)=48 
+zbr(7)=52 
+zbr(8)=55 
+zbr(9)=57 
+zbr(10)=59 
+zbr(11)=61 
+zbr(12)=63 
+zbr(13)=65 
+zbr(14)=67 
+zbr(15)=69 
+zbr(16)=70 
+zbr(17)=71 
+zbr(18)=73 
+zbr(19)=75 
+zbr(20)=76 
+zbr(21)=77 
+zbr(22)=78 
+zbr(23)=79 
+zbr(24)=80 
+zbr(25)=82 
+zbr(26)=84 
+zbr(27)=85 
+zbr(28)=87 
+zbr(29)=89 
+zbr(30)=91 
+zbr(31)=93 
+zbr(32)=95 
+zbr(33)=97 
+zbr(34)=100 
+checkzbr=zbr(ze) 
+end function

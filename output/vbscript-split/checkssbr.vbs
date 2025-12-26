@@ -1,0 +1,44 @@
+function checkssbr(sse)
+dim ssbr(40) 
+ssbr(0)=0 
+ssbr(1)=0 
+ssbr(2)=0 
+ssbr(3)=35 
+ssbr(4)=40 
+ssbr(5)=44 
+ssbr(6)=50 
+ssbr(7)=55 
+ssbr(8)=60 
+ssbr(9)=60 
+ssbr(10)=60 
+ssbr(11)=60 
+ssbr(12)=60 
+ssbr(13)=61 
+ssbr(14)=61 
+ssbr(15)=62 
+ssbr(16)=62 
+ssbr(17)=63 
+ssbr(18)=65 
+ssbr(19)=67 
+ssbr(20)=67 
+ssbr(21)=68 
+ssbr(22)=68 
+ssbr(23)=69 
+ssbr(24)=70 
+ssbr(25)=70 
+ssbr(26)=71 
+ssbr(27)=72 
+ssbr(28)=73 
+ssbr(29)=75 
+ssbr(30)=77 
+ssbr(31)=79 
+ssbr(32)=80 
+ssbr(33)=82 
+ssbr(34)=85 
+ssbr(35)=90 
+ssbr(36)=95 
+ssbr(37)=100 
+ssbr(38)=110 
+ssbr(39)=115 
+checkssbr=ssbr(sse) 
+end function

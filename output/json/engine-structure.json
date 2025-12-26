@@ -1,0 +1,985 @@
+{
+  "description": "Engine and data structure for MCMI-II",
+  "functions": [
+    {
+      "name": "window_onload",
+      "type": "sub",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "c1_onclick",
+      "type": "sub",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "v",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Validity scale calculation"
+    },
+    {
+      "name": "pp",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Delusional disorder scale calculation"
+    },
+    {
+      "name": "cc",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Major Depression scale calculation"
+    },
+    {
+      "name": "ss",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Schizophrenia scale calculation"
+    },
+    {
+      "name": "t",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "b",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "d",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "n",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "h",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "a",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "p",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "c",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "s",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "eightb",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "eighta",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "seven",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "sixb",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "sixa",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "five",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "four",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "three",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "two",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "one",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "z",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "y",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkonebr",
+      "type": "function",
+      "parameters": [
+        "onee"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checktwobr",
+      "type": "function",
+      "parameters": [
+        "twoe"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkthreebr",
+      "type": "function",
+      "parameters": [
+        "threee"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkfourbr",
+      "type": "function",
+      "parameters": [
+        "foure"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkfivebr",
+      "type": "function",
+      "parameters": [
+        "fivee"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checksixabr",
+      "type": "function",
+      "parameters": [
+        "sixae"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checksixbbr",
+      "type": "function",
+      "parameters": [
+        "sixbe"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checksevenbr",
+      "type": "function",
+      "parameters": [
+        "sevene"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkeightabr",
+      "type": "function",
+      "parameters": [
+        "eightae"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkeightbbr",
+      "type": "function",
+      "parameters": [
+        "eightbe"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checksbr",
+      "type": "function",
+      "parameters": [
+        "se"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkcbr",
+      "type": "function",
+      "parameters": [
+        "ce"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkpbr",
+      "type": "function",
+      "parameters": [
+        "pe"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkabr",
+      "type": "function",
+      "parameters": [
+        "ae"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkhbr",
+      "type": "function",
+      "parameters": [
+        "he"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checknbr",
+      "type": "function",
+      "parameters": [
+        "ne"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkdbr",
+      "type": "function",
+      "parameters": [
+        "de"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkbbr",
+      "type": "function",
+      "parameters": [
+        "be"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checktbr",
+      "type": "function",
+      "parameters": [
+        "te"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkssbr",
+      "type": "function",
+      "parameters": [
+        "sse"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkccbr",
+      "type": "function",
+      "parameters": [
+        "cce"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkppbr",
+      "type": "function",
+      "parameters": [
+        "ppe"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkybr",
+      "type": "function",
+      "parameters": [
+        "ye"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkzbr",
+      "type": "function",
+      "parameters": [
+        "ze"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkfonebr",
+      "type": "function",
+      "parameters": [
+        "fonee"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkftwobr",
+      "type": "function",
+      "parameters": [
+        "ftwoe"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkfthreebr",
+      "type": "function",
+      "parameters": [
+        "fthreee"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkffourbr",
+      "type": "function",
+      "parameters": [
+        "ffoure"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkffivebr",
+      "type": "function",
+      "parameters": [
+        "ffivee"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkfsixabr",
+      "type": "function",
+      "parameters": [
+        "fsixae"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkfsixbbr",
+      "type": "function",
+      "parameters": [
+        "fsixbe"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkfsevenbr",
+      "type": "function",
+      "parameters": [
+        "fsevene"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkfeightabr",
+      "type": "function",
+      "parameters": [
+        "feightae"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkfeightbbr",
+      "type": "function",
+      "parameters": [
+        "feightbe"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkfsbr",
+      "type": "function",
+      "parameters": [
+        "fse"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkfcbr",
+      "type": "function",
+      "parameters": [
+        "fce"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkfpbr",
+      "type": "function",
+      "parameters": [
+        "fpe"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkfabr",
+      "type": "function",
+      "parameters": [
+        "fae"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkfhbr",
+      "type": "function",
+      "parameters": [
+        "fhe"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkfnbr",
+      "type": "function",
+      "parameters": [
+        "fne"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkfdbr",
+      "type": "function",
+      "parameters": [
+        "fde"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkfbbr",
+      "type": "function",
+      "parameters": [
+        "fbe"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkftbr",
+      "type": "function",
+      "parameters": [
+        "fte"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkfssbr",
+      "type": "function",
+      "parameters": [
+        "fsse"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkfccbr",
+      "type": "function",
+      "parameters": [
+        "fcce"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkfppbr",
+      "type": "function",
+      "parameters": [
+        "fppe"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkfybr",
+      "type": "function",
+      "parameters": [
+        "fye"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "checkfzbr",
+      "type": "function",
+      "parameters": [
+        "fze"
+      ],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "male",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "female",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "daadjust",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "ddadjust",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "dcadjust",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "buttvalidate",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    },
+    {
+      "name": "buttclick",
+      "type": "function",
+      "parameters": [],
+      "purpose": "Assessment calculation function"
+    }
+  ],
+  "dataStructures": [
+    {
+      "name": "w",
+      "isArray": true,
+      "arraySize": 26,
+      "purpose": "Raw scores array"
+    },
+    {
+      "name": "r",
+      "isArray": true,
+      "arraySize": 26,
+      "purpose": "Scale names array"
+    },
+    {
+      "name": "rawbr",
+      "isArray": true,
+      "arraySize": 26,
+      "purpose": "Raw base rate array"
+    },
+    {
+      "name": "frawbr",
+      "isArray": true,
+      "arraySize": 26,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "aftercor",
+      "isArray": true,
+      "arraySize": 26,
+      "purpose": "After correction array"
+    },
+    {
+      "name": "afterhcor",
+      "isArray": true,
+      "arraySize": 26,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "dabr",
+      "isArray": true,
+      "arraySize": 26,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "afterddcor",
+      "isArray": true,
+      "arraySize": 26,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "afterdccor",
+      "isArray": true,
+      "arraySize": 26,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "afterinp",
+      "isArray": true,
+      "arraySize": 26,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "afterall",
+      "isArray": true,
+      "arraySize": 26,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "gg",
+      "isArray": true,
+      "arraySize": 26,
+      "purpose": "Scale labels array"
+    },
+    {
+      "name": "g",
+      "isArray": false,
+      "arraySize": null,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "gp",
+      "isArray": false,
+      "arraySize": null,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "fordc",
+      "isArray": true,
+      "arraySize": 26,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "wf",
+      "isArray": false,
+      "arraySize": null,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "f",
+      "isArray": false,
+      "arraySize": null,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "onebr",
+      "isArray": true,
+      "arraySize": 41,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "twobr",
+      "isArray": true,
+      "arraySize": 47,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "threebr",
+      "isArray": true,
+      "arraySize": 52,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "fourbr",
+      "isArray": true,
+      "arraySize": 59,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "fivebr",
+      "isArray": true,
+      "arraySize": 68,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "sixabr",
+      "isArray": true,
+      "arraySize": 55,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "sixbbr",
+      "isArray": true,
+      "arraySize": 54,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "sevenbr",
+      "isArray": true,
+      "arraySize": 62,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "eightabr",
+      "isArray": true,
+      "arraySize": 56,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "eightbbr",
+      "isArray": true,
+      "arraySize": 44,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "sbr",
+      "isArray": true,
+      "arraySize": 49,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "cbr",
+      "isArray": true,
+      "arraySize": 65,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "pbr",
+      "isArray": true,
+      "arraySize": 63,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "abr",
+      "isArray": true,
+      "arraySize": 37,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "hbr",
+      "isArray": true,
+      "arraySize": 44,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "nbr",
+      "isArray": true,
+      "arraySize": 45,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "dbr",
+      "isArray": true,
+      "arraySize": 57,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "bbr",
+      "isArray": true,
+      "arraySize": 52,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "tbr",
+      "isArray": true,
+      "arraySize": 61,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "ssbr",
+      "isArray": true,
+      "arraySize": 40,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "ccbr",
+      "isArray": true,
+      "arraySize": 47,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "ppbr",
+      "isArray": true,
+      "arraySize": 37,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "ybr",
+      "isArray": true,
+      "arraySize": 23,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "zbr",
+      "isArray": true,
+      "arraySize": 35,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "fonebr",
+      "isArray": true,
+      "arraySize": 45,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "ftwobr",
+      "isArray": true,
+      "arraySize": 52,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "fthreebr",
+      "isArray": true,
+      "arraySize": 54,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "ffourbr",
+      "isArray": true,
+      "arraySize": 53,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "ffivebr",
+      "isArray": true,
+      "arraySize": 58,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "fsixabr",
+      "isArray": true,
+      "arraySize": 57,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "fsixbbr",
+      "isArray": true,
+      "arraySize": 63,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "fsevenbr",
+      "isArray": true,
+      "arraySize": 61,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "feightabr",
+      "isArray": true,
+      "arraySize": 54,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "feightbbr",
+      "isArray": true,
+      "arraySize": 49,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "fsbr",
+      "isArray": true,
+      "arraySize": 49,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "fcbr",
+      "isArray": true,
+      "arraySize": 66,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "fpbr",
+      "isArray": true,
+      "arraySize": 60,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "fabr",
+      "isArray": true,
+      "arraySize": 40,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "fhbr",
+      "isArray": true,
+      "arraySize": 45,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "fnbr",
+      "isArray": true,
+      "arraySize": 46,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "fdbr",
+      "isArray": true,
+      "arraySize": 58,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "fbbr",
+      "isArray": true,
+      "arraySize": 51,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "ftbr",
+      "isArray": true,
+      "arraySize": 64,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "fssbr",
+      "isArray": true,
+      "arraySize": 48,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "fccbr",
+      "isArray": true,
+      "arraySize": 49,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "fppbr",
+      "isArray": true,
+      "arraySize": 37,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "fybr",
+      "isArray": true,
+      "arraySize": 22,
+      "purpose": "Assessment data variable"
+    },
+    {
+      "name": "fzbr",
+      "isArray": true,
+      "arraySize": 36,
+      "purpose": "Assessment data variable"
+    }
+  ]
+}
