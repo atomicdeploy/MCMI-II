@@ -101,7 +101,7 @@ python3 -m http.server 8080
 - Keyboard shortcuts (T/F keys)
 
 **From Transpiled JavaScript:**
-- All scoring functions (82 functions)
+- All scoring functions (84 functions)
 - Variable declarations (65 variables)
 - Question navigation logic
 - Form validation
