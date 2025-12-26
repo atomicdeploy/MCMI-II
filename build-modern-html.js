@@ -47,6 +47,10 @@ try {
   modernHtml += '// Modern JavaScript transpiled from VBScript\n';
   modernHtml += '// This replaces the original VBScript code to work in modern browsers\n\n';
   
+  // Add the k variable initialization (equivalent to VBScript's "set k=document.frm1")
+  modernHtml += '// Initialize form reference (replaces VBScript "set k=document.frm1")\n';
+  modernHtml += 'const k = document.frm1;\n\n';
+  
   // Add the transpiled JavaScript
   modernHtml += transpiledJs;
   

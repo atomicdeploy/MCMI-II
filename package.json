@@ -12,6 +12,7 @@
     "lint:fix": "eslint src/ tests/ --fix",
     "validate": "node src/validator.js",
     "validate:js": "node src/js-validator.js output/javascript/transpiled.js",
+    "validate:modern": "node validate-modern-html.js",
     "build": "node build.js",
     "build:modern": "node build-modern-html.js",
     "serve": "npx http-server dist -p 8080 -o",
