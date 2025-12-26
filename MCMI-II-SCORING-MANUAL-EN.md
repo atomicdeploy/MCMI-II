@@ -50,8 +50,8 @@ This manual provides exact, complete, and precise instructions for:
 
 ### Question Format
 Each of the 175 questions requires a binary response:
-- **FALSE (0)** - خیر (No) - Left radio button
-- **TRUE (1)** - بلی (Yes) - Right radio button
+- **FALSE (0)** - No - Left radio button
+- **TRUE (1)** - Yes - Right radio button
 
 Questions are labeled **R1 through R175** in the assessment form.
 
@@ -220,7 +220,7 @@ R3, R5, R8, R18, R23, R24, R25, R26, R27, R33, R36, R43, R45, R49, R50, R51, R53
 - R2 (TRUE): +3
 - R10 (TRUE): +2
 - R13 (TRUE): +3
-- R14 (FALSE): +1 ← Note: FALSE response scores
+- R14 (FALSE): +1 **Note:** FALSE response scores
 - R16 (TRUE): +1
 - R19 (TRUE): +3
 - R20 (FALSE): +2
@@ -669,7 +669,7 @@ if (g === 6 || g === 7 || g === 10 || gp === 10) {
   afterdccor[15] += 2;  // P
   afterdccor[16] += 15; // A
   afterdccor[17] += 13; // H
-  afterdccor[19] += 15; // D (index 19 not listed but implied)
+  afterdccor[19] += 15; // D
 }
 ```
 
@@ -1085,7 +1085,7 @@ All formulas, tables, and procedures are exact reproductions of the original imp
 
 **Document Status:** Complete Implementation Guide  
 **Version:** 1.0  
-**Date:** 2025-12-26  
+**Date:** 2024-12-26  
 **Language:** English
 
 ---
