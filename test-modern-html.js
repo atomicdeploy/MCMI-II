@@ -8,7 +8,7 @@
 import { chromium } from 'playwright';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
-import fs from 'fs';
+import { existsSync } from 'fs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -18,6 +18,12 @@ async function testModernHTML() {
   
   const htmlPath = join(__dirname, 'MCMI2-modern.html');
   const fileUrl = 'file://' + htmlPath;
+  
+  if (!existsSync(htmlPath)) {
+    console.error(`❌ MCMI2-modern.html not found at: ${htmlPath}`);
+    console.error("   Run 'npm run build:modern' first to generate MCMI2-modern.html.");
+    return 1;
+  }
   
   console.log(`📄 Loading: ${fileUrl}`);
   
@@ -29,13 +35,8 @@ async function testModernHTML() {
     const context = await browser.newContext();
     const page = await context.newPage();
     
-    // Listen for console messages and errors
-    const consoleMessages = [];
+    // Listen for errors
     const errorMessages = [];
-    
-    page.on('console', msg => {
-      consoleMessages.push(`${msg.type()}: ${msg.text()}`);
-    });
     
     page.on('pageerror', error => {
       errorMessages.push(error.message);
@@ -114,7 +115,6 @@ async function testModernHTML() {
     // Look for report indicators
     const hasReportTable = bodyContent.includes('Raw Score') || bodyContent.includes('BR from table');
     const hasXScore = bodyContent.includes('X (Disclosure)');
-    const hasScaleNames = bodyContent.includes('Validity') || bodyContent.includes('Delusional disorder');
     
     if (hasReportTable && hasXScore) {
       console.log('✅ Report generated successfully!');
