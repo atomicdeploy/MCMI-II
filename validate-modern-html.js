@@ -78,10 +78,10 @@ try {
   
   // Check 7: Has transpiled functions
   const functionCount = (html.match(/function \w+\(/g) || []).length;
-  if (functionCount >= 80) {
+  if (functionCount >= 84) {
     console.log(`✓ Transpiled functions present (${functionCount} functions found)`);
   } else {
-    console.log(`⚠ Warning: Expected 80+ functions, found ${functionCount}`);
+    console.log(`⚠ Warning: Expected at least 84 functions, found ${functionCount}`);
     warnings++;
   }
   
