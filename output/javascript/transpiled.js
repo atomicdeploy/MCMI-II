@@ -4392,16 +4392,43 @@ function buttclick() {
   document.write("</tbody></table>");
   f = "Report is done!";
   if (wf===1) {
-    const fso = /* FileSystemObject - use Blob API */ null;
-    const f1 = fso.OpenTextFile (fname + ".htm",2,true);
-    f1.write("Report from " + name + "<br>Age:" + age + "<br>Code:" + code + "<br><table cellspacing=5>");
+    // Generate HTML report content
+    let reportHTML = "<!DOCTYPE html><html><head><meta charset='UTF-8'><title>MCMI-II Report</title>";
+    reportHTML += "<style>body{font-family:Arial,sans-serif;padding:20px;max-width:800px;margin:0 auto;}";
+    reportHTML += "h1{color:#2c3e50;}table{width:100%;border-collapse:collapse;margin:20px 0;}";
+    reportHTML += "th,td{border:1px solid #ddd;padding:8px;text-align:left;}";
+    reportHTML += "th{background-color:#3498db;color:white;}</style></head><body>";
+    reportHTML += "<h1>MCMI-II Assessment Report</h1>";
+    reportHTML += "<p><strong>Name:</strong> " + name + "</p>";
+    reportHTML += "<p><strong>Age:</strong> " + age + "</p>";
+    reportHTML += "<p><strong>Code:</strong> " + code + "</p>";
+    reportHTML += "<table><tr><th>Scale</th><th>Score</th></tr>";
+    
     for (let i = 1; i <= 24; i++) {
-      f1.write("<tr><td>" + gg[i] + "</td><td>" + afterall[i] + "</td></tr>");
+      reportHTML += "<tr><td>" + gg[i] + "</td><td>" + afterall[i] + "</td></tr>";
     }
-    f1.write("</table>");
-    f1.close;
-    if (fso.FileExists (fname + ".htm")) {
-      f = "A report has been successfully saved in file    " + fname + ".htm";
+    
+    reportHTML += "</table><p><em>Report generated: " + new Date().toLocaleString() + "</em></p>";
+    reportHTML += "</body></html>";
+    
+    // Use Blob API to download the report (browser-compatible)
+    if (typeof Blob !== 'undefined' && typeof document !== 'undefined') {
+      try {
+        const blob = new Blob([reportHTML], { type: 'text/html' });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = fname + ".htm";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+        f = "A report has been successfully saved as: " + fname + ".htm";
+      } catch (e) {
+        f = "Failed to save report: " + e.message;
+      }
+    } else {
+      f = "File download not supported in this environment";
     }
   }
   document.write("<b>X (Disclosure):" + xscore + "</b><br>");

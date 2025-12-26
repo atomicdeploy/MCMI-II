@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MCMI-II Psychological Assessment Tool - Modern Web Application">
+  <meta name="theme-color" content="#3498db">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="assets/icon-192.png">
+  <title>MCMI-II Assessment Tool</title>
+  <link rel="stylesheet" href="styles/app.css">
+</head>
+<body>
+  <div id="app">
+    <header class="app-header">
+      <div class="container">
+        <h1 class="logo">MCMI-II Assessment</h1>
+        <div class="header-controls">
+          <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">
+            <span class="theme-icon">🌙</span>
+          </button>
+          <div class="progress-indicator">
+            <span id="progress-text">0 of 175</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <div class="container">
+        <!-- Welcome Screen -->
+        <section id="welcome-screen" class="screen active">
+          <div class="card welcome-card">
+            <h2>Welcome to MCMI-II Assessment</h2>
+            <p class="subtitle">Millon Clinical Multiaxial Inventory - II</p>
+            
+            <div class="info-box">
+              <p>📋 <strong>175 Questions</strong> - Approximately 25-30 minutes</p>
+              <p>🔒 <strong>Confidential</strong> - Your responses are private</p>
+              <p>✅ <strong>Answer honestly</strong> - There are no right or wrong answers</p>
+            </div>
+
+            <form id="demographic-form" class="demographic-form">
+              <div class="form-group">
+                <label for="patient-name">Name:</label>
+                <input type="text" id="patient-name" required placeholder="Enter your name">
+              </div>
+
+              <div class="form-group">
+                <label for="patient-age">Age:</label>
+                <input type="number" id="patient-age" min="18" max="120" required placeholder="Enter your age">
+              </div>
+
+              <div class="form-group">
+                <label for="patient-code">Code (Optional):</label>
+                <input type="text" id="patient-code" placeholder="Enter identification code">
+              </div>
+
+              <div class="form-group">
+                <label>Gender:</label>
+                <div class="radio-group">
+                  <label class="radio-label">
+                    <input type="radio" name="gender" value="female" required>
+                    <span>Female</span>
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="gender" value="male" required>
+                    <span>Male</span>
+                  </label>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-large">Start Assessment</button>
+            </form>
+          </div>
+        </section>
+
+        <!-- Assessment Screen -->
+        <section id="assessment-screen" class="screen">
+          <div class="card assessment-card">
+            <div class="question-header">
+              <span class="question-number">Question <span id="current-q">1</span> of 175</span>
+              <div class="progress-bar">
+                <div id="progress-fill" class="progress-fill"></div>
+              </div>
+            </div>
+
+            <div id="question-container" class="question-container">
+              <p id="question-text" class="question-text"></p>
+              
+              <div id="answer-options" class="answer-options">
+                <label class="answer-option">
+                  <input type="radio" name="answer" value="false">
+                  <span class="answer-label">
+                    <span class="answer-icon">✗</span>
+                    <span class="answer-text">FALSE - خیر</span>
+                  </span>
+                </label>
+                <label class="answer-option">
+                  <input type="radio" name="answer" value="true">
+                  <span class="answer-label">
+                    <span class="answer-icon">✓</span>
+                    <span class="answer-text">TRUE - بلی</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <div class="question-nav">
+              <button id="prev-btn" class="btn btn-secondary" disabled>← Previous</button>
+              <button id="next-btn" class="btn btn-primary">Next →</button>
+              <button id="submit-btn" class="btn btn-success" style="display:none;">Submit Assessment</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Results Screen -->
+        <section id="results-screen" class="screen">
+          <div class="card results-card">
+            <div class="results-header">
+              <h2>Assessment Complete!</h2>
+              <div class="completion-badge">✅</div>
+            </div>
+
+            <div id="results-summary" class="results-summary"></div>
+
+            <div class="results-actions">
+              <button id="download-report-btn" class="btn btn-primary btn-large">
+                📥 Download Report
+              </button>
+              <button id="restart-btn" class="btn btn-secondary">
+                🔄 Start New Assessment
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="app-footer">
+      <div class="container">
+        <p>MCMI-II Assessment Tool - Modernized Version | <span id="year"></span></p>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

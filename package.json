@@ -12,6 +12,8 @@
     "lint:fix": "eslint src/ tests/ --fix",
     "validate": "node src/validator.js",
     "validate:js": "node src/js-validator.js output/javascript/transpiled.js",
+    "build": "node build.js",
+    "serve": "npx http-server dist -p 8080 -o",
     "ci": "npm run lint && npm run parse && npm run validate && npm run validate:js && npm run test"
   },
   "keywords": [

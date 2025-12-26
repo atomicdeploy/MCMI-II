@@ -2,10 +2,8 @@
 node_modules/
 npm-debug.log
 yarn-error.log
-package-lock.json
 
-# Build outputs
-dist/
+# Build outputs (keep dist for deployment)
 build/
 *.min.js
 *.min.css

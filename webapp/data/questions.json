@@ -1,0 +1,2649 @@
+{
+  "assessment": "MCMI-II",
+  "version": "1.0",
+  "totalQuestions": 175,
+  "metadata": {
+    "title": "MCMI-II",
+    "formName": "frm1",
+    "encoding": "UTF-8",
+    "originalEncoding": "UTF-16LE",
+    "demographicFields": [
+      {
+        "name": "radgender",
+        "type": "radio",
+        "label": "Gender",
+        "options": [
+          "female",
+          "male"
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "number": 1,
+      "text": "بيشتر به ميل خود رفتار می کنم تا مطابق انتظاراتی که ديگران از من دارند",
+      "fieldName": "R1",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 2,
+      "number": 2,
+      "text": "تنها کار کردن را راحتتر از کار کردن با ديگران ميدانم",
+      "fieldName": "R2",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 3,
+      "number": 3,
+      "text": "بيشتر وقتها گفتگو با ديگران برايم مشکل و رنج آور است",
+      "fieldName": "R3",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 4,
+      "number": 4,
+      "text": "معتقدم در زندگی بايد کارها را با اراده و تصميم قوی انجام داد",
+      "fieldName": "R4",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 5,
+      "number": 5,
+      "text": "از چند هفته پيش به اين طرف کوچکترين مساله ای مرا به گريه می اندازد",
+      "fieldName": "R5",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 6,
+      "number": 6,
+      "text": "بعضی از مردم فکر می کنند که من آدم خودخواه و خودپسندی هستم",
+      "fieldName": "R6",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 7,
+      "number": 7,
+      "text": "در نوجوانی بخاطر رفتار بدی که در مدرسه داشتم دچار دردسرهای فراوانی می شدم",
+      "fieldName": "R7",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 8,
+      "number": 8,
+      "text": "هميشه اين احساس را دارم که در يک جمع يا گروه پذيرفته نمی شوم",
+      "fieldName": "R8",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 9,
+      "number": 9,
+      "text": "بيشتر وقتها اگر کسی اذيتم کند از رفتار او انتقاد می کنم",
+      "fieldName": "R9",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 10,
+      "number": 10,
+      "text": "دوست دارم در کارها از ديگران پيروی کنم",
+      "fieldName": "R10",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 11,
+      "number": 11,
+      "text": "بقدری از انجام دادن کارهای مختلف لذت می برم که نمی توانم تصميم بگيرم کدام يک را اول انجام دهم",
+      "fieldName": "R11",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 12,
+      "number": 12,
+      "text": "گاهی اوقات با خانواده ام بسيار تند و خشن رفتار می کنم",
+      "fieldName": "R12",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 13,
+      "number": 13,
+      "text": "علاقه چندانی به دوست پيدا کردن و رفاقت ندارم",
+      "fieldName": "R13",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 14,
+      "number": 14,
+      "text": "فکر می کنم که آدم معاشرتی و خونگرمی هستم",
+      "fieldName": "R14",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 15,
+      "number": 15,
+      "text": "چون فکر می کنم آدم بزرگ و مهمی هستم بنابراين برايم مهم نيست که ديگران در مورد من چه فکری می کنند",
+      "fieldName": "R15",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 16,
+      "number": 16,
+      "text": "هيچکس به اندازه کافی قدر کارها و زحمات مرا نمی داند",
+      "fieldName": "R16",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 17,
+      "number": 17,
+      "text": "من مشروب مصرف می کنم و تا کنون نتوانسته ام آنرا ترک کنم",
+      "fieldName": "R17",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 18,
+      "number": 18,
+      "text": "دلشوره دارم و عرق سرد روی تنم می نشيند",
+      "fieldName": "R18",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 19,
+      "number": 19,
+      "text": "در کارهای گروهی چندان فعال نيستم",
+      "fieldName": "R19",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 20,
+      "number": 20,
+      "text": "بيشتر وقتها فقط به اين خاطر کاری را انجام می دهم که مايه تفريح و سرگرمی است",
+      "fieldName": "R20",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 21,
+      "number": 21,
+      "text": "از ديدن اينکه کسی کاری را خوب انجام نمی دهد جداً ناراحت می شوم",
+      "fieldName": "R21",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 22,
+      "number": 22,
+      "text": "اگر در خانواده ام به من زور بگويند احتمالاً عصبانی می شوم و در برابر خواسته آنها مقاومت می کنم",
+      "fieldName": "R22",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 23,
+      "number": 23,
+      "text": "بيشتر وقتها فکر می کنم که بايد بخاطر کارهايی که انجام داده ام تنبيه شوم",
+      "fieldName": "R23",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 24,
+      "number": 24,
+      "text": "مردم پشت سر من در مورد قيافه و رفتارم حرف می زنند و مرا مسخره می کنند",
+      "fieldName": "R24",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 25,
+      "number": 25,
+      "text": "فکر می کنم ديگران بيشتر از من بخودشان اطمينان دارند که در اين دنيا چکاره اند و چه می خواهند",
+      "fieldName": "R25",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 26,
+      "number": 26,
+      "text": "بدون دليل گريه ام می گيرد و يا عصبانی می شوم",
+      "fieldName": "R26",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 27,
+      "number": 27,
+      "text": "از يکی دوسال پيش تا کنون احساس تنهايی و پوچی می کنم",
+      "fieldName": "R27",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 28,
+      "number": 28,
+      "text": "دوست دارم ديگران متوجه کارهای من بشوند",
+      "fieldName": "R28",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 29,
+      "number": 29,
+      "text": "در هنگام راه رفتن نمی توانم تعادلم را حفظ کنم",
+      "fieldName": "R29",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 30,
+      "number": 30,
+      "text": "از رقابت شديد لذت می برم",
+      "fieldName": "R30",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 31,
+      "number": 31,
+      "text": "وقتی به دردسر می افتم فوراً به دنبال کسی می گردم که کمکم کند",
+      "fieldName": "R31",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 32,
+      "number": 32,
+      "text": "برای اينکه دچار دردسر نشوم مواظب هستم تا مردم چيز زيادی در مورد من ندانند",
+      "fieldName": "R32",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 33,
+      "number": 33,
+      "text": "بيشتر وقتها احساس ضعف و خستگی می کنم",
+      "fieldName": "R33",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 34,
+      "number": 34,
+      "text": "در برخورد با مشکلات آدمهای ديگر بيشتر از من عصبانی مي شوند",
+      "fieldName": "R34",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 35,
+      "number": 35,
+      "text": "اعتياد من به مواد مخدر در گذشته برايم دردسر و مشکل درست کرده است",
+      "fieldName": "R35",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 36,
+      "number": 36,
+      "text": "تازگيها بدون هيچ دليلی به گريه می افتم",
+      "fieldName": "R36",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 37,
+      "number": 37,
+      "text": "فکر می کنم آدم فوق العاده ای هستم و انتظار دارم که ديگران توجه خاص به من داشته باشند",
+      "fieldName": "R37",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 38,
+      "number": 38,
+      "text": "تحت هيچ شرايطی نمی گذارم کسی به بهانه احتياج به کمک، از من سواستفاده کند",
+      "fieldName": "R38",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 39,
+      "number": 39,
+      "text": "يک راه مطمئن برای داشتن دنيايی پر صلح و صفا اصلاح اخلاقيات مردم است",
+      "fieldName": "R39",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 40,
+      "number": 40,
+      "text": "قبلاً با آدمهای ناجور زياد رفت و آمد داشتم",
+      "fieldName": "R40",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 41,
+      "number": 41,
+      "text": "تحمل آدمهايی را که ترديد و دودلی نشان می دهند ندارم",
+      "fieldName": "R41",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 42,
+      "number": 42,
+      "text": "آدم بسيار مطيع و سربزيری هستم",
+      "fieldName": "R42",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 43,
+      "number": 43,
+      "text": "خلق و خوی بدم مرتب مرا به دردسر می اندازد",
+      "fieldName": "R43",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 44,
+      "number": 44,
+      "text": "با زورگويی هم که شده دوست دارم افراد مطابق ميل من رفتار کنند",
+      "fieldName": "R44",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 45,
+      "number": 45,
+      "text": "از چند سال پيش به اين طرف حتی مسايل کوچک هم باعث افسردگيم می شوند",
+      "fieldName": "R45",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 46,
+      "number": 46,
+      "text": "چون مايلم هرکاری را به بهترين وجه انجام دهم بيشتر کارهايم عقب می افتد",
+      "fieldName": "R46",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 47,
+      "number": 47,
+      "text": "آنقدر بی سر و صدا و گوشه گير هستم که بيشتر مردم حتی متوجه من نمی شوند",
+      "fieldName": "R47",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 48,
+      "number": 48,
+      "text": "بيشتر وقتها دلم می خواهد با جنس مخالف باشم",
+      "fieldName": "R48",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 49,
+      "number": 49,
+      "text": "آدم بيسروصدا و ترسويی هستم",
+      "fieldName": "R49",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 50,
+      "number": 50,
+      "text": "آدمی هستم که زياد اشتباه مي کنم و احساس و عقيده ام را زود عوض می کنم",
+      "fieldName": "R50",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 51,
+      "number": 51,
+      "text": "بيشتر شبها وقتی به اتفاقات روزمره فکر می کنم ناراحت می شوم",
+      "fieldName": "R51",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 52,
+      "number": 52,
+      "text": "نوشيدن الکل هرگز مشکل جدی در کارم بوجود نياورده است",
+      "fieldName": "R52",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 53,
+      "number": 53,
+      "text": "تازگيها حتی صبحها احساس ضعف و بی حالی می کنم",
+      "fieldName": "R53",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 54,
+      "number": 54,
+      "text": "چند سالی است که احساس می کنم در زندگی شکست خورده ام",
+      "fieldName": "R54",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 55,
+      "number": 55,
+      "text": "از آدمهايی که خيال می کنند هر کاری را می توانند بهتر از ديگران انجام دهند متنفرم",
+      "fieldName": "R55",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 56,
+      "number": 56,
+      "text": "هميشه اين ترس را دارم مبادا محبت افرادی را که به آنها احتياج دارم از دست بدهم",
+      "fieldName": "R56",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 57,
+      "number": 57,
+      "text": "فکر می کنم زياده از حد اجازه می دهم مردم از من سواستفاده کنند",
+      "fieldName": "R57",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 58,
+      "number": 58,
+      "text": "تازگيها خيلی دلم می خواهد چيزها را پرت کنم و بشکنم",
+      "fieldName": "R58",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 59,
+      "number": 59,
+      "text": "تازگيها بطور جدی به فکر خودکشی افتاده ام",
+      "fieldName": "R59",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 60,
+      "number": 60,
+      "text": "هميشه بدنبال اين هستم که دوستان جديدی پيدا کنم و با افراد تازه ای نشست و برخاست کنم",
+      "fieldName": "R60",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 61,
+      "number": 61,
+      "text": "در هر کاری تمام جزئيات را در نظر می گيرم",
+      "fieldName": "R61",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 62,
+      "number": 62,
+      "text": "در سال گذشته عکس من بر روی جلد مجله هاي زيادي چاپ شد",
+      "fieldName": "R62",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 63,
+      "number": 63,
+      "text": "کسی مرا دوست ندارد",
+      "fieldName": "R63",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 64,
+      "number": 64,
+      "text": "اگر کسی يک ايراد از من بگيرد فوراً ده ايراد از او می گيرم",
+      "fieldName": "R64",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 65,
+      "number": 65,
+      "text": "بعضيها می گويند که من از درد و رنج لذت می برم",
+      "fieldName": "R65",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 66,
+      "number": 66,
+      "text": "بيشتر وقتها خشم و عصبانيت خود را بروز می دهم و بعد پشيمان می شوم",
+      "fieldName": "R66",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 67,
+      "number": 67,
+      "text": "تازگيها احساس می کنم که عصبی هستم و تحت فشار زيادی قرار دارم ولی علت آنرا نمی دانم",
+      "fieldName": "R67",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 68,
+      "number": 68,
+      "text": "گاهی وقتها قدرت حس کردن در بعضی از قسمتهای بدنم را از دست می دهم",
+      "fieldName": "R68",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 69,
+      "number": 69,
+      "text": "افرادی با استفاده از جادو و حس ششم زندگی من را در دست دارند",
+      "fieldName": "R69",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 70,
+      "number": 70,
+      "text": "مصرف مواد مخدر ممکن است عاقلانه نباشد ولی در گذشته حس می کردم که به آنها احتياج دارم",
+      "fieldName": "R70",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 71,
+      "number": 71,
+      "text": "هميشه خسته ام",
+      "fieldName": "R71",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 72,
+      "number": 72,
+      "text": "خواب ندارم و بعد از خواب هم باندازه قبل از خوابيدن خسته ام",
+      "fieldName": "R72",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 73,
+      "number": 73,
+      "text": "ناخواسته دست به کارهای احمقانه زيادی مي زنم که بعداً مرا به دردسر می اندازد",
+      "fieldName": "R73",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 74,
+      "number": 74,
+      "text": "کسی را که به من توهين کرده يا مرا خجالتزده کرده هيچوقت نمی بخشم",
+      "fieldName": "R74",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 75,
+      "number": 75,
+      "text": "ما بايد به نسلهای گذشته احترام بگذاريم و فکر نکنيم که داناتر از آنها هستيم",
+      "fieldName": "R75",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 76,
+      "number": 76,
+      "text": "در حال حاضر بيشتر وقتها حالت افسردگی و غمگينی به من دست می دهد",
+      "fieldName": "R76",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 77,
+      "number": 77,
+      "text": "اصولاً آدمی هستم که ديگران بآسانی از من سواستفاده می کنند",
+      "fieldName": "R77",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 78,
+      "number": 78,
+      "text": "من هميشه سعی می کنم ديگران را از خودم خوشنود کنم حتی اگر از آنها بدم بيايد",
+      "fieldName": "R78",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 79,
+      "number": 79,
+      "text": "چند سال است که بطور جدی به خودکشی فکر می کنم",
+      "fieldName": "R79",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 80,
+      "number": 80,
+      "text": "خيلی زود متوجه می شوم که ديگران قصد دارند برايم دردسر درست کنند",
+      "fieldName": "R80",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 81,
+      "number": 81,
+      "text": "در مقايسه با ديگران هميشه کمتر به مسايل جنسی علاقه نشان داده ام",
+      "fieldName": "R81",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 82,
+      "number": 82,
+      "text": "نمی دانم چرا اما مثل اينکه من از اذيت کردن کسانی که دوستشان دارم لذت می برم",
+      "fieldName": "R82",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 83,
+      "number": 83,
+      "text": "از خيلی وقت پيش صلاح خود را در اين ديده ام که با ديگران کمتر رابطه داشته باشم",
+      "fieldName": "R83",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 84,
+      "number": 84,
+      "text": "حاضرم بميرم ولی اجازه ندهم کسی اراده و اختيار مرا از من بگيرد",
+      "fieldName": "R84",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 85,
+      "number": 85,
+      "text": "از بچگی مواظب بودم کسی سرم کلاه نگذارد",
+      "fieldName": "R85",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 86,
+      "number": 86,
+      "text": "وقتی حوصله ام سر برود ، دوست دارم به کار پر هيجانی دست بزنم",
+      "fieldName": "R86",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 87,
+      "number": 87,
+      "text": "سرپيچی من از قانون مشکلاتی براي من و خانواده ام درست کرده است",
+      "fieldName": "R87",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 88,
+      "number": 88,
+      "text": "آنقدر در کارهايم دقت می کنم که خسته می شوم",
+      "fieldName": "R88",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 89,
+      "number": 89,
+      "text": "از نظر خودم ، من يکی از با استعدادترين آدمها هستم",
+      "fieldName": "R89",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 90,
+      "number": 90,
+      "text": "در ده سال گذشته اتومبيلی نديده ام",
+      "fieldName": "R90",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 91,
+      "number": 91,
+      "text": "از نظر من هيچ مانعی ندارد که آدم برای موفقيت در کارهايش ديگران را وسيله قرار دهد",
+      "fieldName": "R91",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 92,
+      "number": 92,
+      "text": "بدون ترس از تنبيه هميشه هر کاری را که خواسته ام انجام داده ام",
+      "fieldName": "R92",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 93,
+      "number": 93,
+      "text": "بارها شده که بی دليل شادی و هيجان بيش از حد به من دست داده است",
+      "fieldName": "R93",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 94,
+      "number": 94,
+      "text": "در نوجوانی حداقل يک بار از خانه فرار کرده ام",
+      "fieldName": "R94",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 95,
+      "number": 95,
+      "text": "بيشتر وقتها عجولانه چيزهايی می گويم که بعداً از گفتن آنها پشيمان می شوم",
+      "fieldName": "R95",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 96,
+      "number": 96,
+      "text": "چند هفته است که بدون دليل احساس خستگی شديد می کنم",
+      "fieldName": "R96",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 97,
+      "number": 97,
+      "text": "مدتی است که هيچ کاری را درست انجام نمی دهم و بهمين دليل واقعاً احساس گناه می کنم",
+      "fieldName": "R97",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 98,
+      "number": 98,
+      "text": "افکار و انديشه هايی در ذهنم موج مي زنند و رهايم نمی کنند",
+      "fieldName": "R98",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 99,
+      "number": 99,
+      "text": "در يکی دو سال گذشته بسيار دلسرد و غمگين بوده ام",
+      "fieldName": "R99",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 100,
+      "number": 100,
+      "text": "چند سال است که افراد زيادی در مورد زندگی خصوصی من جاسوسی می کنند",
+      "fieldName": "R100",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 101,
+      "number": 101,
+      "text": "نمی دانم چرا ولي گاهی حرفهای بد می زنم صرفاً برای اينکه ديگران را رنجيده خاطر کنم",
+      "fieldName": "R101",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 102,
+      "number": 102,
+      "text": "از بيشتر مردم يا متنفرم يا می ترسم",
+      "fieldName": "R102",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 103,
+      "number": 103,
+      "text": "من آزادانه بدون توجه به عقايد ديگران حرفم را می زنم",
+      "fieldName": "R103",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 104,
+      "number": 104,
+      "text": "وقتی يک شخص مسوول به من دستور بدهد کاری را انجام دهم ، احتمالاً يا آنرا انجام نمی دهم و يا عمداً آنرا بد انجام می دهم",
+      "fieldName": "R104",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 105,
+      "number": 105,
+      "text": "در گذشته اعتيادم به مواد مخدر باعث شده است شغلم را از دست بدهم",
+      "fieldName": "R105",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 106,
+      "number": 106,
+      "text": "برای اينکه اختلاف نظر پيش نيايد ، من هميشه حاضرم تسليم عقايد ديگران شوم",
+      "fieldName": "R106",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 107,
+      "number": 107,
+      "text": "بيشتر وقتها يک آدم غرغرو و اخمو هستم",
+      "fieldName": "R107",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 108,
+      "number": 108,
+      "text": "من ديگر حوصله بگومگو و درگيری را ندارم",
+      "fieldName": "R108",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 109,
+      "number": 109,
+      "text": "تازگيها هر موضوعی مدتها ذهنم را بخود مشغول مي کند",
+      "fieldName": "R109",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 110,
+      "number": 110,
+      "text": "بيشتر وقتها فکر می کنم که شايسته موفقيتهايی که نصيبم شده نبوده ام",
+      "fieldName": "R110",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 111,
+      "number": 111,
+      "text": "من با جذابيت خودم می توانم توجه مردم را بخود جلب کنم",
+      "fieldName": "R111",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 112,
+      "number": 112,
+      "text": "بيشتر وقتها وقتی تنها هستم بشدت احساس می کنم کسی در کنارم نشسته که نمی توانم او را ببينم",
+      "fieldName": "R112",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 113,
+      "number": 113,
+      "text": "احساس بی هدفی می کنم و نمی دانم در زندگی به کجا می روم",
+      "fieldName": "R113",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 114,
+      "number": 114,
+      "text": "تازگيها خيلی عرق می کنم و کلا فه ام",
+      "fieldName": "R114",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 115,
+      "number": 115,
+      "text": "گاهی وقتها احساس می کنم بنحوی بايد به خودم يا ديگران آسيب برسانم",
+      "fieldName": "R115",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 116,
+      "number": 116,
+      "text": "بخاطر جرائمی که هرگز مرتکب نشده ام مرا غير عادلانه تنبيه کرده اند",
+      "fieldName": "R116",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 117,
+      "number": 117,
+      "text": "چند هفته است که اعصابم داغون شده است",
+      "fieldName": "R117",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 118,
+      "number": 118,
+      "text": "فکرهای عجيبی به سرم می افتد که کاش می توانستم از شر آنها خلاص شوم",
+      "fieldName": "R118",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 119,
+      "number": 119,
+      "text": "برای من بسيار مشکل است که بر هوس مشروب خوردن افراطی غلبه کنم",
+      "fieldName": "R119",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 120,
+      "number": 120,
+      "text": "اکثر مردم فکر می کنند آدم بی مصرفی هستم",
+      "fieldName": "R120",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 121,
+      "number": 121,
+      "text": "گاهی هنگام دعوا و جروبحث با کسی که دوستش دارم احساس شديد تحريک جنسی می کنم",
+      "fieldName": "R121",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 122,
+      "number": 122,
+      "text": "طی سالهای گذشته توانسته ام مصرف مشروبم را در کمترين حد نگه دارم",
+      "fieldName": "R122",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 123,
+      "number": 123,
+      "text": "هميشه مردم را امتحان می کنم تا بفهمم چقدر می شود به آنها اعتماد کرد",
+      "fieldName": "R123",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 124,
+      "number": 124,
+      "text": "حتی وقتی بيدارم متوجه آدمهايی که دوروبرم هستند نمی شوم",
+      "fieldName": "R124",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 125,
+      "number": 125,
+      "text": "پيدا کردن دوست برايم کار بسيار ساده ايست",
+      "fieldName": "R125",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 126,
+      "number": 126,
+      "text": "هميشه سعی می کنم که کارهايم خوب تنظيم و برنامه ريزی شده باشد",
+      "fieldName": "R126",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 127,
+      "number": 127,
+      "text": "گاهی وقتها چيزهای ناراحت کننده ای را بوضوح می شنوم که ديگران قدرت شنيدن آنها را ندارند",
+      "fieldName": "R127",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 128,
+      "number": 128,
+      "text": "بنظر می رسد احساساتم خيلی تغيير می کنند",
+      "fieldName": "R128",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 129,
+      "number": 129,
+      "text": "سواستفاده از کسی را که خود اجازه چنين کاری را فراهم کند عيب نمی دانم",
+      "fieldName": "R129",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 130,
+      "number": 130,
+      "text": "طی چند سال گذشته بارها در محل کارم به دردسر افتاده ام",
+      "fieldName": "R130",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 131,
+      "number": 131,
+      "text": "فکرهای مهمی در سر دارم که مردم اين زمانه آنها را نمی فهمند",
+      "fieldName": "R131",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 132,
+      "number": 132,
+      "text": "مدتی است که غمگين و گرفته ام و نمی توانم از اين حالت خلاص شوم",
+      "fieldName": "R132",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 133,
+      "number": 133,
+      "text": "هميشه دوست دارم در کارهايم از ديگران کمک بگيرم",
+      "fieldName": "R133",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 134,
+      "number": 134,
+      "text": "از ديدن آدمهايی که کند کار می کنند اغلب وقتها عصبانی می شوم",
+      "fieldName": "R134",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 135,
+      "number": 135,
+      "text": "من جداً از افرادی که انتظار دارند کاری را بر خلاف ميلم انجام دهم متنفرم",
+      "fieldName": "R135",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 136,
+      "number": 136,
+      "text": "چند سال است آنقدر احساس گناه می کنم که ممکن است بلايی به سر خود بياورم",
+      "fieldName": "R136",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 137,
+      "number": 137,
+      "text": "در مهمانيها هيچوقت گوشه گير نيستم",
+      "fieldName": "R137",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 138,
+      "number": 138,
+      "text": "مردم مرا آدمی رسمی و مقرراتی می شناسند",
+      "fieldName": "R138",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 139,
+      "number": 139,
+      "text": "در برابر مهربانی مردم گاهی دستپاچه و ناراحت می شوم",
+      "fieldName": "R139",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 140,
+      "number": 140,
+      "text": "استفاده از مواد مخدر باعث درگيری خانوادگی برايم شده است",
+      "fieldName": "R140",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 141,
+      "number": 141,
+      "text": "وقتی که با فردی از جنس مخالف خودم روبرو می شوم زود دستپاچه می شوم",
+      "fieldName": "R141",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 142,
+      "number": 142,
+      "text": "بعضی از اعضای خانواده ام می گويند که خودخواه هستم و فقط به خودم فکر می کنم",
+      "fieldName": "R142",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 143,
+      "number": 143,
+      "text": "برايم مهم نيست که اشخاص ديگر علاقه و توجهی به من نشان ندهند",
+      "fieldName": "R143",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 144,
+      "number": 144,
+      "text": "راستش را بخواهيد من اغلب اوقات برای خلاص شدن از گرفتاری دروغ می گويم",
+      "fieldName": "R144",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 145,
+      "number": 145,
+      "text": "مردم خيلی راحت می توانند نظرم را عوض کنند حتی اگر تصميم نهايی خود را گرفته باشم",
+      "fieldName": "R145",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 146,
+      "number": 146,
+      "text": "کسانی هستند که سعی دارند به من صدمه برسانند ولی من اين قدرت را دارم که بر آنها غلبه کنم",
+      "fieldName": "R146",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 147,
+      "number": 147,
+      "text": "والدينم اغلب اوقات می گفتند که من به جايی نمی رسم",
+      "fieldName": "R147",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 148,
+      "number": 148,
+      "text": "بيشتر وقتها من با دستوراتم مردم را عصبانی می کنم",
+      "fieldName": "R148",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 149,
+      "number": 149,
+      "text": "نسبت به مافوق خودم احترام زيادی قائل هستم",
+      "fieldName": "R149",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 150,
+      "number": 150,
+      "text": "من تقريباً هيچگونه ارتباط نزديکی با اشخاص ديگر ندارم",
+      "fieldName": "R150",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 151,
+      "number": 151,
+      "text": "در گذشته مردم به من گفته اند که به خيلی چيزها بيش از حد شوق و علاقه نشان داده ام",
+      "fieldName": "R151",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 152,
+      "number": 152,
+      "text": "در سال گذشته بيش از سی بار برروي اقيانوس اطلس پرواز کرده ام",
+      "fieldName": "R152",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 153,
+      "number": 153,
+      "text": "من به اين گفته اعتقاد دارم در کارها هرچه دقت کنی بازهم کم است",
+      "fieldName": "R153",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 154,
+      "number": 154,
+      "text": "من مستحق رنجی هستم که در طول زندگی کشيده ام",
+      "fieldName": "R154",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 155,
+      "number": 155,
+      "text": "احساس من نسبت به افراد مهم زندگيم اغلب بين محبت و نفرت در حال نوسان است",
+      "fieldName": "R155",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 156,
+      "number": 156,
+      "text": "والدينم هميشه با هم بگومگو داشتند",
+      "fieldName": "R156",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 157,
+      "number": 157,
+      "text": "اگر با کسی دعوا و زدوخورد کنم پشيمان نميشوم",
+      "fieldName": "R157",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 158,
+      "number": 158,
+      "text": "در بين جمع هميشه خجول و کلافه هستم",
+      "fieldName": "R158",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 159,
+      "number": 159,
+      "text": "برای قوانين و مقررات احترام قائلم چون آنها را راهنمای خوبی برای زندگی می دانم",
+      "fieldName": "R159",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 160,
+      "number": 160,
+      "text": "از همان کودکی بتدريج رابطه خود را با واقعيت از دست داده ام",
+      "fieldName": "R160",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 161,
+      "number": 161,
+      "text": "بندرت احساس شديدی نسبت به چيزی پيدا می کنم",
+      "fieldName": "R161",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 162,
+      "number": 162,
+      "text": "در گذشته بيقرار و در حال حرکت بوده ام بی آنکه بدانم مقصدم کجاست",
+      "fieldName": "R162",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 163,
+      "number": 163,
+      "text": "از کسانی که دير سر قرار می آيند بيزارم",
+      "fieldName": "R163",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 164,
+      "number": 164,
+      "text": "افراد آب زيرکاه اغلب سعی دارند کاری را که من انجام داده ام يا فکرش از من بوده به اسم خودشان تمام کنند",
+      "fieldName": "R164",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 165,
+      "number": 165,
+      "text": "اگر کسی اصرار کند که من کاری را مطابق ميل او انجام دهم بشدت عصبانی می شوم",
+      "fieldName": "R165",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 166,
+      "number": 166,
+      "text": "من استعداد موفقيت را تقريباً در هر کاری دارم",
+      "fieldName": "R166",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 167,
+      "number": 167,
+      "text": "تازگی بکلی خرد شده ام",
+      "fieldName": "R167",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 168,
+      "number": 168,
+      "text": "اشخاصی را که دوست دارم ظاهراً تشويق می کنم که به من آسيب برسانند",
+      "fieldName": "R168",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 169,
+      "number": 169,
+      "text": "روی سرو بدنم هيچوقت مويی وجود نداشته است",
+      "fieldName": "R169",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 170,
+      "number": 170,
+      "text": "وقتی در يک جمع هستم دوست دارم توجه همه بيشتر به من باشد",
+      "fieldName": "R170",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 171,
+      "number": 171,
+      "text": "اشخاصی که در برخوردهای اول آنها را تحسين کرده ام بعد مايه دلخوری من شده اند",
+      "fieldName": "R171",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 172,
+      "number": 172,
+      "text": "آدمی هستم که می توانم رودرروی کسی بايستم و جوابش را بدهم",
+      "fieldName": "R172",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 173,
+      "number": 173,
+      "text": "ترجيح می دهم با کسانی معاشرت کنم که مواظب و حامی من هستند",
+      "fieldName": "R173",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 174,
+      "number": 174,
+      "text": "بارها در زندگی از شدت شادی و مصرف انرژی حالت افسردگی به من دست داده است",
+      "fieldName": "R174",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    },
+    {
+      "id": 175,
+      "number": 175,
+      "text": "پرهيز از مصرف بيش از حد مواد مخدر يا الکل در گذشته برايم با دشواريهايی همراه بوده است",
+      "fieldName": "R175",
+      "type": "radio",
+      "options": [
+        "false",
+        "true"
+      ],
+      "labels": [
+        "FALSE - خیر",
+        "TRUE - بلی"
+      ]
+    }
+  ]
+}
