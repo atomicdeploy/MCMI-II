@@ -19,13 +19,24 @@ const originalHtmlPath = path.join(__dirname, 'MCMI2_DRS.html');
 const transpiledJsPath = path.join(__dirname, 'output', 'javascript', 'transpiled.js');
 const outputPath = path.join(__dirname, 'MCMI2-modern.html');
 
-// Line number where VBScript starts (line 2165 has <SCRIPT language=vbscript defer>)
-const htmlEndLine = 2164;
-
 try {
   console.log('📖 Reading original HTML file...');
   const originalHtml = fs.readFileSync(originalHtmlPath, 'utf-8');
   const htmlLines = originalHtml.split('\n');
+
+  // Determine where the VBScript <SCRIPT> tag starts so we can strip everything before it.
+  // This avoids relying on a fragile hard-coded line number.
+  const vbscriptTagRegex = /<script[^>]*language\s*=\s*["']?vbscript["']?[^>]*>/i;
+  const vbscriptLineIndex = htmlLines.findIndex((line) => vbscriptTagRegex.test(line));
+
+  let htmlEndLine;
+  if (vbscriptLineIndex !== -1) {
+    htmlEndLine = vbscriptLineIndex;
+  } else {
+    console.warn('⚠️ Could not automatically locate VBScript <SCRIPT> tag. Falling back to expected line 2165.');
+    // Fallback: line 2164 is known to be the last HTML line before VBScript in the original source.
+    htmlEndLine = 2164;
+  }
   
   console.log(`   Total lines in original: ${htmlLines.length}`);
   console.log(`   Extracting first ${htmlEndLine} lines (HTML structure)`);
