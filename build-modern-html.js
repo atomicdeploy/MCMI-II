@@ -42,12 +42,14 @@ try {
   
   let modernHtml = htmlPortion;
   
-  // Add JavaScript instead of VBScript
-  modernHtml += '\n<SCRIPT type="text/javascript">\n';
+  // Add JavaScript instead of VBScript (with defer to match original behavior)
+  modernHtml += '\n<SCRIPT type="text/javascript" defer>\n';
   modernHtml += '// Modern JavaScript transpiled from VBScript\n';
-  modernHtml += '// This replaces the original VBScript code to work in modern browsers\n\n';
+  modernHtml += '// This replaces the original VBScript code to work in modern browsers\n';
+  modernHtml += '// The defer attribute ensures the script runs after the page is parsed (like original VBScript defer)\n\n';
   
   // Add the k variable initialization (equivalent to VBScript's "set k=document.frm1")
+  // This will execute after DOM is loaded due to defer attribute
   modernHtml += '// Initialize form reference (replaces VBScript "set k=document.frm1")\n';
   modernHtml += 'const k = document.frm1;\n\n';
   

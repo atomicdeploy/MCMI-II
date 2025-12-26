@@ -35,7 +35,7 @@ try {
   }
   
   // Check 3: Has all 175 questions (R1 through R175)
-  const questionCount = (html.match(/name=R\d+/g) || []).length / 2; // divided by 2 because each question has 2 radio buttons
+  const questionCount = (html.match(/name=["']?R\d+["']?/g) || []).length / 2; // divided by 2 because each question has 2 radio buttons
   if (questionCount === 175) {
     console.log(`✓ All 175 questions present (${questionCount * 2} radio buttons found)`);
   } else {
