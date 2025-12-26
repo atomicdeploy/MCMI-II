@@ -12,6 +12,7 @@ A complete DOM, HTML, JavaScript, and VBScript parser and converter for the MCMI
 - ✅ Generate modern HTML fragments
 - ✅ Implement emoji-based logging system
 - ✅ Create robust CI/CD pipeline
+- ✅ **Create modern browser-compatible single-file HTML**
 
 ## 📁 Project Structure
 
@@ -41,6 +42,8 @@ MCMI-II/
 ├── .github/workflows/       # CI/CD configuration
 │   └── pipeline.yml
 ├── MCMI2_DRS.html          # Source file (UTF-8 converted)
+├── MCMI2-modern.html       # ⭐ Modern browser-compatible version
+├── build-modern-html.js    # Build script for modern HTML
 └── package.json
 
 ```
@@ -74,6 +77,26 @@ The pipeline automatically:
 ```bash
 npm run parse
 ```
+
+### Building Modern Browser Version
+
+To create the single-file modern browser-compatible HTML:
+
+```bash
+# Build MCMI2-modern.html
+npm run build:modern
+
+# Serve and test in browser
+npm run serve:modern
+```
+
+This creates `MCMI2-modern.html` - a single file that:
+- ✅ Maintains exact look and feel of the original
+- ✅ Works in all modern browsers (no VBScript needed)
+- ✅ Includes transpiled JavaScript inline
+- ✅ Preserves all 175 questions and functionality
+
+See [MCMI2-MODERN-README.md](MCMI2-MODERN-README.md) for details.
 
 ## 📊 Output Files
 

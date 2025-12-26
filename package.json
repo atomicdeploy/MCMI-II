@@ -7,13 +7,17 @@
   "scripts": {
     "parse": "node src/enhanced-pipeline.js",
     "test": "node --test tests/*.test.js",
+    "test:browser": "node browser-test-modern.js",
     "lint": "eslint src/ tests/",
     "lint:all": "eslint src/ tests/ output/javascript/transpiled.js",
     "lint:fix": "eslint src/ tests/ --fix",
     "validate": "node src/validator.js",
     "validate:js": "node src/js-validator.js output/javascript/transpiled.js",
+    "validate:modern": "node validate-modern-html.js",
     "build": "node build.js",
+    "build:modern": "node build-modern-html.js",
     "serve": "npx http-server dist -p 8080 -o",
+    "serve:modern": "npx http-server . -p 8080 -o MCMI2-modern.html",
     "ci": "npm run lint && npm run parse && npm run validate && npm run validate:js && npm run test"
   },
   "keywords": [
@@ -33,6 +37,7 @@
   },
   "devDependencies": {
     "eslint": "^9.39.2",
-    "globals": "^16.5.0"
+    "globals": "^16.5.0",
+    "playwright": "^1.57.0"
   }
 }
