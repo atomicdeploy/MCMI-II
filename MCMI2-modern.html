@@ -2168,7 +2168,8 @@ function resetDRS() {
 // The defer attribute ensures the script runs after the page is parsed (like original VBScript defer)
 
 // Initialize form reference (replaces VBScript "set k=document.frm1")
-const k = document.frm1;
+// With defer, the DOM is guaranteed to be parsed when this runs
+let k = document.frm1;
 
 /**
  * Transpiled JavaScript from VBScript

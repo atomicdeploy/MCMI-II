@@ -49,9 +49,11 @@ try {
   modernHtml += '// The defer attribute ensures the script runs after the page is parsed (like original VBScript defer)\n\n';
   
   // Add the k variable initialization (equivalent to VBScript's "set k=document.frm1")
-  // This will execute after DOM is loaded due to defer attribute
+  // Using let instead of const to match VBScript's set behavior more closely
+  // The defer attribute ensures DOM is loaded, but we initialize it safely
   modernHtml += '// Initialize form reference (replaces VBScript "set k=document.frm1")\n';
-  modernHtml += 'const k = document.frm1;\n\n';
+  modernHtml += '// With defer, the DOM is guaranteed to be parsed when this runs\n';
+  modernHtml += 'let k = document.frm1;\n\n';
   
   // Add the transpiled JavaScript
   modernHtml += transpiledJs;

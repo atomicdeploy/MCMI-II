@@ -35,11 +35,20 @@ try {
   }
   
   // Check 3: Has all 175 questions (R1 through R175)
-  const questionCount = (html.match(/name=["']?R\d+["']?/g) || []).length / 2; // divided by 2 because each question has 2 radio buttons
+  // Count unique question names (each question has exactly 2 radio buttons)
+  const questionMatches = html.match(/name=["']?R(\d+)["']?/g) || [];
+  const uniqueQuestions = new Set();
+  questionMatches.forEach(match => {
+    const num = match.match(/R(\d+)/)[1];
+    uniqueQuestions.add(parseInt(num));
+  });
+  const questionCount = uniqueQuestions.size;
+  
   if (questionCount === 175) {
-    console.log(`✓ All 175 questions present (${questionCount * 2} radio buttons found)`);
+    console.log(`✓ All 175 questions present (${questionMatches.length} radio buttons found)`);
   } else {
     console.log(`✗ Expected 175 questions, found ${questionCount}`);
+    console.log(`  (Total radio buttons: ${questionMatches.length})`);
     errors++;
   }
   
@@ -60,7 +69,7 @@ try {
   }
   
   // Check 6: Has k variable initialization
-  if (html.includes('const k = document.frm1')) {
+  if (html.includes('let k = document.frm1') || html.includes('const k = document.frm1')) {
     console.log('✓ Form reference variable (k) initialized');
   } else {
     console.log('⚠ Warning: k variable initialization not found');
