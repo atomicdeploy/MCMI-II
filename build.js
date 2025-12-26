@@ -28,6 +28,7 @@ fs.mkdirSync(path.join(DIST_DIR, 'styles'), { recursive: true });
 fs.mkdirSync(path.join(DIST_DIR, 'js'), { recursive: true });
 fs.mkdirSync(path.join(DIST_DIR, 'assets'), { recursive: true });
 fs.mkdirSync(path.join(DIST_DIR, 'data'), { recursive: true });
+fs.mkdirSync(path.join(DIST_DIR, 'locales'), { recursive: true });
 console.log('✅ Created dist directory structure');
 
 // Copy files
@@ -39,7 +40,10 @@ const filesToCopy = [
   { from: 'js/app.js', to: 'js/app.js' },
   { from: 'js/assessment-engine.js', to: 'js/assessment-engine.js' },
   { from: 'js/file-downloader.js', to: 'js/file-downloader.js' },
-  { from: 'data/questions.json', to: 'data/questions.json' }
+  { from: 'js/i18n.js', to: 'js/i18n.js' },
+  { from: 'data/questions.json', to: 'data/questions.json' },
+  { from: 'locales/fa.json', to: 'locales/fa.json' },
+  { from: 'locales/en.json', to: 'locales/en.json' }
 ];
 
 filesToCopy.forEach(({ from, to }) => {

@@ -127,6 +127,35 @@ body {
   transform: scale(1.05);
 }
 
+.language-selector {
+  padding: 0.5rem 0.75rem;
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  outline: none;
+}
+
+.language-selector:hover {
+  border-color: var(--primary-color);
+  background: var(--bg-secondary);
+}
+
+.language-selector:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.language-selector option {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  padding: 0.5rem;
+}
+
 .progress-indicator {
   font-weight: 600;
   color: var(--text-secondary);

@@ -4,6 +4,7 @@
 
 import AssessmentEngine from './assessment-engine.js';
 import FileDownloader from './file-downloader.js';
+import i18n from './i18n.js';
 
 class App {
   constructor() {
@@ -11,11 +12,15 @@ class App {
     this.questions = [];
     this.currentQuestionIndex = 0;
     this.theme = localStorage.getItem('theme') || 'light';
+    this.i18n = i18n;
     
     this.init();
   }
 
   async init() {
+    // Initialize i18n
+    await this.i18n.init();
+    
     // Set initial theme
     document.documentElement.setAttribute('data-theme', this.theme);
     this.updateThemeIcon();
@@ -31,6 +36,9 @@ class App {
     
     // Set year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Update progress text with i18n
+    this.updateProgress();
   }
 
   async loadQuestions() {
@@ -41,11 +49,20 @@ class App {
       console.log(`✅ Loaded ${this.questions.length} questions`);
     } catch (error) {
       console.error('❌ Failed to load questions:', error);
-      alert('Failed to load assessment questions. Please refresh the page.');
+      alert(this.i18n.t('errors.load_questions'));
     }
   }
 
   setupEventListeners() {
+    // Language selector
+    const langSelector = document.getElementById('language-selector');
+    langSelector.value = this.i18n.getCurrentLanguage();
+    langSelector.addEventListener('change', (e) => {
+      this.i18n.setLanguage(e.target.value);
+      this.updateProgress();
+      this.updateQuestionDisplay();
+    });
+    
     // Theme toggle
     document.getElementById('theme-toggle').addEventListener('click', () => {
       this.toggleTheme();
@@ -130,9 +147,7 @@ class App {
     document.getElementById('current-q').textContent = index + 1;
     
     // Update progress
-    const progress = ((index + 1) / this.questions.length) * 100;
-    document.getElementById('progress-fill').style.width = `${progress}%`;
-    document.getElementById('progress-text').textContent = `${index + 1} of ${this.questions.length}`;
+    this.updateProgress();
     
     // Clear previous answer selection
     const radios = document.querySelectorAll('input[name="answer"]');
@@ -157,6 +172,23 @@ class App {
       document.getElementById('submit-btn').style.display = 'none';
     }
   }
+  
+  updateProgress() {
+    const current = this.currentQuestionIndex + 1;
+    const total = this.questions.length;
+    const progress = (current / total) * 100;
+    
+    document.getElementById('progress-fill').style.width = `${progress}%`;
+    document.getElementById('progress-text').innerHTML = 
+      `${current} <span data-i18n="progress.of">${this.i18n.t('progress.of')}</span> ${total}`;
+  }
+  
+  updateQuestionDisplay() {
+    // Re-render current question to apply language changes
+    if (this.currentQuestionIndex >= 0 && this.currentQuestionIndex < this.questions.length) {
+      this.loadQuestion(this.currentQuestionIndex);
+    }
+  }
 
   recordAnswer(value) {
     const question = this.questions[this.currentQuestionIndex];
@@ -177,7 +209,7 @@ class App {
     const answer = this.engine.getAnswer(question.id);
     
     if (!answer) {
-      alert('Please select an answer before continuing.');
+      alert(this.i18n.t('assessment.required'));
       return;
     }
 
@@ -190,8 +222,7 @@ class App {
   submitAssessment() {
     // Check if all questions are answered
     if (!this.engine.isComplete(this.questions.length)) {
-      const unanswered = this.questions.length - Object.keys(this.engine.answers).length;
-      alert(`Please answer all questions. ${unanswered} question(s) remaining.`);
+      alert(this.i18n.t('errors.incomplete'));
       return;
     }
 
@@ -208,16 +239,18 @@ class App {
   displayResults(results) {
     const summary = document.getElementById('results-summary');
     
+    const genderText = results.gender === 'male' ? this.i18n.t('results.male') : this.i18n.t('results.female');
+    
     const html = `
-      <h3>📊 Assessment Summary</h3>
-      <p><strong>Name:</strong> ${results.name}</p>
-      <p><strong>Age:</strong> ${results.age}</p>
-      <p><strong>Gender:</strong> ${results.gender}</p>
-      <p><strong>Questions Answered:</strong> ${results.totalQuestions} / 175</p>
-      <p><strong>Completed:</strong> ${new Date(results.completedAt).toLocaleString()}</p>
+      <h3>📊 <span data-i18n="results.summary">${this.i18n.t('results.summary')}</span></h3>
+      <p><strong data-i18n="results.name">${this.i18n.t('results.name')}</strong> ${results.name}</p>
+      <p><strong data-i18n="results.age">${this.i18n.t('results.age')}</strong> ${results.age}</p>
+      <p><strong data-i18n="results.gender">${this.i18n.t('results.gender')}</strong> ${genderText}</p>
+      <p><strong data-i18n="results.questions_answered">${this.i18n.t('results.questions_answered')}</strong> ${results.totalQuestions} / 175</p>
+      <p><strong data-i18n="results.completed">${this.i18n.t('results.completed')}</strong> ${new Date(results.completedAt).toLocaleString()}</p>
       
       <div style="margin-top: 20px; padding: 15px; background: var(--bg-primary); border-radius: 8px;">
-        <h4 style="color: var(--primary-color); margin-bottom: 10px;">📈 Top Clinical Scales</h4>
+        <h4 style="color: var(--primary-color); margin-bottom: 10px;">📈 <span data-i18n="results.top_scales">${this.i18n.t('results.top_scales')}</span></h4>
         ${results.scores
           .filter(s => !['V', 'X', 'Y', 'Z', '1'].includes(s.code))
           .sort((a, b) => b.value - a.value)
