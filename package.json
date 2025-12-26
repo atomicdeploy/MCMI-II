@@ -16,7 +16,7 @@
     "build": "node build.js",
     "build:modern": "node build-modern-html.js",
     "serve": "npx http-server dist -p 8080 -o",
-    "serve:modern": "npx http-server . -p 8080 -o /MCMI2-modern.html",
+    "serve:modern": "npx http-server . -p 8080 -o MCMI2-modern.html",
     "ci": "npm run lint && npm run parse && npm run validate && npm run validate:js && npm run test"
   },
   "keywords": [
