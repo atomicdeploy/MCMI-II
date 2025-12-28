@@ -35,3 +35,11 @@ coverage/
 # Environment
 .env
 .env.local
+
+# Test files
+test-*.js
+debug-*.js
+extract-content.js
+find-error.js
+screenshot-*.png
+fix-nan-verified.png
