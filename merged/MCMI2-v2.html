@@ -51,6 +51,52 @@ Date: 2025-12-28
 لطفاً برای پاسخ خیر از کلید F  و برای پاسخ بلی از کلید T استفاده نمایید.
 <br>
 
+<!-- AnswerSheet LCD Interface (Integrated from answersheet/ code) -->
+<div id="answersheetPanel" style="margin: 20px auto; max-width: 700px; padding: 20px; background: rgba(255,255,255,0.8); border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+	<h3 style="text-align: center; color: #2c3e50; margin-top: 0; direction: rtl;">پاسخنامه - AnswerSheet Interface</h3>
+	
+	<!-- LCD Display -->
+	<input id="lcd-display" class="lcd-input" type="number" min="1" max="175" value="1" 
+		style="display: block; margin: 10px auto; width: 100%; max-width: 500px; height: 90px; border: 0; text-align: center; font-size: 48pt; font-family: monospace; padding: 5px; background: rgba(255,255,255,0.9); box-shadow: inset 0 2px 5px rgba(0,0,0,0.1); border-radius: 5px; direction: ltr;">
+	
+	<!-- Status Message Display -->
+	<div id="answersheet-status" class="answersheet-status hide" 
+		style="display: block; position: relative; width: 100%; max-width: 500px; margin: 10px auto; text-align: center; line-height: 40px; font-size: 12pt; background-color: rgba(0, 0, 0, 0.1); color: black; border-radius: 5px; padding: 5px; transform: perspective(500px); transition: transform 0.5s ease, opacity 0.5s ease; opacity: 1;">
+		پیام سیستم
+	</div>
+	
+	<div style="text-align: center; margin-top: 10px;">
+		<button onclick="toggleAnswerSheetMode()" style="padding: 8px 15px; background-color: #3498db; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">
+			🔄 Toggle AnswerSheet Mode
+		</button>
+	</div>
+</div>
+
+<style>
+/* AnswerSheet Interface Styles */
+.lcd-input:focus {
+	background: rgba(255,255,255,1) !important;
+	outline: 2px solid #3498db;
+}
+
+.answersheet-status.hide {
+	transform: perspective(500px) rotateX(-90deg);
+	opacity: 0;
+}
+
+.answersheet-status.info {
+	background-color: rgba(32, 196, 255, 0.6) !important;
+}
+
+.answersheet-status.error {
+	background-color: rgba(255, 0, 0, 0.3) !important;
+}
+
+.answersheet-status.success {
+	background-color: rgba(0, 255, 30, 0.3) !important;
+}
+</style>
+
 <div style="margin: auto; direction: rtl; text-align:center;">
 <label>
 	<b> شماره سؤال انتخاب شده: </b><br>
@@ -97,8 +143,8 @@ Date: 2025-12-28
 		</button>
 	</div>
 	<div style="font-size: 12px; color: #7f8c8d; margin-top: 10px;">
-		<input type="checkbox" id="autoSave" onchange="toggleAutoSave(this.checked)" style="margin-left: 5px;">
-		<label for="autoSave">Auto-save every 30 seconds / ذخیره خودکار هر ۳۰ ثانیه</label>
+		<input type="checkbox" id="autoSave" onchange="toggleAutoSave(this.checked)" checked style="margin-left: 5px;">
+		<label for="autoSave">Auto-save on every change / ذخیره خودکار با هر تغییر</label>
 	</div>
 	<div id="storageStatus" style="margin-top: 10px; padding: 8px; background-color: #bdc3c7; border-radius: 4px; font-size: 13px; display: none;">
 	</div>
@@ -232,8 +278,8 @@ function resetDRS() {
 // NEW FEATURES: Import/Export, LocalStorage, Auto-save, Device Interface
 // ====================================================================
 
-// Auto-save timer
-var autoSaveInterval = null;
+// Auto-save state (event-based, not polling)
+var autoSaveEnabled = true;
 
 function showStatus(message, type) {
 	var statusDiv = document.getElementById('storageStatus');
@@ -245,6 +291,125 @@ function showStatus(message, type) {
 		statusDiv.style.display = 'none';
 	}, 3000);
 }
+
+// ====================================================================
+// ANSWERSHEET MESSAGE SYSTEM (from answersheet/ code)
+// ====================================================================
+
+var answerSheetMessage_timeoutID;
+
+function showAnswerSheetMessage(text, type, timeOut, callback) {
+	var classList = "info error success";
+	var object = document.getElementById('answersheet-status');
+	
+	var timeOut = timeOut || 2000;
+	var hide = (!text || timeOut == 0);
+	var text = text || '';
+	var type = type || 'info';
+	
+	if (hide) {
+		object.classList.add('hide');
+	} else {
+		object.innerHTML = text;
+		object.className = 'answersheet-status ' + type;
+		object.classList.remove('hide');
+	}
+	
+	clearTimeout(answerSheetMessage_timeoutID);
+	if (timeOut > 0) {
+		answerSheetMessage_timeoutID = setTimeout(function() {
+			if (callback) callback();
+			showAnswerSheetMessage(false);
+		}, timeOut);
+	}
+}
+
+// LCD Display Functions (from answersheet/core.js)
+var lcdDisplayActive = false;
+
+function toggleAnswerSheetMode() {
+	lcdDisplayActive = !lcdDisplayActive;
+	var lcdDisplay = document.getElementById('lcd-display');
+	var regularInput = document.getElementById('qnumber');
+	
+	if (lcdDisplayActive) {
+		lcdDisplay.style.display = 'block';
+		regularInput.style.display = 'none';
+		lcdDisplay.focus();
+		showAnswerSheetMessage('حالت پاسخنامه فعال شد - AnswerSheet Mode Active', 'success', 2000);
+	} else {
+		lcdDisplay.style.display = 'none';
+		regularInput.style.display = 'block';
+		regularInput.focus();
+		showAnswerSheetMessage('حالت عادی فعال شد - Normal Mode Active', 'info', 2000);
+	}
+}
+
+// LCD Display validation and input handling
+function maxLengthCheck(evt) {
+	var theEvent = evt || window.event;
+	var object = theEvent.target;
+	if (object.value.length > object.max.length) {
+		object.value = object.value.slice(0, object.max.length);
+	}
+	if (parseInt(object.value) < parseInt(object.min)) {
+		object.value = parseInt(object.min);
+	}
+	if (parseInt(object.value) > parseInt(object.max)) {
+		object.value = parseInt(object.max);
+	}
+}
+
+function isNumeric(evt) {
+	var theEvent = evt || window.event;
+	var key = theEvent.keyCode || theEvent.which;
+	key = String.fromCharCode(key);
+	var regex = /[0-9]/;
+	if (!regex.test(key)) {
+		theEvent.returnValue = false;
+		if (theEvent.preventDefault) theEvent.preventDefault();
+	}
+}
+
+function numValidate(evt) {
+	var theEvent = evt || window.event;
+	var object = theEvent.target;
+	if (object.value == '' && object.min) {
+		object.value = parseInt(object.min);
+	}
+}
+
+// Initialize LCD Display
+window.addEventListener('load', function() {
+	var lcdDisplay = document.getElementById('lcd-display');
+	if (lcdDisplay) {
+		lcdDisplay.addEventListener('input', maxLengthCheck);
+		lcdDisplay.addEventListener('keypress', isNumeric);
+		lcdDisplay.addEventListener('blur', numValidate);
+		
+		// Sync LCD with regular input
+		lcdDisplay.addEventListener('input', function() {
+			document.getElementById('qnumber').value = this.value;
+			qselect(this.value);
+		});
+		
+		// Handle Enter and Space keys
+		lcdDisplay.addEventListener('keypress', function(e) {
+			if (e.which === 13 || e.which === 32) { // Enter or Space
+				this.blur();
+				showAnswerSheetMessage('سؤال ' + this.value + ' انتخاب شد', 'success', 1500);
+			}
+		});
+	}
+	
+	// Hide LCD initially
+	lcdDisplay.style.display = 'none';
+	
+	// Welcome message
+	setTimeout(function() {
+		showAnswerSheetMessage('به سیستم یکپارچه MCMI-II خوش آمدید', 'info', 3000);
+	}, 500);
+});
 
 // Get all answers from the form
 function getAllAnswers() {
@@ -487,24 +652,58 @@ function clearLocalStorage() {
 	}
 }
 
-// Toggle auto-save
+// Toggle auto-save (EVENT-BASED, not polling!)
 function toggleAutoSave(enabled) {
+	autoSaveEnabled = enabled;
 	if (enabled) {
-		// Save every 30 seconds
-		autoSaveInterval = setInterval(function() {
-			saveToLocalStorage();
-			console.log('Auto-saved at ' + new Date().toLocaleTimeString());
-		}, 30000);
-		showStatus('✅ Auto-save enabled (every 30 seconds)', 'success');
+		showStatus('✅ Event-based auto-save enabled (saves on every change)', 'success');
+		showAnswerSheetMessage('ذخیره خودکار فعال شد', 'success', 2000);
 		// Do an initial save
 		saveToLocalStorage();
+		// Set up event listeners for all inputs
+		setupAutoSaveListeners();
 	} else {
-		if (autoSaveInterval) {
-			clearInterval(autoSaveInterval);
-			autoSaveInterval = null;
-		}
 		showStatus('ℹ️ Auto-save disabled', 'info');
+		showAnswerSheetMessage('ذخیره خودکار غیرفعال شد', 'info', 2000);
 	}
+}
+
+// Setup event listeners for auto-save on change
+function setupAutoSaveListeners() {
+	if (!autoSaveEnabled) return;
+	
+	// Listen to all radio buttons (questions)
+	for (var i = 1; i <= 175; i++) {
+		var radios = document.getElementsByName('R' + i);
+		if (radios && radios.length >= 2) {
+			radios[0].addEventListener('change', function() {
+				if (autoSaveEnabled) {
+					saveToLocalStorage();
+					console.log('Auto-saved on question change at ' + new Date().toLocaleTimeString());
+				}
+			});
+			radios[1].addEventListener('change', function() {
+				if (autoSaveEnabled) {
+					saveToLocalStorage();
+					console.log('Auto-saved on question change at ' + new Date().toLocaleTimeString());
+				}
+			});
+		}
+	}
+	
+	// Listen to demographic fields
+	var demographicFields = ['T1', 'T2', 'T3', 'radgender', 'D1'];
+	demographicFields.forEach(function(fieldName) {
+		var fields = document.getElementsByName(fieldName);
+		for (var i = 0; i < fields.length; i++) {
+			fields[i].addEventListener('change', function() {
+				if (autoSaveEnabled) {
+					saveToLocalStorage();
+					console.log('Auto-saved on demographic change at ' + new Date().toLocaleTimeString());
+				}
+			});
+		}
+	});
 }
 
 // ====================================================================
@@ -615,7 +814,7 @@ function resetDeviceMemory() {
 	}
 }
 
-// Initialize: Try to load from localStorage on page load
+// Initialize: Try to load from localStorage on page load and setup auto-save
 window.addEventListener('load', function() {
 	// Check if there's saved data
 	var stored = localStorage.getItem('MCMI2_Answers');
@@ -624,6 +823,12 @@ window.addEventListener('load', function() {
 		if (loadSaved) {
 			loadFromLocalStorage();
 		}
+	}
+	
+	// Setup event-based auto-save (enabled by default)
+	var autoSaveCheckbox = document.getElementById('autoSave');
+	if (autoSaveCheckbox && autoSaveCheckbox.checked) {
+		toggleAutoSave(true);
 	}
 });
 </script>
