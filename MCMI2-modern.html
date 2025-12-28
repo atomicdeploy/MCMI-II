@@ -2197,15 +2197,15 @@ let wf;
 let f;
 
 function window_onload() {
-  if (k.c1.checked === true) { k.t4.disabled === false; }
+  if (k.C1.checked === true) { k.T4.disabled = false; }
 }
 
 function c1_onclick() {
-  if (k.c1.checked === true) {
-    k.t4.disabled === false;
+  if (k.C1.checked === true) {
+    k.T4.disabled = false;
     wf = 1;
   } else {
-    k.t4.disabled === true;
+    k.T4.disabled = true;
   }
 }
 
@@ -6208,11 +6208,11 @@ function dcadjust() {
 }
 
 function buttvalidate() {
-  if (k.t3.value==="") {
+  if (k.T3.value==="") {
     alert("لطفاً حداقل خانه مربوط به سن را پر کنيد");
-  } else if (!!isNaN(k.t3.value)) {
+  } else if (!!isNaN(k.T3.value)) {
     alert("لطفاً در خانه مربوط به سن يک عدد وارد کنيد");
-  } else if (k.t3.value>120 || k.t3.value<13) {
+  } else if (k.T3.value>120 || k.T3.value<13) {
     alert("سن شما برای اين تست مناسب نيست");
   } else if (!k.elements.radgender[0].checked && !k.elements.radgender[1].checked) {
     alert("لطفاً دايره مربوط به جنسيت را پر کنيد");
@@ -6224,12 +6224,12 @@ function buttvalidate() {
 
 function buttclick() {
   total = v+pp+cc+ss+t+b+n+d+h+a+p+c+s+eightb+eighta+seven+sixb+sixa+five+four+three+two+one+z+y;
-  fname = k.t4.value;
-  if (!(k.t1.value === "") && !(k.t2.value === "")) {
-    name = k.t1.value;
-    code = k.t2.value;
+  fname = k.T4.value;
+  if (!(k.T1.value === "") && !(k.T2.value === "")) {
+    name = k.T1.value;
+    code = k.T2.value;
   }
-  age = k.t3.value;
+  age = k.T3.value;
   if (k.elements.radgender[1].checked) {
     male();
   } else {
@@ -6458,7 +6458,7 @@ function buttclick() {
   gg[22] = "SS";
   gg[23] = "CC";
   gg[24] = "PP";
-  document.write("<center><b>" + k.t1.value + k.t3.value + " ساله" + "</b></center>");
+  document.write("<center><b>" + k.T1.value + k.T3.value + " ساله" + "</b></center>");
   document.write("<table border=0 cellspacing=0 cellpadding=0 ><tbody>");
   document.write("<tr height=34><td width=167 colspan=2> </td><td width=34 style='border-left-style: solid;  border-top-style:solid;border-color: #000000'>Raw Score</td><td width=34 style='border-left-style: solid; border-right-style: solid; border-top-style:solid; border-color: #000000'>BR from table</td><td width=34 style='border-right-style: solid;  border-top-style:solid;border-color: #000000'>BR  X   Cor.</td><td width=34 style='  border-right-style: solid; border-top-style:solid; border-color: #000000'>BR  1/2X   Cor.</td><td width=34 style=' border-right-style: solid; border-top-style:solid; border-color: #000000'>BR  DA Adj.</td><td width=34 style=' border-right-style: solid; border-top-style:solid; border-color: #000000'>BR  DD Adj.</td><td width=34 style='  border-right-style: solid; border-top-style:solid; border-color: #000000'>BR  DC Adj.</td><td width=34 style='  border-top-style:solid ; border-color: #000000'>BR  Inp Adj.</td><th   style=' border-right-style: solid; border-top-style:solid; border-color: #000000'>Final BR</th></tr>");
   for (let i = 1; i <= 24; i++) {
